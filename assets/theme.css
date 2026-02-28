@@ -272,19 +272,29 @@ height-observer {
 .accordion-group > * + * > .accordion {
   border-block-start-width: 0;
 }
-
+.shopify-section--blog-posts .blog-post-list{
+  gap: 12px;
+}
 .blog-post-card {
   align-content: start;
   gap: 1.25rem;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 0 0 49%;
+  border: 1px solid #939393;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .blog-post-card__info {
   justify-items: start;
   row-gap: 1rem;
   display: grid;
+  align-items: center;
 }
-
+.blog-post-card__info p{
+  height: 100%;
+}
 .blog-post-card__meta {
   flex-wrap: wrap;
   align-items: center;
@@ -307,6 +317,7 @@ height-observer {
   column-gap: var(--blog-post-list-column-gap);
   row-gap: var(--blog-post-list-row-gap);
   display: grid;
+  display: flex;
 }
 
 .featured-blog-post {
@@ -319,11 +330,28 @@ height-observer {
     --blog-post-list-items-per-row: 2;
   }
 }
-
+.product-title{
+  font-family: var(--text-font-family) !important;
+  letter-spacing: 0 !important;
+  font-weight: 500;
+  line-height: 100% !important;
+}
 @media screen and (max-width: 999px) {
   .blog-post-list--carousel {
     --blog-post-list-card-width: 40vw;
     grid: auto / auto-flow var(--blog-post-list-card-width);
+  }
+  .search-phone-wrapper{
+    display: none !important;
+  }
+  .announcement-bar .social-media{
+    display: none;
+  }
+  .announcement-bar.announcement-bar-container{
+    justify-content: center;
+  }
+  .collection-list .collection-card__arrow svg{
+    height: clamp(25px, 5vw, 36px) !important;
   }
 }
 
@@ -4821,8 +4849,8 @@ product-rerender {
   row-gap: var(--header-padding-block);
   box-shadow: 0 -1px rgb(var(--header-separation-border-color)) inset;
   reading-flow: grid-columns;
-  padding-block-start: var(--header-padding-block);
-  padding-block-end: var(--header-padding-block);
+  padding-block-start: 12px;
+  padding-block-end: 12px;
   padding-inline-start: var(--container-gutter);
   padding-inline-end: var(--container-gutter);
   transition: background .2s, color .2s, border .2s, box-shadow .2s, transform .15s ease-in-out;

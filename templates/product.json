@@ -12,6 +12,29 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "modal_pjKYDR": {
+          "type": "modal",
+          "settings": {
+            "button_title": "Button title",
+            "button_style": "solid",
+            "stretch_button": false,
+            "button_background": "",
+            "button_text_color": "",
+            "modal_title": "Modal title",
+            "modal_content": "<p>Write some content that will appear in a modal</p>"
+          }
+        },
+        "accordion_qj7Jmt": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Title",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
         "vendor": {
           "type": "vendor",
           "settings": {}
@@ -55,14 +78,12 @@
         },
         "liquid_M6NYWq": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
             "liquid": "{% if product.selected_or_first_available_variant.inventory_policy == 'continue' and product.selected_or_first_available_variant.inventory_quantity <= 0 %}\n  <div class=\"product-preorder-message\" style=\"margin: 1rem 0; padding: 0.75rem; background: #f3f4f6; border-radius: 4px;\">\n    <p style=\"margin: 0; font-size: 0.875rem; color: #374151;\">Pre-order now - usually ships within 3 working days</p>\n  </div>\n{% endif %}"
           }
         },
         "more_information_Rnf887": {
           "type": "more_information",
-          "disabled": true,
           "settings": {
             "text": "Pre-order now: usually available within 3-4 working days"
           }
@@ -103,6 +124,8 @@
         }
       },
       "block_order": [
+        "modal_pjKYDR",
+        "accordion_qj7Jmt",
         "vendor",
         "title",
         "price",
