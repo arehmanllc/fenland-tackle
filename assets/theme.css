@@ -202,7 +202,13 @@ video {
 height-observer {
   display: block;
 }
-
+.announcement-bar.announcement-bar-container{
+  display: flex;
+  justify-content: space-between;
+}
+.announcement-bar.announcement-bar-container .announcement-bar{
+  padding: 0;
+}
 .color-scheme {
   background-color: rgb(var(--background));
   background-image: var(--background-gradient);
@@ -714,8 +720,8 @@ shopify-accelerated-checkout, shopify-accelerated-checkout-cart {
 }
 
 .page-dots > * {
-  width: var(--dot-size);
-  height: var(--dot-size);
+  width: 15px;
+  height: 15px;
   border-radius: var(--rounded-full);
   place-content: center;
   display: grid;
@@ -2761,12 +2767,15 @@ tr[onclick]:hover {
     --table-cell-padding-inline: .75rem;
   }
 }
-
+.localization-selectors button{
+  font-family: var(--text-font-family);
+}
 .social-media--list {
   align-items: center;
-  gap: var(--social-media-list-gap, .75rem 2rem);
+  gap: var(--social-media-list-gap, .75rem 10px);
   flex-wrap: wrap;
   display: flex;
+  height: 100%;
 }
 
 .social-media--list .social-media__item {
@@ -3636,10 +3645,14 @@ tr[onclick]:hover {
     stroke-dashoffset: 0;
   }
 }
-
+.section-header .h6{
+  font-size: clamp(28px,3vw,42px);
+}
 .circular-progress {
   transition: opacity .25s;
   transform: rotate(-90deg);
+  width: 13px;
+  height: 13px;
 }
 
 .circular-progress circle:last-child {
@@ -3773,6 +3786,9 @@ product-rerender {
   padding-inline-start: max(var(--announcement-bar-gutter), 50% - var(--container-max-width) / 2);
   padding-inline-end: max(var(--announcement-bar-gutter), 50% - var(--container-max-width) / 2);
   display: flex;
+}
+.announcement-bar__carousel .prose.heading{
+  font-family: var(--text-font-family);
 }
 
 .announcement-bar__carousel {
@@ -4898,6 +4914,10 @@ product-rerender {
   align-items: center;
   gap: .625rem 1.25rem;
   display: flex;
+}
+.header__primary-nav .header__primary-nav-item:last-child{
+  color: #416954;
+  font-weight: 500;
 }
 
 .header__primary-nav-item [data-title]:before {
@@ -6605,6 +6625,9 @@ product-rerender {
   position: absolute;
   inset-block-end: var(--slideshow-controls-spacing);
   inset-inline-end: var(--slideshow-controls-spacing);
+  left: 0;
+  bottom: 10px;
+  width: 100%;
 }
 
 .shopify-section--slideshow:first-child .slideshow[allow-transparent-header] {

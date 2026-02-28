@@ -4,7 +4,7 @@
   CSS
   ------------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
-
+{{ 'collection-list.css' |  asset_url | stylesheet_tag }}
   {%- liquid
     assign stack_mobile = section.settings.stack_collections_mobile
     assign stack_desktop = section.settings.stack_collections
@@ -239,7 +239,7 @@
       "type": "range",
       "id": "collections_per_row_desktop",
       "min": 1,
-      "max": 5,
+      "max": 6,
       "label": "t:sections.collection_list.collections_per_row_desktop",
       "default": 3
     },

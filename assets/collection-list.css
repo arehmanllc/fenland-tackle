@@ -1,0 +1,6 @@
+.collection-list .collection-card__content p{
+  font-size: clamp(12px,3vw,16px);
+}
+.collection-list .content-over-media{
+  --content-over-media-gap: 2rem;
+}
