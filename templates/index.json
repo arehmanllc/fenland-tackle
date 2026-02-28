@@ -285,9 +285,15 @@
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "separate_section_with_border": true,
+        "force_grid_layout": true,
+        "card_aspect_ratio": "1/1",
+        "card_height_mobile": 220,
+        "card_height_desktop": 240,
+        "separate_section_with_border": false,
         "image_size": "xs",
         "show_text_outside": false,
+        "show_arrow_icon": true,
+        "arrow_color": "#416954",
         "space_items": true,
         "stack_collections": true,
         "collections_per_row_desktop": 6,
@@ -296,6 +302,291 @@
         "subheading": "FEATURED CATEGORIES",
         "title": "",
         "content": ""
+      }
+    },
+    "featured_collections_gPD9WH": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_VKTXiB": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "Explore More"
+          }
+        }
+      },
+      "block_order": [
+        "collection_VKTXiB"
+      ],
+      "name": "Sale Collection",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 0.4,
+        "subheading": ""
+      }
+    },
+    "text_with_icons_FjVN8V": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_Kkjpya": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Prologic.png",
+            "icon_width": 64,
+            "mobile_icon_width": 48,
+            "title": "Free Local Delivery",
+            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+          }
+        },
+        "item_jXRMYg": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Prologic.png",
+            "icon_width": 64,
+            "mobile_icon_width": 48,
+            "title": "Free Local Delivery",
+            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+          }
+        },
+        "item_JmhUa9": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Prologic.png",
+            "icon_width": 64,
+            "mobile_icon_width": 48,
+            "title": "Free Local Delivery",
+            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Kkjpya",
+        "item_jXRMYg",
+        "item_JmhUa9"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "image_with_text_D6k4FH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3Am8UH": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Story at Fenland Tackle Exchange",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_3WgqLw": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Fenland Tackle Exchange was founded with a simple mission — to give anglers across the UK a better way to buy, sell, and trade quality fishing tackle. We understand the passion behind every session, which is why we offer carefully selected new and pre-owned gear you can trust. Our goal is to help anglers access premium equipment while giving unused tackle a second life.</p>"
+          }
+        },
+        "liquid_QRgMq7": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"container\">\n<div class=\"block\"><p>1000+</p>\n<div>Products\nAvailable</div></div>\n<div class=\"block\"><p>UK Wide</p>\n<div>Buy, Sell, and\nTrade Service</div></div>\n<div class=\"block\"><p>Quality Checked</p>\n<div>Every Used Item Inspected</div></div>\n</div>"
+          }
+        },
+        "button_b8JyNE": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Shop All Products",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_DKfMXb": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "text": "Sell Your Tackle",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3Am8UH",
+        "richtext_3WgqLw",
+        "liquid_QRgMq7",
+        "button_b8JyNE",
+        "button_DKfMXb"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/IMG_20260228_103831.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_AzdJdY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HV8yMK": {
+          "type": "heading",
+          "settings": {
+            "text": "Trusted Fishing Tackle Brands",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_pekmLE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Carefully selected gear from proven brands known for reliability, performance, and value — trusted by anglers across the UK for every fishing style and condition.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HV8yMK",
+        "richtext_pekmLE"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-c9161325-0349-41a9-8394-c40d7b20ed8d",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "scrolling_content_Lt8DRt": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_CW6tHJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/30cm-hook-length-box.jpg"
+          }
+        },
+        "image_fWeD8K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/long.webp"
+          }
+        },
+        "image_h3VFKy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6c9d71cf-7600-42fd-ba84-74775f0126ec_1_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_CW6tHJ",
+        "image_fWeD8K",
+        "image_h3VFKy"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 40,
+        "text_font_size_desktop": 96,
+        "section_vertical_spacing_mobile": 26,
+        "section_vertical_spacing_desktop": 32,
+        "item_horizontal_spacing_mobile": 30,
+        "item_horizontal_spacing_desktop": 30,
+        "background": "#d9e1dd",
+        "text_color": ""
+      }
+    },
+    "image_with_text_6Yz6hW": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_8jhrDH": {
+          "type": "subheading",
+          "settings": {
+            "text": "Fenland Tackle Exchange"
+          }
+        },
+        "heading_kPPheb": {
+          "type": "heading",
+          "settings": {
+            "text": "Sell Your Fishing Tackle",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_BjmLpz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Fenland Tackle Exchange, we make it easy for you to sell your unwanted fishing tackle hassle-free. We understand that selling fishing gear can often be a frustrating experience, especially when dealing with time-wasters and complex listings on platforms like eBay, Facebook Marketplace, or Gumtree. Let us take the stress out of selling your tackle!<br/></p>"
+          }
+        },
+        "button_angXAP": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Read More",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8jhrDH",
+        "heading_kPPheb",
+        "richtext_BjmLpz",
+        "button_angXAP"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/2A_1.png",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "blog_posts_KCUVeE": {
+      "type": "blog-posts",
+      "name": "t:sections.blog_posts.presets.blog_posts.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "blog": "news",
+        "posts_count": 2,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "Our Blogs",
+        "content": "",
+        "button_link": "",
+        "button_text": "View all"
       }
     },
     "scrolling_content_y3exB6": {
@@ -346,48 +637,6 @@
         "item_horizontal_spacing_desktop": 10,
         "background": "",
         "text_color": ""
-      }
-    },
-    "featured_collections_gPD9WH": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_VKTXiB": {
-          "type": "collection",
-          "settings": {
-            "collection": "new-arrivals",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
-        "collection_d3Qy4n": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "special-offers",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "collection_VKTXiB",
-        "collection_d3Qy4n"
-      ],
-      "name": "Sale Collection",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": true,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 0.4,
-        "subheading": ""
       }
     },
     "featured-collections": {
@@ -494,95 +743,6 @@
         "subheading": ""
       }
     },
-    "image_with_text_6Yz6hW": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_8jhrDH": {
-          "type": "subheading",
-          "settings": {
-            "text": "Fenland Tackle Exchange"
-          }
-        },
-        "heading_kPPheb": {
-          "type": "heading",
-          "settings": {
-            "text": "Where experience counts",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_BjmLpz": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Fenland Tackle Exchange - for dependable carp, match, predator and specimen fishing tackle, bait and clothing from established angling brands.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_8jhrDH",
-        "heading_kPPheb",
-        "richtext_BjmLpz"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "image": "shopify://shop_images/2A_1.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "md",
-        "remove_vertical_spacing": true
-      }
-    },
-    "text_with_icons_FjVN8V": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_Kkjpya": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "Dependable Delivery",
-            "content": "<p>Because we do not sell on multiple platforms, you can be sure our inventory is always right up to date. If it’s listed, it’s in stock, ready for collection or delivery.</p>"
-          }
-        },
-        "item_7LUxeq": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-success",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "Angling Essentials",
-            "content": "<p>Can't find what you're looking for? Drop us a PM or give us a call. if our suppliers have the products you need in stock, we’ll get them out to you in days, at the best prices around.</p>"
-          }
-        },
-        "item_8B8VV8": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-recycle",
-            "custom_icon": "shopify://shop_images/guarantee.png",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "'Old school' values",
-            "content": "<p>As passionate anglers, we offer only tackle and bait that we - and our extensive network of specialist anglers, customers and friends - personally trust and depend upon.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_Kkjpya",
-        "item_7LUxeq",
-        "item_8B8VV8"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-3",
-        "separate_section_with_border": true,
-        "stack_on_mobile": false,
-        "icon_color": "",
-        "text_color": "",
-        "text_alignment": "center"
-      }
-    },
     "testimonials_TBzX6A": {
       "type": "testimonials",
       "blocks": {
@@ -590,6 +750,7 @@
           "type": "testimonial",
           "settings": {
             "content": "<p>\"Fast post, perfect item thank you\"</p>",
+            "image": "shopify://shop_images/8929e9f0-0705-47fb-ad5f-7af26fc8872d_1.jpg",
             "logo_max_width": 140,
             "logo_mobile_max_width": 100,
             "author": ""
@@ -599,6 +760,7 @@
           "type": "testimonial",
           "settings": {
             "content": "<p>\"Super quick delivery. Highly recommended!\"</p>",
+            "image": "shopify://shop_images/a3c2ba9b-6680-4b4e-b820-bf83cbe36535_1.jpg",
             "logo_max_width": 140,
             "logo_mobile_max_width": 100,
             "author": ""
@@ -608,7 +770,7 @@
           "type": "testimonial",
           "settings": {
             "content": "<p>\"A great place to shop, and super fast delivery.<br/>Highly recommended!\"</p>",
-            "image": "shopify://shop_images/5stars.png",
+            "image": "shopify://shop_images/IMG_20260228_103348.jpg",
             "logo_max_width": 140,
             "logo_mobile_max_width": 100,
             "author": ""
@@ -618,6 +780,7 @@
           "type": "testimonial",
           "settings": {
             "content": "<p>\"Arrived quicker than expected, great product would highly recommend 5🌟\"</p>",
+            "image": "shopify://shop_images/IMG_20260225_151115.jpg",
             "logo_max_width": 140,
             "logo_mobile_max_width": 100,
             "author": ""
@@ -627,6 +790,7 @@
           "type": "testimonial",
           "settings": {
             "content": "<p>Great advice over the phone, placed the order and picked it up the same day!   Perfect - thanks guys.</p>",
+            "image": "shopify://shop_images/IMG_20260225_152112.jpg",
             "logo_max_width": 140,
             "logo_mobile_max_width": 100,
             "author": ""
@@ -640,7 +804,6 @@
         "testimonial_9DxTtG",
         "testimonial_PNrUTD"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "separate_section_with_border": true,
@@ -650,20 +813,6 @@
         "subheading": "REVIEWS",
         "title": "",
         "content": ""
-      }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "image_size": "auto",
-        "subheading": "",
-        "title": "",
-        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
-        "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     },
     "174930763382116150": {
@@ -744,7 +893,7 @@
       ],
       "name": "Pre-order message",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
@@ -772,22 +921,82 @@
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
       }
+    },
+    "faq_KTWBHq": {
+      "type": "faq",
+      "blocks": {
+        "question_yRjhcP": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_DMRJGn": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_ek6DfC": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_yRjhcP",
+        "question_DMRJGn",
+        "question_ek6DfC"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": true,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "image": "shopify://shop_images/10794-banner.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
     "slideshow",
     "collection-list",
-    "scrolling_content_y3exB6",
     "featured_collections_gPD9WH",
+    "text_with_icons_FjVN8V",
+    "image_with_text_D6k4FH",
+    "rich_text_AzdJdY",
+    "scrolling_content_Lt8DRt",
+    "image_with_text_6Yz6hW",
+    "blog_posts_KCUVeE",
+    "scrolling_content_y3exB6",
     "featured-collections",
     "featured_collections_pmhw7V",
-    "image_with_text_6Yz6hW",
-    "text_with_icons_FjVN8V",
     "testimonials_TBzX6A",
-    "newsletter",
     "174930763382116150",
     "custom_liquid_enMzAr",
     "1768914436eb0313e2",
-    "1768916274a86d8fc1"
+    "1768916274a86d8fc1",
+    "faq_KTWBHq",
+    "newsletter"
   ]
 }

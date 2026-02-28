@@ -16,11 +16,18 @@
       "settings": {
         "color_scheme": "",
         "show_cart_note": true,
+        "allow_discount_application": false,
         "show_shipping_text": true,
         "show_view_cart_button": true,
         "show_checkout_button": true,
         "show_price_in_checkout_button": true,
-        "cross_sell_products": [],
+        "cross_sell_products": [
+          "connected-neoprene-tip-butt-protectors-for-transporting-made-up-carp-rods",
+          "double-barrel-carp-fishing-pva-mesh-dispensers-narrow-wide-plunger",
+          "monster-moggie-catfishing-halibut-pellets-choose-from-28mm-or-20mm-pre-drilled",
+          "1-3kw-portable-butane-gas-bivvy-heater-compact-fishing-heater-swivel-body",
+          "1-8m-profiler-two-piece-extending-telescopic-carbon-specimen-net-handle"
+        ],
         "cross_sell_title": "Complete with",
         "cross_sell_stack_products": false
       }
