@@ -1,0 +1,254 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "images_with_text_scroll_GFhgW4": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "image_with_text_fNgG6V": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Fenland_Illustration_900c6192-f3dd-4811-ba70-80dc93370d6a.png",
+            "subheading": "",
+            "title": "Welcome to Fenland!",
+            "content": "<p>At Fenland Tackle Exchange, we understand that fishing is more than just a hobby; it’s a passion.</p><p>That’s why we’re committed to providing anglers across the UK with dependable freshwater fishing tackle and bait at affordable prices.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_aVr7NX": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/Bite_alarms_217449db-b0ab-4ee6-af81-3068afd4b326.png",
+            "subheading": "",
+            "title": "",
+            "content": "<p>As dedicated anglers with years of hands-on experience, we only sell gear that we, and our fellow fishing enthusiasts, trust and rely on. The products we offer are the same ones that we use ourselves. From rods and reels to bait and clothing, every item is chosen based on performance and reliability.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_tx6NWa": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/illustration_4_1.png",
+            "subheading": "",
+            "title": "",
+            "content": "<p>Whether you’re a seasoned pro or just starting out, our online tackle<em> </em>store has everything you need for a successful fishing session. And our range of tackle, bait and accessories is constantly growing.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "image_with_text_gmmRyi": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/1A_2.png",
+            "subheading": "",
+            "title": "",
+            "content": "<p>We bring in new stock daily; so if you’re looking for specific products from our top-tier suppliers, just let us know. We’ll be happy to help – special-ordering the angling essentials you need, and probably saving you a few pounds into the bargain.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_fNgG6V",
+        "image_with_text_aVr7NX",
+        "image_with_text_tx6NWa",
+        "image_with_text_gmmRyi"
+      ],
+      "name": "t:sections.images_with_text_scroll.presets.images_with_text_scroll.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_position": "start",
+        "text_alignment": "center",
+        "heading_tag": "h3",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "image_with_text_exChKn": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_7L9Kiy": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_p9bHMC": {
+          "type": "heading",
+          "settings": {
+            "text": "Where experience counts",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_7QNVJN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Fenland Tackle Exchange - for dependable carp, match, predator and specimen fishing tackle, bait and clothing from established angling brands.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7L9Kiy",
+        "heading_p9bHMC",
+        "richtext_7QNVJN"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/2A_1_e61ff8a8-29a4-40eb-a067-a73b0be305b0.png",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "testimonials_4VwVhL": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_7MLRky": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Fast post, perfect item thank you\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_HJAMNX": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Super quick delivery. Highly recommended!\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_TFTzH4": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"A great place to shop, and super fast delivery.<br/>Highly recommended!\"</p>",
+            "image": "shopify://shop_images/5stars.png",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_x3rbjK": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Arrived quicker than expected, great product would highly recommend 5🌟\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_pGJEWT": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>Great advice over the phone, placed the order and picked it up the same day!   Perfect - thanks guys.</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_7MLRky",
+        "testimonial_HJAMNX",
+        "testimonial_TFTzH4",
+        "testimonial_x3rbjK",
+        "testimonial_pGJEWT"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "auto_rotate_between_testimonials": true,
+        "cycle_speed": 5,
+        "font_size_factor": 1,
+        "subheading": "<strong>REVIEWS</strong>",
+        "title": "",
+        "content": ""
+      }
+    },
+    "text_with_icons_gPRJeV": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_R44ABF": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Dependable Delivery",
+            "content": "<p>Because we do not sell on multiple platforms, you can be sure our inventory is always right up to date. If it’s listed, it’s in stock, ready for collection or delivery.</p>"
+          }
+        },
+        "item_g6jARN": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-success",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Angling Essentials",
+            "content": "<p>Can't find what you're looking for? Drop us a PM or give us a call. if our suppliers have the products you need in stock, we’ll get them out to you in days, at the best prices around.</p>"
+          }
+        },
+        "item_Knaj43": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-shield",
+            "custom_icon": "shopify://shop_images/guarantee_1.png",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "'Old school' values",
+            "content": "<p>As passionate anglers, we offer only tackle and bait that we - and our extensive network of specialist anglers, customers and friends - personally trust and depend upon.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_R44ABF",
+        "item_g6jARN",
+        "item_Knaj43"
+      ],
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "images_with_text_scroll_GFhgW4",
+    "image_with_text_exChKn",
+    "testimonials_4VwVhL",
+    "text_with_icons_gPRJeV"
+  ]
+}

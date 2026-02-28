@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "disabled": true,
+          "settings": {
+            "title": "Newsletter",
+            "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "main-menu-1",
+            "show_menu_title": true,
+            "menu_title": "<strong>Shop Categories</strong>"
+          }
+        },
+        "links_BG4hYC": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": "<strong>Find Out More</strong>"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "<a href=\"https://fenlandtackleexchange.co.uk/pages/about-us?view=about-us\" title=\"https://fenlandtackleexchange.co.uk/pages/about-us?view=about-us\"><strong>About</strong></a>",
+            "content": "<p>At Fenland Tackle Exchange, we pride ourselves on sourcing fishing tackle, bait, and clothing from long-established brands that may not always be the most fashionable but have proven their worth on the water. In addition to nationwide delivery, we  offer convenient collection - including evenings and weekends - from our 'tackle trade counter' in March, PE15.</p>",
+            "enable_follow_on_shop": true
+          }
+        },
+        "image_N7tPph": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo.png",
+            "image_width": 150,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "links",
+        "links_BG4hYC",
+        "text",
+        "image_N7tPph"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "show_social_media": true,
+        "show_payment_icons": false,
+        "show_country_selector": false,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "show_locale_selector": true
+      }
+    },
+    "custom_liquid_3Vxiqj": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script>\nfunction adjustSearchBar() {\n  const annBar = document.querySelector('.announcement-bar, .AnnouncementBar, .shopify-section--announcement-bar');\n  const header = document.querySelector('header.header, .site-header, .header-wrapper, .header-section');\n  const searchBar = document.getElementById('search-bar-container');\n\n  if (!searchBar) return;\n\n  let offset = 0;\n  if (annBar) offset += annBar.offsetHeight;\n  if (header) offset += header.offsetHeight;\n\n  // Use FIXED instead of sticky\n  searchBar.style.position = 'fixed';\n  searchBar.style.top = offset + 'px';\n  searchBar.style.left = '0';\n  searchBar.style.width = '100%';\n  searchBar.style.zIndex = '3'; // just under navbar\n  searchBar.style.backgroundColor = '#fff';\n\n  // Push page content down so it doesn’t sit underneath\n  const mainContent = document.querySelector('#MainContent, .main-content, .page-wrapper, .site-content, .content-wrapper');\n  if (mainContent) {\n    mainContent.style.marginTop = (offset + searchBar.offsetHeight) + 'px';\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded', adjustSearchBar);\nwindow.addEventListener('resize', adjustSearchBar);\n</script>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "custom_liquid_3Vxiqj"
+  ]
+}

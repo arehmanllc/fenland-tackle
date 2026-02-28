@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message-1": {
+          "type": "message",
+          "settings": {
+            "text": "Fenland Tackle Exchange, City Road, March PE15 9LS"
+          }
+        },
+        "message_eA78Ek": {
+          "type": "message",
+          "settings": {
+            "text": "Phones staffed: Mon 12pm-4pm | Thurs  12pm-7pm | Fri 12pm-4pm | Sat 9am-3pm | Sun 10am-3pm"
+          }
+        },
+        "message_x7nKYF": {
+          "type": "message",
+          "settings": {
+            "text": "<strong>Order online</strong> or call: <strong>01354 530105</strong>"
+          }
+        },
+        "message_yBxEeH": {
+          "type": "message",
+          "settings": {
+            "text": "Free local delivery on orders over £25"
+          }
+        },
+        "message_JMpGff": {
+          "type": "message",
+          "settings": {
+            "text": "Free national delivery on orders over £100"
+          }
+        }
+      },
+      "block_order": [
+        "message-1",
+        "message_eA78Ek",
+        "message_x7nKYF",
+        "message_yBxEeH",
+        "message_JMpGff"
+      ],
+      "custom_css": [
+        ".announcement-bar__carousel {text-transform: none;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_sticky": true,
+        "autoplay": true,
+        "cycle_speed": 17,
+        "desktop_font_size": 15,
+        "mobile_font_size": 10
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "enable_sticky": true,
+        "hide_on_scroll": false,
+        "show_separation_border": false,
+        "reduce_padding": true,
+        "logo": "shopify://shop_images/300dpi_logo.png",
+        "logo_max_width": 65,
+        "logo_mobile_max_width": 20,
+        "menu": "main-menu-1",
+        "sidebar_menu": "main-menu-1",
+        "menu_open_trigger": "hover",
+        "menu_text_font": "body",
+        "enable_search": false,
+        "sidebar_color_scheme": "scheme-2",
+        "sidebar_text_font": "heading",
+        "sidebar_show_dividers": true,
+        "sidebar_open_second_level_menus": true,
+        "layout": "logo_left_navigation_center",
+        "show_icons": false,
+        "show_country_selector": false,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "show_locale_selector": false,
+        "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/300dpi_logo.png"
+      }
+    },
+    "custom_liquid_WPMLmK": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Search",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<!-- Responsive Search Bar -->\n<div id=\"search-bar-container\">\n<div class=\"search-phone-wrapper\">\n\n  <form action=\"{{ routes.search_url }}\" method=\"get\" role=\"search\" class=\"search-bar\">\n    <input type=\"search\"\n           name=\"q\"\n           placeholder=\"Search products...\"\n           aria-label=\"Search\"\n           class=\"search-input\"\n           value=\"{{ search.terms | escape }}\">\n\n    <button type=\"submit\" class=\"search-button\" aria-label=\"Search\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n        <circle cx=\"11\" cy=\"11\" r=\"8\"/>\n        <line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"/>\n      </svg>\n    </button>\n  </form>\n</div>\n</div>\n<style>\n#search-bar-container {\n  background: #fff;\n  width: 100%;\n  height: 65px;\n  z-index: 3; \n  margin: 0 0 4px 0;\n  border-bottom: 1px solid #ddd;\n}\n\n.search-phone-wrapper {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n  /* 👇 NEW sticky styles */\n\n  position: sticky;\n  top: 50px;\n  z-index: 3;\n  background: #fff; /* keep it visible */\n  padding: 10px 0;\n}\n\n.search-bar {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  max-width: 700px;\n  border: 1px solid #ddd;\n  border-radius: 20px;\n  padding: 5px 5px;\n  background: #fff;\n  margin-bottom: 5px;\n}\n\n.search-input {\n  flex: 1;\n  border: none;\n  padding: 8px 10px;\n  font-size: 16px;\n  outline: none;\n}\n\n.search-button {\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.search-button .icon {\n  width: 20px;\n  height: 20px;\n  stroke-width: 2;\n}\n\n.phone-number {\n  font-size: 16px;\n  font-weight: bold;\n  white-space: nowrap;\n  margin-bottom: 8px;\n}\n\n.phone-number a {\n  text-decoration: none;\n  color: inherit;\n}\n\n  .search-bar {\n    width: 80%;\n    max-width: 100%;\n    margin-bottom: 10px;\n  }\n\n  .search-input {font-size: 14px;\n  }\n</style>",
+        "text_alignment": "center"
+      }
+    },
+    "custom_liquid_nTwXhJ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- Responsive Search Bar -->\n<div class=\"search-phone-wrapper\">\n\n  <form action=\"{{ routes.search_url }}\" method=\"get\" role=\"search\" class=\"search-bar\">\n    <input type=\"search\"\n           name=\"q\"\n           placeholder=\"Search products...\"\n           aria-label=\"Search\"\n           class=\"search-input\"\n           value=\"{{ search.terms | escape }}\">\n\n    <button type=\"submit\" class=\"search-button\" aria-label=\"Search\">\n      <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\">\n        <circle cx=\"11\" cy=\"11\" r=\"8\"/>\n        <line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\"/>\n      </svg>\n    </button>\n  </form>\n</div>\n\n<style>\n.search-phone-wrapper {\n  display: flex;\nposition: sticky;\ntop: 0;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n  /* 👇 NEW sticky styles */\n\n  position: flex;\n  top: 0px;\n  z-index: 3;\n  background: #fff; /* keep it visible */\n  padding: 2px 0;\n}\n\n.search-bar {\n  display: flex;\n  align-items: center;\n  width: 100%;\n  max-width: 700px;\n  border: 1px solid #ddd;\n  border-radius: 20px;\n  padding: 5px 5px;\n  background: #fff;\n  margin-bottom: 5px;\n}\n\n.search-input {\n  flex: 1;\n  border: none;\n  padding: 8px 10px;\n  font-size: 16px;\n  outline: none;\n}\n\n.search-button {\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.search-button .icon {\n  width: 20px;\n  height: 20px;\n  stroke-width: 2;\n}\n\n@media (max-width: 768px) {\n  .search-phone-wrapper {\n    align-items: stretch;\n  }\n\n  .search-bar {\n    width: 100%;\n    max-width: 100%;\n    margin-bottom: 5px;\n  }\n\n  .search-input {\n    font-size: 14px;\n  }\n</style>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "custom_liquid_WPMLmK",
+    "custom_liquid_nTwXhJ"
+  ]
+}

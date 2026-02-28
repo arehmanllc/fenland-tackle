@@ -1,0 +1,106 @@
+{% doc %}
+  @prompt
+    Create a custom liquid code block that overrides the "Re-stocking soon" inventory status message and replaces it with "Pre-order now - usually ships within 3 working days". The block should detect when a product shows the restocking message and display the custom pre-order text instead, maintaining the same styling as the original inventory status message.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-preorder-override-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-preorder-override-{{ ai_gen_id }}[hidden] {
+    display: none;
+  }
+{% endstyle %}
+
+<preorder-status-override-{{ ai_gen_id }}
+  class="ai-preorder-override-{{ ai_gen_id }}"
+  data-custom-text="{{ block.settings.custom_text }}"
+  {{ block.shopify_attributes }}
+>
+</preorder-status-override-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class PreorderStatusOverride{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.customText = this.dataset.customText;
+      }
+
+      connectedCallback() {
+        this.overrideInventoryStatus();
+        this.observeInventoryChanges();
+      }
+
+      overrideInventoryStatus() {
+        const inventoryElements = document.querySelectorAll('.inventory, .product-inventory, [class*="inventory"]');
+        
+        inventoryElements.forEach((element) => {
+          const textContent = element.textContent.trim().toLowerCase();
+          
+          if (textContent.includes('re-stocking soon') || textContent.includes('restocking soon')) {
+            element.textContent = this.customText;
+            element.setAttribute('data-preorder-override', 'true');
+          }
+        });
+      }
+
+      observeInventoryChanges() {
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.type === 'childList' || mutation.type === 'characterData') {
+              this.overrideInventoryStatus();
+            }
+          });
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          characterData: true
+        });
+
+        this.observer = observer;
+      }
+
+      disconnectedCallback() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    }
+
+    customElements.define('preorder-status-override-{{ ai_gen_id }}', PreorderStatusOverride{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Pre-order status override",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Custom message"
+    },
+    {
+      "type": "text",
+      "id": "custom_text",
+      "label": "Pre-order text",
+      "default": "Pre-order now - usually ships within 3 working days"
+    },
+    {
+      "type": "paragraph",
+      "content": "This block detects and replaces 'Re-stocking soon' inventory messages with your custom pre-order text. Add this block to your product template."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pre-order status override"
+    }
+  ]
+}
+{% endschema %}

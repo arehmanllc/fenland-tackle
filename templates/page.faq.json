@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What type of fishing tackle do you sell at Fenland Tackle Exchange?</strong>",
+            "answer": "<p>We offer a wide range of freshwater fishing tackle, including rods, reels, carp fishing tackle, predator gear, coarse fishing essentials, specimen fishing tackle, bite alarms, luggage, and more—all from dependable, lesser-known brands at affordable prices.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How can I sell my pre-owned fishing tackle with Fenland Tackle Exchange?</strong>",
+            "answer": "<p>You can easily sell your fishing tackle by filling out our seller enquiry form. We buy job lots of pre-owned fishing gear, particularly complete carp set-ups, to help you upgrade your kit or make extra cash.<br/></p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What makes your fishing bait more affordable?</strong>",
+            "answer": "<p>We source quality bait from lesser-known brands, allowing anglers to obtain dependable options without the high price tag. Our affordable fishing bait is perfect for carp, coarse, and predator fishing.<br/></p>"
+          }
+        },
+        "question_KTByFn": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you buy complete carp set-ups?</strong>",
+            "answer": "<p>Yes! At Fenland Tackle Exchange, we specialise in buying complete carp set-ups and other fishing tackle. This is a great way for you to upgrade your kit while getting fair prices for your pre-owned gear.<br/></p>"
+          }
+        },
+        "question_6KgtNh": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How do you ensure the quality of your fishing tackle?</strong>",
+            "answer": "<p>We only sell fishing tackle and bait that our team personally uses and depends on. Our hands-on experience allows us to curate a selection of reliable products that meet the needs of anglers at all levels.<br/></p>"
+          }
+        },
+        "question_qYHhjC": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I trade my old fishing gear for new tackle?</strong>",
+            "answer": "<p>Yes! We offer a straightforward selling process where you can trade your pre-owned fishing gear, allowing you to invest in new tackle while clearing out what you no longer need.<br/></p>"
+          }
+        },
+        "question_eRV4bJ": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What additional fishing accessories do you carry?</strong>",
+            "answer": "<p>Along with fishing tackle, we carry a variety of fishing accessories, including rod pods, metalware, bivvies, shelters, mats, slings, scales, cooking equipment, and more to enhance your fishing experience.<br/><br/></p>"
+          }
+        },
+        "question_xX6HBB": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are your prices competitive compared to other tackle shops?</strong>",
+            "answer": "<p>Absolutely! Fenland Tackle Exchange is dedicated to providing anglers with some of the best deals on affordable fishing tackle in the UK. Our competitive pricing makes it easy for you to find reliable gear without overspending.<br/></p>"
+          }
+        },
+        "question_Ky9YCp": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How can I contact you for more information?</strong>",
+            "answer": "<p>If you have further questions about our fishing tackle or the selling process, you can reach out via our <a href=\"https://fenlandtacklestore.co.uk/pages/contact\" target=\"_blank\">contact form </a>on the website, or you can call our customer service team directly.<br/></p>"
+          }
+        },
+        "question_ECTBUB": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What is your returns policy on fishing tackle purchases?</strong>",
+            "answer": "<p>We want you to be completely satisfied with your purchase. Please refer to our Returns Policy on our website for detailed information on returns and exchanges of any fishing tackle you buy.<br/></p>"
+          }
+        },
+        "question_TRXEmE": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I find reviews of your fishing tackle online?</strong>",
+            "answer": "<p>Yes! Check our website for customer reviews and testimonials on various tackle and bait products. Our community of anglers shares their experiences to help you make informed purchasing decisions.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question_KTByFn",
+        "question_6KgtNh",
+        "question_qYHhjC",
+        "question_eRV4bJ",
+        "question_xX6HBB",
+        "question_Ky9YCp",
+        "question_ECTBUB",
+        "question_TRXEmE"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": true,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
+}

@@ -1,0 +1,160 @@
+{% doc %}
+  @prompt
+    Create a custom liquid code block that overrides the "Re-stocking soon" inventory status message and replaces it with "Pre-order now - usually ships within 3 working days". The block should detect when a product shows the restocking message and display the custom pre-order text instead, maintaining the same styling as the original inventory status message.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-inventory-override-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-inventory-override-{{ ai_gen_id }}[hidden] {
+    display: none;
+  }
+{% endstyle %}
+
+<inventory-status-override-{{ ai_gen_id }}
+  class="ai-inventory-override-{{ ai_gen_id }}"
+  data-original-text="{{ block.settings.original_text }}"
+  data-replacement-text="{{ block.settings.replacement_text }}"
+  {{ block.shopify_attributes }}
+>
+</inventory-status-override-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class InventoryStatusOverride{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.originalText = this.dataset.originalText;
+        this.replacementText = this.dataset.replacementText;
+      }
+
+      connectedCallback() {
+        this.overrideInventoryStatus();
+        this.observeInventoryChanges();
+      }
+
+      overrideInventoryStatus() {
+        const inventoryElements = document.querySelectorAll('.inventory, .product-inventory, [class*="inventory"], [class*="stock"]');
+        
+        inventoryElements.forEach((element) => {
+          if (this.containsOriginalText(element)) {
+            this.replaceText(element);
+          }
+        });
+      }
+
+      containsOriginalText(element) {
+        const textContent = element.textContent.trim().toLowerCase();
+        const originalLower = this.originalText.toLowerCase();
+        return textContent.includes(originalLower);
+      }
+
+      replaceText(element) {
+        const walker = document.createTreeWalker(
+          element,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+
+        const nodesToReplace = [];
+        let node;
+
+        while (node = walker.nextNode()) {
+          const textLower = node.textContent.toLowerCase();
+          const originalLower = this.originalText.toLowerCase();
+          
+          if (textLower.includes(originalLower)) {
+            nodesToReplace.push(node);
+          }
+        }
+
+        nodesToReplace.forEach((textNode) => {
+          const regex = new RegExp(this.originalText, 'gi');
+          textNode.textContent = textNode.textContent.replace(regex, this.replacementText);
+        });
+      }
+
+      observeInventoryChanges() {
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            mutation.addedNodes.forEach((node) => {
+              if (node.nodeType === Node.ELEMENT_NODE) {
+                const inventoryElements = node.querySelectorAll('.inventory, .product-inventory, [class*="inventory"], [class*="stock"]');
+                
+                inventoryElements.forEach((element) => {
+                  if (this.containsOriginalText(element)) {
+                    this.replaceText(element);
+                  }
+                });
+
+                if (this.containsOriginalText(node)) {
+                  this.replaceText(node);
+                }
+              }
+            });
+
+            if (mutation.type === 'characterData' || mutation.type === 'childList') {
+              const target = mutation.target;
+              if (target.nodeType === Node.ELEMENT_NODE && this.containsOriginalText(target)) {
+                this.replaceText(target);
+              }
+            }
+          });
+        });
+
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+          characterDataOldValue: true
+        });
+      }
+    }
+
+    customElements.define('inventory-status-override-{{ ai_gen_id }}', InventoryStatusOverride{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Inventory status override",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text replacement"
+    },
+    {
+      "type": "text",
+      "id": "original_text",
+      "label": "Original text to replace",
+      "default": "Re-stocking soon",
+      "info": "The inventory status message you want to override"
+    },
+    {
+      "type": "text",
+      "id": "replacement_text",
+      "label": "Replacement text",
+      "default": "Pre-order now - usually ships within 3 working days",
+      "info": "The custom message that will replace the original text"
+    },
+    {
+      "type": "header",
+      "content": "Instructions"
+    },
+    {
+      "type": "paragraph",
+      "content": "This block automatically detects and replaces inventory status messages across your product pages. It maintains the original styling and updates dynamically when variants change."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Inventory status override"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,800 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ErQbMW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fenland_Tackle_Exchange_Fishing_Rods.png",
+            "mobile_image": "shopify://shop_images/Fenland_Tackle_Exchange_Fishing_Rods.png",
+            "subheading": "",
+            "title": "<strong>Dependable fishing tackle, bait and clothing</strong>",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 700,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "shopify://collections/terminal-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#204e36",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fentexchange_2.png",
+            "mobile_image": "shopify://shop_images/Fentexchange_2.png",
+            "subheading": "",
+            "title": "<strong>For anglers with more sense than money</strong>",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 580,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_AYaWQB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pole_Fishing_in_Cambridgeshire.png",
+            "subheading": "",
+            "title": "<strong>Proven brands, zero hype</strong>",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
+            "content_max_width": 440,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fentexchange_1.png",
+            "mobile_image": "shopify://shop_images/Fentexchange_1.png",
+            "subheading": "",
+            "title": "<strong>Pre-owned tackle bought and sold</strong>",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 580,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "shopify://collections/terminal-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#204e36",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_ErQbMW",
+        "slide-2",
+        "image_AYaWQB",
+        "slide-1"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "xs",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "scrolling_content_y3exB6": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_bC3z8c": {
+          "type": "text",
+          "settings": {
+            "text": "Convenient out-of-hours collection    |"
+          }
+        },
+        "text_cAHAHL": {
+          "type": "text",
+          "settings": {
+            "text": "Free delivery (min order)    |"
+          }
+        },
+        "text_LARLDe": {
+          "type": "text",
+          "settings": {
+            "text": " Join us at… @SkylarkCarBoot (Sundays) … @FenlandTackleExchange (Saturdays)   |"
+          }
+        },
+        "text_F86tQ4": {
+          "type": "text",
+          "settings": {
+            "text": "Weekly clearance sales    |"
+          }
+        }
+      },
+      "block_order": [
+        "text_bC3z8c",
+        "text_cAHAHL",
+        "text_LARLDe",
+        "text_F86tQ4"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.2,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 24,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 10,
+        "background": "",
+        "text_color": ""
+      }
+    },
+    "featured_collections_gPD9WH": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_VKTXiB": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_d3Qy4n": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "special-offers",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_VKTXiB",
+        "collection_d3Qy4n"
+      ],
+      "name": "Sale Collection",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 0.4,
+        "subheading": ""
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "winter-warmers",
+            "image": "shopify://shop_images/Home_crp_2.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Winter Warmers",
+            "button_text": "View products",
+            "button_link": "shopify://collections/winter-warmers",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "bait",
+            "image": "shopify://shop_images/Category-Bait.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Bait",
+            "button_text": "View products",
+            "button_link": "shopify://collections/bait",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "other-terminal-tackle",
+            "image": "shopify://shop_images/pike_1.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Predator",
+            "button_text": "View products",
+            "button_link": "shopify://collections/other-terminal-tackle",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_eWrdnA": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "hardware",
+            "image": "shopify://shop_images/Hardware_b14369bb-3dff-4403-b935-146d0df10a4d.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Hardware",
+            "button_text": "View products",
+            "button_link": "shopify://collections/hardware",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_XgBTM3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "",
+            "image": "shopify://shop_images/category-bivvies_8243eebd-e0cf-4bb6-9f1a-0fae287ad014.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Camping",
+            "button_text": "View products",
+            "button_link": "shopify://collections/camping",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NamhfX": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "luggage-storage",
+            "image": "shopify://shop_images/EVA_luggage.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Luggage",
+            "button_text": "View products",
+            "button_link": "shopify://collections/luggage-storage",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_yV46Mz": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "terminal-tackle",
+            "image": "shopify://shop_images/Terminal.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Terminal",
+            "button_text": "View products",
+            "button_link": "shopify://collections/terminal-tackle",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "collection": "bite-alarms",
+            "image": "shopify://shop_images/Category-Bite-Alarm.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "Alarms",
+            "button_text": "View products",
+            "button_link": "shopify://collections/bite-alarms",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection-2",
+        "collection-1",
+        "collection-3",
+        "collection_eWrdnA",
+        "collection_XgBTM3",
+        "collection_NamhfX",
+        "collection_yV46Mz",
+        "collection-4"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "xs",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "stack_collections_mobile": true,
+        "collections_per_row_mobile": "2",
+        "subheading": "FEATURED CATEGORIES",
+        "title": "",
+        "content": ""
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "bivvies-shelters",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/bivvies-shelters",
+            "link_text": "View all"
+          }
+        },
+        "collection_G9RpPz": {
+          "type": "collection",
+          "settings": {
+            "collection": "chairs-bed-chairs",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/chairs-bed-chairs",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection_G9RpPz"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_pmhw7V": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_6EMgCU": {
+          "type": "collection",
+          "settings": {
+            "collection": "nets",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/nets",
+            "link_text": "View all"
+          }
+        },
+        "collection_XAG7eY": {
+          "type": "collection",
+          "settings": {
+            "collection": "jumpers-tees-hoodies",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/jumpers-tees-hoodies",
+            "link_text": "View all"
+          }
+        },
+        "collection_tDz6Lf": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_DchRC9": {
+          "type": "collection",
+          "settings": {
+            "collection": "scales-weighing-slings",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_6EMgCU",
+        "collection_XAG7eY",
+        "collection_tDz6Lf",
+        "collection_DchRC9"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "image_with_text_6Yz6hW": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_8jhrDH": {
+          "type": "subheading",
+          "settings": {
+            "text": "Fenland Tackle Exchange"
+          }
+        },
+        "heading_kPPheb": {
+          "type": "heading",
+          "settings": {
+            "text": "Where experience counts",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_BjmLpz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Fenland Tackle Exchange - for dependable carp, match, predator and specimen fishing tackle, bait and clothing from established angling brands.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8jhrDH",
+        "heading_kPPheb",
+        "richtext_BjmLpz"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/2A_1.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "text_with_icons_FjVN8V": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_Kkjpya": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Dependable Delivery",
+            "content": "<p>Because we do not sell on multiple platforms, you can be sure our inventory is always right up to date. If it’s listed, it’s in stock, ready for collection or delivery.</p>"
+          }
+        },
+        "item_7LUxeq": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-success",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "Angling Essentials",
+            "content": "<p>Can't find what you're looking for? Drop us a PM or give us a call. if our suppliers have the products you need in stock, we’ll get them out to you in days, at the best prices around.</p>"
+          }
+        },
+        "item_8B8VV8": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-recycle",
+            "custom_icon": "shopify://shop_images/guarantee.png",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "'Old school' values",
+            "content": "<p>As passionate anglers, we offer only tackle and bait that we - and our extensive network of specialist anglers, customers and friends - personally trust and depend upon.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_Kkjpya",
+        "item_7LUxeq",
+        "item_8B8VV8"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "testimonials_TBzX6A": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_jiRqdh": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Fast post, perfect item thank you\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_bUyYFG": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Super quick delivery. Highly recommended!\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_gREP4r": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"A great place to shop, and super fast delivery.<br/>Highly recommended!\"</p>",
+            "image": "shopify://shop_images/5stars.png",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_9DxTtG": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>\"Arrived quicker than expected, great product would highly recommend 5🌟\"</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        },
+        "testimonial_PNrUTD": {
+          "type": "testimonial",
+          "settings": {
+            "content": "<p>Great advice over the phone, placed the order and picked it up the same day!   Perfect - thanks guys.</p>",
+            "logo_max_width": 140,
+            "logo_mobile_max_width": 100,
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_jiRqdh",
+        "testimonial_bUyYFG",
+        "testimonial_gREP4r",
+        "testimonial_9DxTtG",
+        "testimonial_PNrUTD"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "auto_rotate_between_testimonials": true,
+        "cycle_speed": 5,
+        "font_size_factor": 1,
+        "subheading": "REVIEWS",
+        "title": "",
+        "content": ""
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "subheading": "",
+        "title": "",
+        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "174930763382116150": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c92cf21_6QiUAU": {
+          "type": "ai_gen_block_c92cf21",
+          "disabled": true,
+          "settings": {
+            "menu_position": "left",
+            "menu_width": 300,
+            "menu_width_mobile": 280,
+            "show_header": true,
+            "menu_title": "Shop by Brand",
+            "title_font_size": 20,
+            "menu_item_1_text": "Gardner Tackle",
+            "menu_item_1_link": "shopify://collections/gardner-tackle",
+            "menu_item_2_text": "All products",
+            "menu_item_2_link": "shopify://collections",
+            "menu_item_3_text": "Brand 3",
+            "menu_item_3_link": "",
+            "menu_item_4_text": "Brand 4",
+            "menu_item_4_link": "",
+            "menu_item_5_text": "",
+            "menu_item_5_link": "",
+            "menu_font_size": 16,
+            "show_footer": true,
+            "footer_text": "<p>© 2025 Fenland Tackle Exchange</p>",
+            "menu_bg_color": "#ffffff",
+            "menu_text_color": "#333333",
+            "menu_hover_color": "#f5f5f5",
+            "menu_divider_color": "#eeeeee",
+            "toggle_bg_color": "#333333",
+            "toggle_icon_color": "#ffffff",
+            "toggle_border_radius": 4,
+            "animation_duration": 300,
+            "animation_easing": "ease-in-out"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c92cf21_6QiUAU"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "custom_liquid_enMzAr": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "",
+        "text_alignment": "center"
+      }
+    },
+    "1768914436eb0313e2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4fcc50b_9MQKAT": {
+          "type": "ai_gen_block_4fcc50b",
+          "settings": {
+            "custom_text": "Pre-order now - usually ships within 3 working days"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4fcc50b_9MQKAT"
+      ],
+      "name": "Pre-order message",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "1768916274a86d8fc1": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d121513_mU6M8C": {
+          "type": "re-stock_message_update",
+          "settings": {
+            "original_text": "Re-stocking soon",
+            "replacement_text": "Pre-order now - usually ships within 3 working days"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d121513_mU6M8C"
+      ],
+      "name": "Pre-order message",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "scrolling_content_y3exB6",
+    "featured_collections_gPD9WH",
+    "collection-list",
+    "featured-collections",
+    "featured_collections_pmhw7V",
+    "image_with_text_6Yz6hW",
+    "text_with_icons_FjVN8V",
+    "testimonials_TBzX6A",
+    "newsletter",
+    "174930763382116150",
+    "custom_liquid_enMzAr",
+    "1768914436eb0313e2",
+    "1768916274a86d8fc1"
+  ]
+}

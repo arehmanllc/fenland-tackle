@@ -1,0 +1,347 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_6PtQD8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_DmeYHb": {
+          "type": "heading",
+          "settings": {
+            "text": "Sell Your Tackle to Fenland Tackle Exchange",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_r4nEm7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>Looking to offload your unused fishing gear?</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DmeYHb",
+        "richtext_r4nEm7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/Sell_your_gear_page.png",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "image_with_text_phnerb": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_zqRWWT": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Fenland Tackle Exchange, we make it easy for you to <strong>sell your unwanted fishing tackle</strong> hassle-free. We understand that selling fishing gear can often be a frustrating experience, especially when dealing with time-wasters and complex listings on platforms like eBay, Facebook Marketplace, or Gumtree. Let us take the stress out of selling your tackle!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_zqRWWT"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Sell-your-tackle-2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": true
+      }
+    },
+    "slideshow_pN6VxD": {
+      "type": "slideshow",
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "multi_column_LkjiNU": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_8PWaFq": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "<strong>Say Goodbye to Lowball Offers</strong>",
+            "heading_tag": "h4",
+            "content": "<p>Tired of receiving ridiculous offers that undervalue your gear? We provide competitive prices for the fishing tackle you want to sell.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_fkJDgR": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "<strong>Eliminate Postage Headaches</strong>",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_8PWaFq",
+        "image_with_text_fkJDgR"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "",
+        "title": "<strong>Why Sell To Fenland Tackle Exchange?</strong>",
+        "content": ""
+      }
+    },
+    "multi_column_iARTJn": {
+      "type": "multi-column",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "",
+        "title": "<strong>How We Simplify The Selling Process</strong>",
+        "content": ""
+      }
+    },
+    "rich_text_F3wMkp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cRQ88T": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>How We Simplify The Selling Process</strong>",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cRQ88T"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "text_with_icons_VTteYw": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_8V6iyF": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "<strong>Hassle-Free Collection</strong>",
+            "content": "<p>No need to worry about wrapping, packing, or dealing with couriers. We take care of all the logistics for you.</p>"
+          }
+        },
+        "item_6gMctd": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "<strong>Free Pick Up Service Across The UK</strong>",
+            "content": "<p>Enjoy the convenience of our free collection service throughout the UK. Selling your fishing gear has never been easier!</p>"
+          }
+        },
+        "item_TRm6QV": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-money",
+            "icon_width": 24,
+            "mobile_icon_width": 24,
+            "title": "<strong>Instant Payment On Collection</strong>",
+            "content": "<p>Forget the waiting game! We pay you instantly via BACS upon collection of your tackle, so you have your money right away.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_8V6iyF",
+        "item_6gMctd",
+        "item_TRm6QV"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "#3aab43",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
+    "multi_column_JUQEXd": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_YytKeU": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "<strong>1. Complete and Submit the Valuation Request Form</strong>",
+            "heading_tag": "h6",
+            "content": "<p>Provide us with details about your equipment. We’ll assess your items for sale and respond promptly with a competitive offer.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_DNxUJC": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "<strong>2. Accept Our Offer</strong>",
+            "heading_tag": "h6",
+            "content": "<p>If you’re happy with our offer, we’ll arrange a convenient time for free collection of your equipment.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_BfFFne": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "<strong>3. Get Paid Instantly</strong>",
+            "heading_tag": "h6",
+            "content": "<p>As soon as we collect your tackle, we’ll transfer the agreed amount directly to your bank account via BACS.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_YytKeU",
+        "image_with_text_DNxUJC",
+        "image_with_text_BfFFne"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": true,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "md",
+        "subheading": "",
+        "title": "<strong>How to Sell Your Fishing Tackle</strong>",
+        "content": "<p>We are interested in job lots, including complete carp, coarse, match, predator, and specimen angling setups. Here’s how to get started:</p>"
+      }
+    },
+    "rich_text_3UCyxV": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_NfGFCL": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_XrnGJj": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>Get Started Today!</strong>",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_ErTPUK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Don’t let your unwanted fishing gear gather dust! Simplify your selling experience with Fenland Tackle Exchange. Use the enquiry form below to list the tackle you’d like to sell, and receive a personalized, no-obligation quotation within 72 hours (usually quicker!).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_NfGFCL",
+        "heading_XrnGJj",
+        "richtext_ErTPUK"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "blocks": {
+        "text_b7cawg": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "use_long_text": false,
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "text_b7cawg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Tackle Valuation Request Form",
+        "content": "<p>Fill in your contact details, and provide a detailed list of the items you want to sell. <br/>Please include the following information: <strong> </strong></p><p><strong>1)</strong> Your full address (we need to know where to collect from!) <br/><strong>2)</strong> Item Type (i.e rod, reel, bivvy... )  <strong>3)</strong> Brand   <strong>4)</strong> Model  <strong> 5)</strong> Condition  <strong> 6)</strong> Quantity<br/></p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_6PtQD8",
+    "image_with_text_phnerb",
+    "slideshow_pN6VxD",
+    "multi_column_LkjiNU",
+    "multi_column_iARTJn",
+    "rich_text_F3wMkp",
+    "text_with_icons_VTteYw",
+    "multi_column_JUQEXd",
+    "rich_text_3UCyxV",
+    "contact-form"
+  ]
+}

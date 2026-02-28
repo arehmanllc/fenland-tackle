@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "image_with_text_overlay_6PtQD8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_DmeYHb": {
+          "type": "heading",
+          "settings": {
+            "text": "Photo Competition",
+            "heading_tag": "h1"
+          }
+        },
+        "heading_b7KhP6": {
+          "type": "heading",
+          "settings": {
+            "text": "Share your memorable moments and win!",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DmeYHb",
+        "heading_b7KhP6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/Competition-Page-Main-Image.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_xxHELg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_EV9f9K": {
+          "type": "subheading",
+          "settings": {
+            "text": "Enter our fishing photo competition for your chance to win a £100 gift voucher!"
+          }
+        },
+        "heading_t9jptV": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h6"
+          }
+        },
+        "richtext_DHiNxW": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EV9f9K",
+        "heading_t9jptV",
+        "richtext_DHiNxW"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_NJbF7d": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_FX8nnM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Fenland Tackle Exchange, we love celebrating the passion and excitement of fishing. So, we’re thrilled to announce our Photo Competition, where you can showcase your highlights from the previous season… and maybe get rewarded for your contributions too.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_FX8nnM"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Competition-2.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_EnWrYe": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_JHDa9x": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Here's how to Enter:</strong></p><p>1. Snap a Photo: Capture a memorable angling moment from the season. It doesn’t have to be a catch pic - so think ‘outside the box’. It could be a perfect sunrise or a new PB; a ‘holy grail’ diving kingfisher shot, or that uber-carpy three rod set-up you just couldn’t resist sharing.</p><p>2. Post your photo(s) on social media, tagging us @FenlandTackleExchange  with the hashtag #FTEPhotoComp. </p><p>3. Share your story. If, for example, it’s a catch pic, tell us about the target species, weight, location, and the challenges you overcame to accomplish your goal.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_JHDa9x"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "md",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_nHx87k": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_GmC6XL": {
+          "type": "subheading",
+          "settings": {
+            "text": "Win a £100 gift voucher to spend on tackle and bait in our online store!"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GmC6XL"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_KN9Kkh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Lb3xQi": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>Terms and Conditions</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_Ajw938": {
+          "type": "richtext",
+          "settings": {
+            "content": "<ul><li>Submission Period: by 1st June 2026 </li><li>Winners announced on ‘The Glorious 16th’ (of June) 2026</li><li>Winners will be contacted via email, and the gift voucher must be redeemed within six months</li><li>Photos must be original and taken by the entrant</li><li>By submitting your entry, you grant Fenland Tackle Exchange permission to use your images on our website and social media platforms</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lb3xQi",
+        "richtext_Ajw938"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Photo-Comp-2.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_x3Pfwa": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_cgHzYH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Fishing isn't just about catching; it's about the stories and experiences that come with it. Join us in celebrating our community of anglers at Fenland Tackle Exchange.</strong><br/><strong><br/>Good luck, and tight lines!</strong></p><p>For any questions about the competition, feel free to contact us at:<br/>info@fenlandtackleexchange.co.uk</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_cgHzYH"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_6PtQD8",
+    "rich_text_xxHELg",
+    "image_with_text_NJbF7d",
+    "rich_text_EnWrYe",
+    "rich_text_nHx87k",
+    "image_with_text_KN9Kkh",
+    "rich_text_x3Pfwa"
+  ]
+}

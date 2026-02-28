@@ -1,0 +1,98 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_overlay_6PtQD8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_DmeYHb": {
+          "type": "heading",
+          "settings": {
+            "text": "Contact us today",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_r4nEm7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h4>We would love to hear from you.</h4>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DmeYHb",
+        "richtext_r4nEm7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_size": "xs",
+        "image": "shopify://shop_images/contact-us-sml.png",
+        "mobile_image": "shopify://shop_images/contact-us-sml.png",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "color_scheme": "",
+        "show_title": false,
+        "page_width": "xs"
+      }
+    },
+    "contact-form": {
+      "type": "contact",
+      "blocks": {
+        "text_b7cawg": {
+          "type": "text",
+          "settings": {
+            "title": "Phone",
+            "use_long_text": false,
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "text_b7cawg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "custom_liquid_yzkyMM": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<!-- Fully Responsive Google Map -->\n<div class=\"map-responsive\">\n  <iframe\n    src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.143666772349!2d0.08422207592862926!3d52.54892613408851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8076321b73ec1%3A0x61ba028db3edbaca!2sFenland%20Tackle%20Exchange!5e0!3m2!1sen!2sng!4v1758789568680!5m2!1sen!2sng\"\n    allowfullscreen\n    loading=\"lazy\"\n    referrerpolicy=\"no-referrer-when-downgrade\"\n  ></iframe>\n</div>\n\n<style>\n/* --- Fluid container for all screen sizes --- */\n.map-responsive {\n  position: relative;\n  width: 60%;        /* stretch to full available width */\n  height: 0;\n  padding-bottom: 56.25%; /* 16:9 aspect ratio (change if you want taller/shorter) */\n  overflow: hidden;\nmargin-left:20%;\n}\n\n/* --- Make the iframe fill the container --- */\n.map-responsive iframe {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  border: 0;\n}\n</style>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_overlay_6PtQD8",
+    "main",
+    "contact-form",
+    "custom_liquid_yzkyMM"
+  ]
+}

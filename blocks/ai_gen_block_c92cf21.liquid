@@ -1,0 +1,550 @@
+{% doc %}
+  @prompt
+    Create a responsive side navigation menu that can be toggled open and closed, with customizable menu items, styling options, and smooth animations
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-side-nav-container-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    {{ block.settings.menu_position }}: 0;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+  }
+
+  .ai-side-nav-{{ ai_gen_id }} {
+    width: {{ block.settings.menu_width }}px;
+    height: 100%;
+    background-color: {{ block.settings.menu_bg_color }};
+    color: {{ block.settings.menu_text_color }};
+    transform: translateX({{ block.settings.menu_position | replace: 'left', '-100%' | replace: 'right', '100%' }});
+    transition: transform {{ block.settings.animation_duration }}ms {{ block.settings.animation_easing }};
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-side-nav-{{ ai_gen_id }}.active {
+    transform: translateX(0);
+  }
+
+  .ai-side-nav-toggle-{{ ai_gen_id }} {
+    position: fixed;
+    top: 20px;
+    {{ block.settings.menu_position }}: 20px;
+    z-index: 1001;
+    background-color: {{ block.settings.toggle_bg_color }};
+    color: {{ block.settings.toggle_icon_color }};
+    border: none;
+    border-radius: {{ block.settings.toggle_border_radius }}px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-side-nav-toggle-icon-{{ ai_gen_id }} {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  .ai-side-nav-toggle-icon-{{ ai_gen_id }} span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: {{ block.settings.toggle_icon_color }};
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: transform 0.25s ease-in-out, top 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  }
+
+  .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(1) {
+    top: 6px;
+  }
+
+  .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(2) {
+    top: 12px;
+  }
+
+  .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(3) {
+    top: 18px;
+  }
+
+  .ai-side-nav-toggle-{{ ai_gen_id }}.active .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(1) {
+    top: 12px;
+    transform: rotate(45deg);
+  }
+
+  .ai-side-nav-toggle-{{ ai_gen_id }}.active .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ai-side-nav-toggle-{{ ai_gen_id }}.active .ai-side-nav-toggle-icon-{{ ai_gen_id }} span:nth-child(3) {
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+
+  .ai-side-nav-header-{{ ai_gen_id }} {
+    padding: 20px;
+    border-bottom: 1px solid {{ block.settings.menu_divider_color }};
+  }
+
+  .ai-side-nav-title-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.title_font_size }}px;
+    font-weight: bold;
+  }
+
+  .ai-side-nav-menu-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ai-side-nav-menu-item-{{ ai_gen_id }} {
+    border-bottom: 1px solid {{ block.settings.menu_divider_color }};
+  }
+
+  .ai-side-nav-menu-link-{{ ai_gen_id }} {
+    display: block;
+    padding: 15px 20px;
+    color: {{ block.settings.menu_text_color }};
+    text-decoration: none;
+    font-size: {{ block.settings.menu_font_size }}px;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-side-nav-menu-link-{{ ai_gen_id }}:hover,
+  .ai-side-nav-menu-link-{{ ai_gen_id }}:focus {
+    background-color: {{ block.settings.menu_hover_color }};
+    color: {{ block.settings.menu_text_color }};
+  }
+
+  .ai-side-nav-footer-{{ ai_gen_id }} {
+    margin-top: auto;
+    padding: 20px;
+    border-top: 1px solid {{ block.settings.menu_divider_color }};
+    font-size: 14px;
+  }
+
+  .ai-side-nav-overlay-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity {{ block.settings.animation_duration }}ms ease, visibility {{ block.settings.animation_duration }}ms ease;
+  }
+
+  .ai-side-nav-overlay-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media screen and (max-width: 767px) {
+    .ai-side-nav-{{ ai_gen_id }} {
+      width: {{ block.settings.menu_width_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<side-navigation-{{ ai_gen_id }} {{ block.shopify_attributes }}>
+  <button 
+    class="ai-side-nav-toggle-{{ ai_gen_id }}" 
+    aria-label="Toggle navigation menu"
+    aria-expanded="false"
+    aria-controls="ai-side-nav-{{ ai_gen_id }}"
+  >
+    <div class="ai-side-nav-toggle-icon-{{ ai_gen_id }}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </button>
+
+  <div class="ai-side-nav-overlay-{{ ai_gen_id }}"></div>
+
+  <div class="ai-side-nav-container-{{ ai_gen_id }}">
+    <nav 
+      id="ai-side-nav-{{ ai_gen_id }}" 
+      class="ai-side-nav-{{ ai_gen_id }}"
+      aria-label="Side navigation"
+    >
+      {% if block.settings.show_header %}
+        <div class="ai-side-nav-header-{{ ai_gen_id }}">
+          <h2 class="ai-side-nav-title-{{ ai_gen_id }}">{{ block.settings.menu_title }}</h2>
+        </div>
+      {% endif %}
+
+      <ul class="ai-side-nav-menu-{{ ai_gen_id }}">
+        {% if block.settings.menu_item_1_text != blank and block.settings.menu_item_1_link != blank %}
+          <li class="ai-side-nav-menu-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.menu_item_1_link }}" class="ai-side-nav-menu-link-{{ ai_gen_id }}">
+              {{ block.settings.menu_item_1_text }}
+            </a>
+          </li>
+        {% endif %}
+
+        {% if block.settings.menu_item_2_text != blank and block.settings.menu_item_2_link != blank %}
+          <li class="ai-side-nav-menu-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.menu_item_2_link }}" class="ai-side-nav-menu-link-{{ ai_gen_id }}">
+              {{ block.settings.menu_item_2_text }}
+            </a>
+          </li>
+        {% endif %}
+
+        {% if block.settings.menu_item_3_text != blank and block.settings.menu_item_3_link != blank %}
+          <li class="ai-side-nav-menu-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.menu_item_3_link }}" class="ai-side-nav-menu-link-{{ ai_gen_id }}">
+              {{ block.settings.menu_item_3_text }}
+            </a>
+          </li>
+        {% endif %}
+
+        {% if block.settings.menu_item_4_text != blank and block.settings.menu_item_4_link != blank %}
+          <li class="ai-side-nav-menu-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.menu_item_4_link }}" class="ai-side-nav-menu-link-{{ ai_gen_id }}">
+              {{ block.settings.menu_item_4_text }}
+            </a>
+          </li>
+        {% endif %}
+
+        {% if block.settings.menu_item_5_text != blank and block.settings.menu_item_5_link != blank %}
+          <li class="ai-side-nav-menu-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.menu_item_5_link }}" class="ai-side-nav-menu-link-{{ ai_gen_id }}">
+              {{ block.settings.menu_item_5_text }}
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+
+      {% if block.settings.show_footer and block.settings.footer_text != blank %}
+        <div class="ai-side-nav-footer-{{ ai_gen_id }}">
+          {{ block.settings.footer_text }}
+        </div>
+      {% endif %}
+    </nav>
+  </div>
+</side-navigation-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class SideNavigation{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.toggleButton = this.querySelector('.ai-side-nav-toggle-{{ ai_gen_id }}');
+        this.sideNav = this.querySelector('.ai-side-nav-{{ ai_gen_id }}');
+        this.overlay = this.querySelector('.ai-side-nav-overlay-{{ ai_gen_id }}');
+        this.isOpen = false;
+      }
+
+      connectedCallback() {
+        this.toggleButton.addEventListener('click', this.toggleNav.bind(this));
+        this.overlay.addEventListener('click', this.closeNav.bind(this));
+        
+        // Close menu when pressing Escape key
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && this.isOpen) {
+            this.closeNav();
+          }
+        });
+      }
+
+      toggleNav() {
+        if (this.isOpen) {
+          this.closeNav();
+        } else {
+          this.openNav();
+        }
+      }
+
+      openNav() {
+        this.isOpen = true;
+        this.sideNav.classList.add('active');
+        this.toggleButton.classList.add('active');
+        this.overlay.classList.add('active');
+        this.toggleButton.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      closeNav() {
+        this.isOpen = false;
+        this.sideNav.classList.remove('active');
+        this.toggleButton.classList.remove('active');
+        this.overlay.classList.remove('active');
+        this.toggleButton.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+    }
+
+    customElements.define('side-navigation-{{ ai_gen_id }}', SideNavigation{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Side Navigation Menu",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Menu Layout"
+    },
+    {
+      "type": "select",
+      "id": "menu_position",
+      "label": "Menu position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "menu_width",
+      "min": 200,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Menu width (desktop)",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "menu_width_mobile",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Menu width (mobile)",
+      "default": 280
+    },
+    {
+      "type": "header",
+      "content": "Menu Header"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_header",
+      "label": "Show header",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "menu_title",
+      "label": "Menu title",
+      "default": "Navigation"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "min": 14,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Title font size",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Menu Items"
+    },
+    {
+      "type": "text",
+      "id": "menu_item_1_text",
+      "label": "Menu item 1 text",
+      "default": "Home"
+    },
+    {
+      "type": "url",
+      "id": "menu_item_1_link",
+      "label": "Menu item 1 link"
+    },
+    {
+      "type": "text",
+      "id": "menu_item_2_text",
+      "label": "Menu item 2 text",
+      "default": "Shop"
+    },
+    {
+      "type": "url",
+      "id": "menu_item_2_link",
+      "label": "Menu item 2 link"
+    },
+    {
+      "type": "text",
+      "id": "menu_item_3_text",
+      "label": "Menu item 3 text",
+      "default": "About"
+    },
+    {
+      "type": "url",
+      "id": "menu_item_3_link",
+      "label": "Menu item 3 link"
+    },
+    {
+      "type": "text",
+      "id": "menu_item_4_text",
+      "label": "Menu item 4 text",
+      "default": "Contact"
+    },
+    {
+      "type": "url",
+      "id": "menu_item_4_link",
+      "label": "Menu item 4 link"
+    },
+    {
+      "type": "text",
+      "id": "menu_item_5_text",
+      "label": "Menu item 5 text",
+      "default": "Blog"
+    },
+    {
+      "type": "url",
+      "id": "menu_item_5_link",
+      "label": "Menu item 5 link"
+    },
+    {
+      "type": "range",
+      "id": "menu_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Menu item font size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Menu Footer"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_footer",
+      "label": "Show footer",
+      "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer text",
+      "default": "<p>© 2023 Your Store Name</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "menu_bg_color",
+      "label": "Menu background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "menu_text_color",
+      "label": "Menu text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "menu_hover_color",
+      "label": "Menu item hover color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "menu_divider_color",
+      "label": "Menu divider color",
+      "default": "#eeeeee"
+    },
+    {
+      "type": "color",
+      "id": "toggle_bg_color",
+      "label": "Toggle button background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "toggle_icon_color",
+      "label": "Toggle button icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "toggle_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Toggle button border radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "min": 100,
+      "max": 1000,
+      "step": 50,
+      "unit": "ms",
+      "label": "Animation duration",
+      "default": 300
+    },
+    {
+      "type": "select",
+      "id": "animation_easing",
+      "label": "Animation easing",
+      "options": [
+        {
+          "value": "ease",
+          "label": "Ease"
+        },
+        {
+          "value": "ease-in",
+          "label": "Ease In"
+        },
+        {
+          "value": "ease-out",
+          "label": "Ease Out"
+        },
+        {
+          "value": "ease-in-out",
+          "label": "Ease In Out"
+        }
+      ],
+      "default": "ease-in-out"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Side Navigation Menu"
+    }
+  ]
+}
+{% endschema %}

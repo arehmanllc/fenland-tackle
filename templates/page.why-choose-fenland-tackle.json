@@ -1,0 +1,536 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_my3pcU": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9YMWYH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-1_940x372_a17cc322-ad4c-417b-90f7-3f75049d346f.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#54c65a",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_FXzLUk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-2_940x372_c2b0434a-cd8a-4fa6-a444-5bef0b2f804d.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections/all",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#54c65a",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_ywgjLd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-3_940x372_387a2523-fd6c-493b-a1b6-d592b871fdd2.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#54c65a",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_kzEfzD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-4_940x372_71239d01-cc79-4904-ad64-cda3f0b4b1c4.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 540,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#218727",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_r8WdRh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-5_940x372_b0768ab1-407e-40b1-907e-6202bf738cdd.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#54c65a",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_DDy367": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEW_Slideshow-6_940x372_a37668aa-8c01-4576-9b4d-ead829b2b9ec.png",
+            "subheading": "",
+            "title": "Why Choose Fenland Tackle Exchange?",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "Buy Tackle",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#54c65a",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "Sell Tackle",
+            "button_2_link": "shopify://pages/sell-your-fishing-tackle",
+            "button_2_style": "solid",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#54c65a",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "image_9YMWYH",
+        "image_FXzLUk",
+        "image_ywgjLd",
+        "image_kzEfzD",
+        "image_r8WdRh",
+        "image_DDy367"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "rich_text_cgXDCc": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_Qab87w": {
+          "type": "subheading",
+          "settings": {
+            "text": "<strong>New and used fishing tackle, bait & accessories for experienced anglers with more sense than money.</strong>"
+          }
+        },
+        "heading_3FMQrx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "New and used fishing tackle, bait & accessories for experienced anglers with more sense than money.",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Qab87w",
+        "heading_3FMQrx"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_overlay_6PtQD8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_DmeYHb": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Choose  Us?",
+            "heading_tag": "h1"
+          }
+        },
+        "heading_b7KhP6": {
+          "type": "heading",
+          "settings": {
+            "text": "New and used fishing tackle, bait & accessories for experienced anglers with more sense than money.",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DmeYHb",
+        "heading_b7KhP6"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "image_size": "sm",
+        "image": "shopify://shop_images/Slideshow_4.png",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_xxHELg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_t9jptV": {
+          "type": "heading",
+          "settings": {
+            "text": "Who we are",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_t9jptV"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_NJbF7d": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_FX8nnM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At Fenland Tackle Exchange, we understand that fishing is more than just a hobby; it’s a passion.</p><p>That’s why we’re committed to providing anglers across the UK with dependable freshwater fishing tackle and bait at affordable prices.</p><p>Specialising in coarse, carp, predator, and specimen fishing gear, we proudly offer products from trusted (often lesser-known) brands; firms with hard-won reputations for delivering proven products that catch fish.</p><p>Following two decades in the tackle industry, we now trade primarily online, enabling us to slash our overheads – and pass the resulting cost savings on to you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_FX8nnM"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/Illustration_222.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "before_after_bdP4Xa": {
+      "type": "before-after",
+      "blocks": {
+        "before_q8HUyp": {
+          "type": "before",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/brands_1_2.jpg",
+            "text": "Before",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "after_tDW97q": {
+          "type": "after",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/brands_3_4.jpg",
+            "text": "After",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "before_q8HUyp",
+        "after_tDW97q"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Wallet-Friendly Tackle and Bait from Established Manufacturers",
+        "content": "<p>Our curated fishing tackle range includes everything you need for a successful day on the water—from rods and reels to bait, clothing and terminal tackle.</p><p>By focusing principally on trustworthy ‘old school’ brands, we provide anglers with the opportunity to rediscover reliable products that might not be available in retail stores; accessing the best equipment, without the hefty price tag associated with high-profile brands – and ensuring you can get the most out of every fishing trip, without breaking the bank.</p>",
+        "cursor_direction": "horizontal",
+        "cursor_initial_position": 50,
+        "cursor_background": "#ffffff",
+        "cursor_arrows_color": "#000000"
+      }
+    },
+    "rich_text_EnWrYe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PCrTGa": {
+          "type": "heading",
+          "settings": {
+            "text": "Wallet-Friendly Tackle and Bait from Established Manufacturers",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_J7Cyf6": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Our curated fishing tackle range includes everything you need for a successful day on the water—from rods and reels to bait, clothing and terminal tackle.</p><p>By focusing principally on trustworthy ‘old school’ brands, we provide anglers with the opportunity to rediscover reliable products that might not be available in retail stores; accessing the best equipment, without the hefty price tag associated with high-profile brands – and ensuring you can get the most out of every fishing trip, without breaking the bank.</p>"
+          }
+        },
+        "image_83zrQ9": {
+          "type": "image",
+          "settings": {
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_PCrTGa",
+        "richtext_J7Cyf6",
+        "image_83zrQ9"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "md",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_nHx87k": {
+      "type": "rich-text",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_4LanrG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tnjkGY": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>Trusted Products from Experienced Anglers</strong>",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_FXyb9j": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5><strong>Tried and Tested</strong></h5><p>As passionate anglers, we offer only tackle and bait that we - and our extensive network of specialist anglers, customers and friends - personally trust and depend upon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tnjkGY",
+        "richtext_FXyb9j"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/3A.png",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "image_with_text_KN9Kkh": {
+      "type": "image-with-text",
+      "blocks": {
+        "richtext_Ajw938": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h5><strong>Dependable Delivery</strong></h5><p>Because we do not sell on multiple platforms, you can be sure our inventory is always right up to date. If it’s listed, it’s in stock. And all orders over £100.00 are post free.</p><h5><strong>Expert Advice</strong></h5><p>Get honest recommendations based on 50+ years’ angling experience targeting specimen fish, in lakes and rivers throughout the UK and Europe.</p><h5><strong>Angling Essentials On Demand</strong></h5><p>Don’t see what you need? Drop us a PM or give us a call; if our suppliers have the products you need in stock, we’ll get them out to you ASAP, at the most competitive prices around.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_Ajw938"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/illustration_4.png",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "rich_text_x3Pfwa": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_cgHzYH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3>Sell Your Pre-Owned Fishing Gear</h3><p>In addition to selling top-notch tackle, Fenland Tackle Exchange is also the place where you can turn your old gear into cash. We buy ‘job lots’ of pre-owned fishing tackle – in particular, complete carp, predator and match fishing setups – with instant payout, and free collection throughout the UK.</p><p>Whether you’re looking to upgrade – or just clear out your unused kit – we make it easy for you to sell your gear to fellow fishing enthusiasts.</p><p>With our straightforward process, you can get a fair price for your equipment, allowing you to invest in new tackle while decluttering your precious garage space.</p>"
+          }
+        },
+        "button_Vtcpfr": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Sell Your Tackle",
+            "url": "shopify://pages/sell-your-fishing-tackle",
+            "background": "#54c65a",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_cgHzYH",
+        "button_Vtcpfr"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "image_with_text_block_eEX9jr": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "subheading_jGJbE3": {
+          "type": "subheading",
+          "settings": {
+            "text": "More than just a shop"
+          }
+        },
+        "richtext_6zPnLj": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h2>Join the Fenland Fishing Community</h2><p>At Fenland Tackle Exchange, we are more than just an online retailer; we are a community of fishing enthusiasts.</p><p>We’ll be updating our social media regularly, with our own experiences (warts and all); and we welcome yours too – offering a monthly prize for the most impressive pics, stories and of course captures.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_jGJbE3",
+        "richtext_6zPnLj"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_size": "md",
+        "image": "shopify://shop_images/Community_llustration_2.png",
+        "content_width": "lg",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_my3pcU",
+    "rich_text_cgXDCc",
+    "image_with_text_overlay_6PtQD8",
+    "main",
+    "rich_text_xxHELg",
+    "image_with_text_NJbF7d",
+    "before_after_bdP4Xa",
+    "rich_text_EnWrYe",
+    "rich_text_nHx87k",
+    "image_with_text_4LanrG",
+    "image_with_text_KN9Kkh",
+    "rich_text_x3Pfwa",
+    "image_with_text_block_eEX9jr"
+  ]
+}
