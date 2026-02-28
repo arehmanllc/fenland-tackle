@@ -1,3 +1,4 @@
+{{ 'ft-col.css' |  asset_url | stylesheet_tag}}
 {%- if section.blocks.size > 0 -%}
   <style>
     #shopify-section-{{ section.id }} {
@@ -20,7 +21,7 @@
       {%- assign wrapper_carousel_id = 'featured-collections-carousel-' | append: section.id -%}
 
       <div class="section-stack">
-        <div class="v-stack justify-self-center gap-4 text-center sm:gap-5">
+        <div class="v-stack gap-4 sm:gap-5 ft-coll-btn-container">
           {%- if section.settings.subheading != blank -%}
             <p class="h6 text-center">{{- section.settings.subheading -}}</p>
           {%- endif -%}
@@ -35,6 +36,15 @@
             </carousel-navigation>
           {%- else -%}
             <h2 class="h2">{{ section.blocks.first.settings.title | default: section.blocks.first.settings.collection.title | default: 'Collection' }}</h2>
+            {%- for block in section.blocks -%}
+              {%- if block.settings.link_text != blank -%}
+                {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
+
+                <div class="coll-btn">
+                  {%- render 'button', href: button_link, content: block.settings.link_text -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}  
           {%- endif -%}
         </div>
 
@@ -84,14 +94,14 @@
                   </carousel-next-button>
                 </product-list>
               {%- endif -%}
-
+{% comment %} 
               {%- if block.settings.link_text != blank -%}
                 {%- assign button_link = block.settings.link_url | default: block.settings.collection.url | default: '#' -%}
 
                 <div class="justify-self-center">
                   {%- render 'button', href: button_link, content: block.settings.link_text -%}
                 </div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
             </div>
           {%- endfor -%}
         </featured-collections-carousel>
@@ -103,7 +113,7 @@
 {% schema %}
 {
   "name": "t:sections.featured_collections.name",
-  "class": "shopify-section--featured-collections",
+  "class": "shopify-section--featured-collections ft-coll",
   "tag": "section",
   "disabled_on": {
     "templates": ["password"],

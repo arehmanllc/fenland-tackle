@@ -9,6 +9,10 @@
     assign stack_mobile = section.settings.stack_collections_mobile
     assign stack_desktop = section.settings.stack_collections
     assign stack_mobile_and_desktop = false
+    if section.settings.force_grid_layout
+      assign stack_mobile = true
+      assign stack_desktop = true
+    endif
 
     if stack_desktop and stack_mobile
       assign stack_mobile_and_desktop = true
@@ -17,6 +21,7 @@
 
   <style>
     #shopify-section-{{ section.id }} {
+      --collection-card-aspect: {{ section.settings.card_aspect_ratio | default: '1/1' }};
       {%- if stack_mobile or stack_mobile_and_desktop -%}
         --collection-list-items-per-row: {{ section.settings.collections_per_row_mobile | times: 1 }};
       {%- else -%}
@@ -30,6 +35,7 @@
 
     @media screen and (min-width: 700px) {
       #shopify-section-{{ section.id }} {
+        --collection-card-aspect: {{ section.settings.card_aspect_ratio | default: '1/1' }};
         {%- if stack_mobile or stack_mobile_and_desktop -%}
           --collection-list-items-per-row: {{ 2 | at_most: section.settings.collections_per_row_desktop }};
         {%- else -%}
@@ -114,6 +120,15 @@
               {%- if section.settings.show_text_outside -%}
                 {{- collection_card_info -}}
               {%- endif -%}
+
+              {%- if section.settings.show_arrow_icon -%}
+                <span class="collection-card__arrow" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27 26" fill="none">
+                    <circle cx="13.5" cy="13" r="12.5" stroke="{{ section.settings.arrow_color | default: '#416954' }}" />
+                    <path d="M7.87512 12.5C7.59898 12.5 7.37512 12.7239 7.37512 13C7.37512 13.2761 7.59898 13.5 7.87512 13.5V13V12.5ZM19.4787 13.3536C19.6739 13.1583 19.6739 12.8417 19.4787 12.6464L16.2967 9.46447C16.1014 9.2692 15.7849 9.2692 15.5896 9.46447C15.3943 9.65973 15.3943 9.97631 15.5896 10.1716L18.418 13L15.5896 15.8284C15.3943 16.0237 15.3943 16.3403 15.5896 16.5355C15.7849 16.7308 16.1014 16.7308 16.2967 16.5355L19.4787 13.3536ZM7.87512 13V13.5H19.1251V13V12.5H7.87512V13Z" fill="{{ section.settings.arrow_color | default: '#416954' }}" />
+                  </svg>
+                </span>
+              {%- endif -%}
             {%- endcapture -%}
 
             {%- if collection_url != blank -%}
@@ -184,6 +199,43 @@
     },
     {
       "type": "checkbox",
+      "id": "force_grid_layout",
+      "label": "Force grid layout (no carousel)",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "card_aspect_ratio",
+      "label": "Card aspect ratio",
+      "options": [
+        { "value": "1/1", "label": "Square (1:1)" },
+        { "value": "4/3", "label": "Landscape (4:3)" },
+        { "value": "3/4", "label": "Portrait (3:4)" }
+      ],
+      "default": "1/1"
+    },
+    {
+      "type": "range",
+      "id": "card_height_mobile",
+      "min": 120,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Card height on mobile",
+      "default": 220
+    },
+    {
+      "type": "range",
+      "id": "card_height_desktop",
+      "min": 140,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Card height on desktop",
+      "default": 240
+    },
+    {
+      "type": "checkbox",
       "id": "separate_section_with_border",
       "label": "t:global.section.separate_section_with_border",
       "default": true
@@ -222,6 +274,19 @@
       "id": "show_text_outside",
       "label": "t:sections.collection_list.show_text_outside",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow_icon",
+      "label": "Show arrow icon",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Arrow color",
+      "default": "#416954",
+      "visible_if": "{{ section.settings.show_arrow_icon }}"
     },
     {
       "type": "checkbox",

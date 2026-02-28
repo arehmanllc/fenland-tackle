@@ -1,0 +1,9 @@
+.shopify-section--image-with-text .image-with-text .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.shopify-section--image-with-text .image-with-text .container > *{
+  margin: 0;
+}

@@ -1,0 +1,6 @@
+.shopify-section--text-with-icons .text-with-icons__item .h6{
+  font-family: var(--text-font-family) !important;
+}
+.shopify-section--text-with-icons .text-with-icons{
+  justify-content: space-between;
+}

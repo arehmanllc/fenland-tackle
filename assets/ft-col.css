@@ -1,0 +1,31 @@
+.ft-coll-btn-container{
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+.coll-btn .button{
+  letter-spacing: 0;
+}
+.ft-coll .product-card{
+  border: 1px solid #416954;
+  border-radius: 6px;
+  gap: 0;
+}
+.ft-coll .product-card__info{
+  background-color: rgba(65, 105, 84, 0.2);
+  padding: 12px;
+  text-align: left;
+}
+.ft-coll .product-card__info .price-list{
+  justify-content: flex-start;
+}
+.ft-coll .product-card__quick-add-button{
+  background-color: #416954;
+  color: #ffffff;
+  width: 100%;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+}
+.ft-coll .product-card__quick-add-button.invisible{
+  background-color: rgba(65, 105, 84, 0.2);
+}
