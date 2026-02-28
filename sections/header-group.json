@@ -22,6 +22,7 @@
         },
         "message_eA78Ek": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "Phones staffed: Mon 12pm-4pm | Thurs  12pm-7pm | Fri 12pm-4pm | Sat 9am-3pm | Sun 10am-3pm"
           }
@@ -52,9 +53,7 @@
         "message_yBxEeH",
         "message_JMpGff"
       ],
-      "custom_css": [
-        ".announcement-bar__carousel {text-transform: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-3",
         "enable_sticky": true,
@@ -67,29 +66,29 @@
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "enable_sticky": true,
-        "hide_on_scroll": false,
-        "show_separation_border": false,
+        "hide_on_scroll": true,
+        "show_separation_border": true,
         "reduce_padding": true,
         "logo": "shopify://shop_images/300dpi_logo.png",
         "logo_max_width": 65,
-        "logo_mobile_max_width": 20,
-        "menu": "main-menu-1",
+        "logo_mobile_max_width": 50,
+        "menu": "main-menu-copy",
         "sidebar_menu": "main-menu-1",
         "menu_open_trigger": "hover",
         "menu_text_font": "body",
-        "enable_search": false,
+        "enable_search": true,
         "sidebar_color_scheme": "scheme-2",
         "sidebar_text_font": "heading",
         "sidebar_show_dividers": true,
         "sidebar_open_second_level_menus": true,
         "layout": "logo_left_navigation_center",
-        "show_icons": false,
-        "show_country_selector": false,
-        "show_country_name": false,
-        "show_country_flag": false,
-        "show_locale_selector": false,
+        "show_icons": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
+        "show_locale_selector": true,
         "transparent_header_text_color": "#ffffff",
         "transparent_logo": "shopify://shop_images/300dpi_logo.png"
       }
@@ -109,6 +108,7 @@
     },
     "custom_liquid_nTwXhJ": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom_liquid.presets.custom_liquid.name",
       "settings": {
         "color_scheme": "scheme-1",

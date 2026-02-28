@@ -21,11 +21,11 @@
     "success_color": "#307a07",
     "warning_color": "#ed8a00",
     "error_color": "#cb2b2b",
-    "heading_font": "sans-serif",
+    "heading_font": "oswald_n4",
     "heading_text_transform": "normal",
     "heading_font_size_factor": 1.4,
-    "heading_letter_spacing": 12,
-    "text_font": "sans-serif",
+    "heading_letter_spacing": 0,
+    "text_font": "roboto_n4",
     "text_font_size_mobile": 18,
     "text_font_size_desktop": 18,
     "button_text_transform": "normal",
@@ -35,7 +35,7 @@
     "product_card_text_font": "heading",
     "product_color_display": "swatch",
     "show_sold_out_badge": false,
-    "cart_icon": "shopping_cart",
+    "cart_icon": "shopping_bag",
     "cart_free_shipping_threshold": "75.00",
     "social_facebook": "https://www.facebook.com/FenlandTackleExchange/",
     "social_twitter": "https://X.com/TheCarpBloke",
@@ -58,7 +58,7 @@
         "settings": {
           "background": "#f3f3f3",
           "background_gradient": "",
-          "text_color": "#5c5c5c",
+          "text_color": "#151515",
           "primary_button_background": "#5c5c5c",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ffffff",
@@ -67,24 +67,35 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#204e36",
+          "background": "#416954",
           "background_gradient": "",
-          "text_color": "#ffffff",
-          "primary_button_background": "#ffffff",
+          "text_color": "#fafafa",
+          "primary_button_background": "#fafafa",
           "primary_button_text_color": "#204e36",
-          "circle_button_background": "#ffffff",
-          "circle_button_icon": "#204e36"
+          "circle_button_background": "#fafafa",
+          "circle_button_icon": "#fafafa"
         }
       },
       "scheme-4": {
         "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text_color": "#151515",
+          "primary_button_background": "rgba(0,0,0,0)",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "rgba(0,0,0,0)",
+          "circle_button_icon": "#1c1c1c"
+        }
+      },
+      "scheme-e0375511-8841-4708-a587-96b13488ff60": {
+        "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text_color": "#ffffff",
-          "primary_button_background": "#ffffff",
-          "primary_button_text_color": "#1c1c1c",
-          "circle_button_background": "#ffffff",
-          "circle_button_icon": "#1c1c1c"
+          "primary_button_background": "#204e36",
+          "primary_button_text_color": "#ffffff",
+          "circle_button_background": "#204e36",
+          "circle_button_icon": "#ffffff"
         }
       }
     }
