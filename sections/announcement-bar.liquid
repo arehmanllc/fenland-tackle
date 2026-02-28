@@ -33,7 +33,9 @@
   </style>
 
   <height-observer variable="announcement-bar">
-    <div class="announcement-bar color-scheme color-scheme--{{ section.settings.color_scheme.id }}">
+    <div class="announcement-bar announcement-bar-container color-scheme color-scheme--{{ section.settings.color_scheme.id }}"">
+      {%- render 'social-media', layout: 'list' -%}
+    <div class="announcement-bar >
       {%- assign carousel_id = 'carousel-' | append: section.id -%}
 
       {%- if section.blocks.size > 1 -%}
@@ -59,6 +61,13 @@
           </button>
         </carousel-next-button>
       {%- endif -%}
+    </div>
+    <div class="country-language-container">
+      <li class="localization-selectors md-max:hidden">
+          {%- render 'localization-selector', type: 'locale', placement: 'bottom-end', id_prefix: 'header-nav' -%}
+          {%- render 'localization-selector', type: 'country', placement: 'bottom-end', show_country_name: true, show_country_flag: true, id_prefix: 'header-nav' -%}
+        </li>
+    </div>
     </div>
   </height-observer>
 

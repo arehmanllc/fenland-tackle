@@ -225,7 +225,109 @@
             </li>
           {%- endif -%}
         {%- endfor -%}
+        {%- if section.settings.enable_search -%}
+          <li class="header__search-link">
+            {% comment %} <a href="{{ routes.search_url }}" aria-controls="header-search-{{ section.id }}">
+              <span class="sr-only">{{ 'header.general.search' | t }}</span>
 
+              {%- if section.settings.show_icons -%}
+                {%- render 'icon' with 'search', class: 'header__nav-icon' -%}
+              {%- else -%}
+                <span class="md:hidden">{%- render 'icon' with 'search', class: 'header__nav-icon' -%}</span>
+                <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden" aria-hidden="true">{{ 'header.general.search' | t }}</span>
+              {%- endif -%}
+            </a> {% endcomment %}
+            <!-- Responsive Search Bar -->
+            <div class="search-phone-wrapper">
+
+              <form action="{{ routes.search_url }}" method="get" role="search" class="search-bar">
+                <input type="search"
+                      name="q"
+                      placeholder="Search products..."
+                      aria-label="Search"
+                      class="search-input"
+                      value="{{ search.terms | escape }}">
+
+                <button type="submit" class="search-button" aria-label="Search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.82925 0.949083C8.52833 0.949083 10.724 3.17683 10.724 5.91442C10.724 8.65142 8.52833 10.8786 5.82983 10.8786C3.13133 10.8786 0.935667 8.65142 0.935667 5.91442C0.935667 3.17683 3.13133 0.949083 5.82983 0.949083H5.82925ZM5.82925 11.8283C7.31967 11.8283 8.67592 11.2537 9.70842 10.3174L13.3385 14L14 13.3292L10.3565 9.63317C11.2017 8.57813 11.6614 7.26622 11.6597 5.91442C11.6597 2.65358 9.044 0 5.82925 0C2.61508 0 0 2.65358 0 5.91442C0 9.17525 2.61567 11.8283 5.82925 11.8283Z" fill="#151515"/>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </li>
+          <style>
+.search-phone-wrapper {
+  display: flex;
+position: sticky;
+top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* 👇 NEW sticky styles */
+
+  position: flex;
+  top: 0px;
+  z-index: 3; /* keep it visible */
+  padding: 2px 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #ddd;
+  padding: 5px 5px;
+  background: rgba(21, 21, 21, 0.07);
+  margin-bottom: 5px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+}
+.search-input::placeholder{
+  color: rgba(39, 39, 39, 0.6);
+}
+
+.search-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button .icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+@media (max-width: 768px) {
+  .search-phone-wrapper {
+    align-items: stretch;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+</style>
+        {%- endif -%}
         {%- if shop.customer_accounts_enabled -%}
           <li class="header__account-link sm-max:hidden">
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
@@ -243,21 +345,6 @@
                     {{- 'header.general.login' | t -}}
                   {%- endif -%}
                 </span>
-              {%- endif -%}
-            </a>
-          </li>
-        {%- endif -%}
-
-        {%- if section.settings.enable_search -%}
-          <li class="header__search-link">
-            <a href="{{ routes.search_url }}" aria-controls="header-search-{{ section.id }}">
-              <span class="sr-only">{{ 'header.general.search' | t }}</span>
-
-              {%- if section.settings.show_icons -%}
-                {%- render 'icon' with 'search', class: 'header__nav-icon' -%}
-              {%- else -%}
-                <span class="md:hidden">{%- render 'icon' with 'search', class: 'header__nav-icon' -%}</span>
-                <span class="{% if section.settings.menu_text_font == 'heading' %}h6{% endif %} link-faded md-max:hidden" aria-hidden="true">{{ 'header.general.search' | t }}</span>
               {%- endif -%}
             </a>
           </li>
