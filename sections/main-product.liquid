@@ -1,3 +1,4 @@
+{{'prd.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign has_content_below_gallery = false
 
@@ -910,10 +911,9 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "name": "t:sections.main_product.blocks.feature_with_icon.name",
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "text",
-          "label": "t:global.text.text",
-          "default": "Feature"
+          "label": "t:global.text.text"
         },
         {
           "type": "url",
@@ -1252,10 +1252,9 @@ quick buy information in a template, that will be extracted in JS, which ensures
       "name": "t:sections.main_product.blocks.text.name",
       "settings": [
         {
-          "type": "richtext",
+          "type": "inline_richtext",
           "id": "text",
-          "label": "t:global.text.content",
-          "default": "<p>Share some content to your customers about your products.</p>"
+          "label": "t:global.text.content"
         }
       ]
     },
@@ -1788,6 +1787,227 @@ quick buy information in a template, that will be extracted in JS, which ensures
         {
           "type": "paragraph",
           "content": "t:sections.main_product.blocks.share_buttons.instructions"
+        }
+      ]
+    },{
+      "type": "product_tabs",
+      "name": "Product Tabs",
+      "settings": [
+        {
+          "type": "range",
+          "id": "number_of_tabs",
+          "label": "Number of tabs",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "default": 3
+        },
+        {
+          "type": "header",
+          "content": "Tab 1"
+        },
+        {
+          "type": "text",
+          "id": "label_0",
+          "label": "Tab 1 Label",
+          "default": "Description"
+        },
+        {
+          "type": "text",
+          "id": "content_0",
+          "label": "Tab 1 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_0",
+          "label": "Tab 1 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_0",
+          "label": "Tab 1 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_0",
+          "label": "Tab 1 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_0",
+          "label": "Tab 1 Image"
+        },
+        {
+          "type": "header",
+          "content": "Tab 2"
+        },
+        {
+          "type": "text",
+          "id": "label_1",
+          "label": "Tab 2 Label",
+          "default": "Specifications"
+        },
+        {
+          "type": "text",
+          "id": "content_1",
+          "label": "Tab 2 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_1",
+          "label": "Tab 2 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_1",
+          "label": "Tab 2 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_1",
+          "label": "Tab 2 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Tab 2 Image"
+        },
+        {
+          "type": "header",
+          "content": "Tab 3"
+        },
+        {
+          "type": "text",
+          "id": "label_2",
+          "label": "Tab 3 Label",
+          "default": "Shipping & Returns"
+        },
+        {
+          "type": "text",
+          "id": "content_2",
+          "label": "Tab 3 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_2",
+          "label": "Tab 3 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_2",
+          "label": "Tab 3 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_2",
+          "label": "Tab 3 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Tab 3 Image"
+        },
+        {
+          "type": "header",
+          "content": "Tab 4"
+        },
+        {
+          "type": "text",
+          "id": "label_3",
+          "label": "Tab 4 Label"
+        },
+        {
+          "type": "text",
+          "id": "content_3",
+          "label": "Tab 4 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_3",
+          "label": "Tab 4 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_3",
+          "label": "Tab 4 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_3",
+          "label": "Tab 4 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Tab 4 Image"
+        },
+        {
+          "type": "header",
+          "content": "Tab 5"
+        },
+        {
+          "type": "text",
+          "id": "label_4",
+          "label": "Tab 5 Label"
+        },
+        {
+          "type": "text",
+          "id": "content_4",
+          "label": "Tab 5 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_4",
+          "label": "Tab 5 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_4",
+          "label": "Tab 5 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_4",
+          "label": "Tab 5 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Tab 5 Image"
+        },
+        {
+          "type": "header",
+          "content": "Tab 6"
+        },
+        {
+          "type": "text",
+          "id": "label_5",
+          "label": "Tab 6 Label"
+        },
+        {
+          "type": "text",
+          "id": "content_5",
+          "label": "Tab 6 Text Content"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext_5",
+          "label": "Tab 6 Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page_5",
+          "label": "Tab 6 Page"
+        },
+        {
+          "type": "liquid",
+          "id": "html_5",
+          "label": "Tab 6 Custom HTML"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_5",
+          "label": "Tab 6 Image"
         }
       ]
     },

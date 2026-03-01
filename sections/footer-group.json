@@ -14,14 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "newsletter": {
-          "type": "newsletter",
-          "disabled": true,
+        "image_N7tPph": {
+          "type": "image",
           "settings": {
-            "title": "Newsletter",
-            "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
-            "button_background": "",
-            "button_text_color": ""
+            "image": "shopify://shop_images/Logo.png",
+            "content": "<p>At Fenland Tackle Exchange, we pride ourselves on sourcing fishing tackle, bait, and clothing from long-established brands that may not always be the most fashionable but have proven their worth on the water. In addition to nationwide delivery, we offer convenient collection - including evenings and weekends - from our 'tackle trade counter' in March, PE15.</p>",
+            "image_width": 150,
+            "link": ""
           }
         },
         "links": {
@@ -40,38 +39,30 @@
             "menu_title": "<strong>Find Out More</strong>"
           }
         },
-        "text": {
-          "type": "text",
+        "links_V3JU4Q": {
+          "type": "links",
           "settings": {
-            "title": "<a href=\"https://fenlandtackleexchange.co.uk/pages/about-us?view=about-us\" title=\"https://fenlandtackleexchange.co.uk/pages/about-us?view=about-us\"><strong>About</strong></a>",
-            "content": "<p>At Fenland Tackle Exchange, we pride ourselves on sourcing fishing tackle, bait, and clothing from long-established brands that may not always be the most fashionable but have proven their worth on the water. In addition to nationwide delivery, we  offer convenient collection - including evenings and weekends - from our 'tackle trade counter' in March, PE15.</p>",
-            "enable_follow_on_shop": true
-          }
-        },
-        "image_N7tPph": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Logo.png",
-            "image_width": 150,
-            "link": ""
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": "<strong>Find Out More</strong>"
           }
         }
       },
       "block_order": [
-        "newsletter",
+        "image_N7tPph",
         "links",
         "links_BG4hYC",
-        "text",
-        "image_N7tPph"
+        "links_V3JU4Q"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "separate_section_with_border": false,
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
         "show_social_media": true,
-        "show_payment_icons": false,
-        "show_country_selector": false,
-        "show_country_name": false,
-        "show_country_flag": false,
+        "show_payment_icons": true,
+        "show_powered_by_shopify": true,
+        "show_country_selector": true,
+        "show_country_name": true,
+        "show_country_flag": true,
         "show_locale_selector": true
       }
     },

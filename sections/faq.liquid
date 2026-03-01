@@ -1,57 +1,69 @@
+{{'faqs.css' | asset_url | stylesheet_tag }}
 {%- if section.blocks.size > 0 -%}
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
   <div class="section-spacing color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
-    <div class="container container--md">
-      <div class="section-stack">
-        {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content -%}
+    <div class="container">
+      <div class="faqs-container">  
+          <div class="section-stack">
+            {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content -%}
+            <div class="faqs-block">
+              <div class="faqs-left">
+                <div class="section-header">
+                  <h2 class="section-header__heading">{{ section.settings.sec_left_head }}</h2>
+                  <div class="section-header__content">
+                    {{ section.settings.sec_left_para }}
+                  </div>
+                </div>
+              </div>
+              <div class="faq">
+                {%- assign categories_blocks = section.blocks | where: 'type', 'category' -%}
 
-        <div class="faq">
-          {%- assign categories_blocks = section.blocks | where: 'type', 'category' -%}
+                {%- if section.settings.show_categories and categories_blocks.size > 0 -%}
+                  <faq-toc class="faq__toc hidden md:grid">
+                    {%- for block in categories_blocks -%}
+                      <a class="faq__toc-item {% if forloop.first %}is-active{% endif %}" href="#block-{{ block.id }}">{{ block.settings.title }}</a>
+                    {%- endfor -%}
+                  </faq-toc>
+                {%- endif -%}
 
-          {%- if section.settings.show_categories and categories_blocks.size > 0 -%}
-            <faq-toc class="faq__toc hidden md:grid">
-              {%- for block in categories_blocks -%}
-                <a class="faq__toc-item {% if forloop.first %}is-active{% endif %}" href="#block-{{ block.id }}">{{ block.settings.title }}</a>
-              {%- endfor -%}
-            </faq-toc>
-          {%- endif -%}
+                <div class="faq__content">
+                  {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                      {%- when 'category' -%}
+                        {%- if block.settings.title != blank -%}
+                          <p id="block-{{ block.id }}" class="faq__category h4" {{ block.shopify_attributes }}>
+                          {%- if block.settings.custom_icon != blank -%}
+                            {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
+                            {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
+                            {%- capture style -%}--image-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
 
-          <div class="faq__content">
-            {%- for block in section.blocks -%}
-              {%- case block.type -%}
-                {%- when 'category' -%}
-                  {%- if block.settings.title != blank -%}
-                    <p id="block-{{ block.id }}" class="faq__category h4" {{ block.shopify_attributes }}>
-                    {%- if block.settings.custom_icon != blank -%}
-                      {%- capture sizes -%}{{ block.settings.icon_width }}px{%- endcapture -%}
-                      {%- capture widths -%}{{ block.settings.icon_width }}, {{ block.settings.icon_width | times: 2 | at_most: block.settings.custom_icon.width }}{%- endcapture -%}
-                      {%- capture style -%}--image-max-width: {{ block.settings.icon_width }}px{%- endcapture -%}
+                            {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: sizes: sizes, widths: widths, class: 'constrained-image', style: style -}}
+                          {%- elsif block.settings.icon != 'none' -%}
+                            {%- render 'icon' with block.settings.icon, width: block.settings.icon_width -%}
+                          {%- endif -%}
 
-                      {{- block.settings.custom_icon | image_url: width: block.settings.custom_icon.width | image_tag: sizes: sizes, widths: widths, class: 'constrained-image', style: style -}}
-                    {%- elsif block.settings.icon != 'none' -%}
-                      {%- render 'icon' with block.settings.icon, width: block.settings.icon_width -%}
-                    {%- endif -%}
+                            {{- block.settings.title -}}
+                          </p>
+                        {%- endif -%}
 
-                      {{- block.settings.title -}}
-                    </p>
-                  {%- endif -%}
+                      {%- when 'question' -%}
+                        {%- if block.settings.question != blank and block.settings.answer != blank -%}
+                          {%- capture answer -%}
+                            <div class="prose">
+                              {{- block.settings.answer -}}
+                            </div>
+                          {%- endcapture -%}
 
-                {%- when 'question' -%}
-                  {%- if block.settings.question != blank and block.settings.answer != blank -%}
-                    {%- capture answer -%}
-                      <div class="prose">
-                        {{- block.settings.answer -}}
-                      </div>
-                    {%- endcapture -%}
-
-                    {%- render 'accordion', title: block.settings.question, content: answer, show_title_as_text: true, block: block -%}
-                  {%- endif -%}
-              {%- endcase -%}
-            {%- endfor -%}
+                          {%- render 'accordion', title: block.settings.question, content: answer, show_title_as_text: true, block: block -%}
+                        {%- endif -%}
+                    {%- endcase -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div> 
           </div>
-        </div>
-      </div>
+      </div>   
     </div>
   </div>
 
@@ -108,6 +120,16 @@
     {
       "type": "header",
       "content": "t:global.section.header_category"
+    },{
+      "type": "text",
+      "id": "sec_left_head",
+      "label": "Section Left Heading",
+      "default": "Quick links"
+    },{
+      "type": "text",
+      "id": "sec_left_para",
+      "label": "Section Left Text",
+      "default": "Quick links"
     },
     {
       "type": "inline_richtext",

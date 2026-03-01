@@ -1,0 +1,49 @@
+{{ 'tab-content.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'tab-content.js' |  asset_url }}" defer="defer"></script>
+<script src="{{ 'scroll-element.js' |  asset_url }}" defer="defer"></script>
+<product-tabs {{ block.shopify_attributes }} class="{{ class }}">
+  <div class="prod-tabs">
+    <div class="prod-tabs__grid">
+      <element-slider class="block relative">
+        <div class="scroll--slider relative">
+          <div class="slider__shadow--left slider__shadow"> </div>
+          <div class="prod-tabs__head" scroll-slider-wrapper>
+            {% for i in (i..block.settings.number_of_tabs) %}
+              {% capture label %}label_{{ forloop.index0 }}{% endcapture %}
+              {% if block.settings[label] %}
+                <button class="button-tab{% if forloop.first %} active{% endif %}" data-id="{{ block.settings[label] | handleize }}-{{ forloop.index0 }}" tab-button scroll-slider-item>
+                  {{ block.settings[label] }}
+                </button>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="slider__shadow--right slider__shadow"> </div>
+        </div>
+         <div class="slider__nav">
+            <button name="prev">
+              <span class="svg-wrapper">{{ 'icon-arrow-left.svg' | inline_asset_content }}</span>
+            </button>
+            <button name="next">
+              <span class="svg-wrapper">{{ 'icon-arrow-right.svg' | inline_asset_content }}</span>
+            </button>
+          </div>
+      </element-slider>
+      <div class="prod-tabs__body primary-scroll-bar">
+        {% for i in (i..block.settings.number_of_tabs) %}
+        {% capture label %}label_{{ forloop.index0 }}{% endcapture %}{% capture content %}content_{{ forloop.index0 }}{% endcapture %}{% capture richtext %}richtext_{{ forloop.index0 }}{% endcapture %}{% capture page %}page_{{ forloop.index0 }}{% endcapture %}{% capture html %}html_{{ forloop.index0 }}{% endcapture %}{% capture image %}image_{{ forloop.index0 }}{% endcapture %}
+           {% if block.settings[content] != blank or block.settings[richtext] != blank or block.settings[page] != blank or block.settings[html] != blank %}  
+            <div class="prod-tabs__content {% if forloop.first %} active{% endif %}"  data-id="{{ block.settings[label] | handleize }}-{{ forloop.index0 }}" {% if forloop.first %} style="--max-height: auto;" {% endif %}  tab-content>
+              <div class="prod-tabs__content--inner">
+                {%- if block.settings[content] -%}<p>{{ block.settings[content] }}</p> {%- endif -%}
+                {%- if block.settings[image] -%}<div class="ratio media" style="--ratio-percent: {{ 1 | divided_by: block.settings[image].aspect_ratio | times: 100 }};">{{ block.settings[image] | image_url: width: 2048 | image_tag: width: block.settings[image].width, height: block.settings[image].height, sizes: '100vw', widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', fetchpriority: 'low' }}</div>{%- endif -%}
+                {%- if block.settings[richtext] -%} {{ block.settings[richtext] }} {%- endif -%}
+                {%- if block.settings[page] -%}{{ block.settings[page].content }} {%- endif -%}
+                {%- if block.settings[html] -%}{{ block.settings[html] }}{%- endif -%}
+              </div>
+            </div>
+           {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</product-tabs>

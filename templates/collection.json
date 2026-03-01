@@ -12,9 +12,9 @@
     "collection-banner": {
       "type": "collection-banner",
       "settings": {
-        "color_scheme": "",
-        "image_size": "auto",
-        "allow_transparent_header": true,
+        "color_scheme": "scheme-3",
+        "image_size": "md",
+        "allow_transparent_header": false,
         "show_image": true,
         "reveal": true,
         "enable_parallax": true,
@@ -31,9 +31,9 @@
       "settings": {
         "color_scheme": "",
         "hide_product_information": false,
-        "products_per_page": 48,
+        "products_per_page": 24,
         "products_per_row_mobile": "2",
-        "products_size_desktop": "compact",
+        "products_size_desktop": "large",
         "show_grid_mode_selector": true,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
@@ -46,10 +46,88 @@
         "show_filter_values_count": true,
         "open_filters_by_default": false
       }
+    },
+    "image_with_text_pEjbY9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HqUYE3": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Story at Fenland Tackle Exchange",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_FVGnWt": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Fenland Tackle Exchange was founded with a simple mission — to give anglers across the UK a better way to buy, sell, and trade quality fishing tackle. We understand the passion behind every session, which is why we offer carefully selected new and pre-owned gear you can trust. Our goal is to help anglers access premium equipment while giving unused tackle a second life.</p>"
+          }
+        },
+        "liquid_Bq4pTX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"container\">\n<div class=\"block\"><p>1000+</p>\n<div>Products\nAvailable</div></div>\n<div class=\"block\"><p>UK Wide</p>\n<div>Buy, Sell, and\nTrade Service</div></div>\n<div class=\"block\"><p>Quality Checked</p>\n<div>Every Used Item Inspected</div></div>\n</div>"
+          }
+        },
+        "button_x3XFFg": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Shop All Products",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "button_zAgt6c": {
+          "type": "button",
+          "settings": {
+            "style": "outline",
+            "text": "Sell Your Tackle",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_HqUYE3",
+        "richtext_FVGnWt",
+        "liquid_Bq4pTX",
+        "button_x3XFFg",
+        "button_zAgt6c"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/IMG_20260228_103831.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "end",
+        "content_width": "md",
+        "remove_vertical_spacing": true
+      }
+    },
+    "newsletter_4wiFKF": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "image": "shopify://shop_images/10794-banner.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
     "collection-banner",
-    "main"
+    "main",
+    "image_with_text_pEjbY9",
+    "newsletter_4wiFKF"
   ]
 }
