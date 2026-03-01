@@ -440,7 +440,7 @@
         "color_scheme": "",
         "separate_section_with_border": false,
         "image": "shopify://shop_images/IMG_20260228_103831.jpg",
-        "reveal_on_scroll": false,
+        "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
         "remove_vertical_spacing": true
@@ -569,6 +569,86 @@
         "remove_vertical_spacing": true
       }
     },
+    "tabs_featured_collections_jCVXcR": {
+      "type": "tabs-featured-collections",
+      "blocks": {
+        "collection_J93xhW": {
+          "type": "collection",
+          "settings": {
+            "collection": "christmas-gifts-ideas",
+            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_VGcKg7": {
+          "type": "collection",
+          "settings": {
+            "collection": "feeders",
+            "coll_image": "shopify://shop_images/IMG_20260228_103831.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_EMfyYM": {
+          "type": "collection",
+          "settings": {
+            "collection": "angling-pursuits",
+            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_7VTdFc": {
+          "type": "collection",
+          "settings": {
+            "collection": "artificials",
+            "coll_image": "shopify://shop_images/8929e9f0-0705-47fb-ad5f-7af26fc8872d_1.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_m4JNgc": {
+          "type": "collection",
+          "settings": {
+            "collection": "bait",
+            "coll_image": "shopify://shop_images/Zenith.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_J93xhW",
+        "collection_VGcKg7",
+        "collection_EMfyYM",
+        "collection_7VTdFc",
+        "collection_m4JNgc"
+      ],
+      "name": "Tabs Featured Collection",
+      "settings": {
+        "color_scheme": "scheme-c9161325-0349-41a9-8394-c40d7b20ed8d",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "heading": "Terminal Tackle & Essential Tools",
+        "subheading": "Precision components trusted by anglers — from feeders and hooks to rigs, swivels, and tools built for reliability in every session."
+      }
+    },
     "blog_posts_KCUVeE": {
       "type": "blog-posts",
       "name": "t:sections.blog_posts.presets.blog_posts.name",
@@ -576,7 +656,7 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "blog": "news",
-        "posts_count": 2,
+        "posts_count": 6,
         "stack_on_mobile": false,
         "show_category": true,
         "show_date": false,
@@ -587,160 +667,6 @@
         "content": "",
         "button_link": "",
         "button_text": "View all"
-      }
-    },
-    "scrolling_content_y3exB6": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_bC3z8c": {
-          "type": "text",
-          "settings": {
-            "text": "Convenient out-of-hours collection    |"
-          }
-        },
-        "text_cAHAHL": {
-          "type": "text",
-          "settings": {
-            "text": "Free delivery (min order)    |"
-          }
-        },
-        "text_LARLDe": {
-          "type": "text",
-          "settings": {
-            "text": " Join us at… @SkylarkCarBoot (Sundays) … @FenlandTackleExchange (Saturdays)   |"
-          }
-        },
-        "text_F86tQ4": {
-          "type": "text",
-          "settings": {
-            "text": "Weekly clearance sales    |"
-          }
-        }
-      },
-      "block_order": [
-        "text_bC3z8c",
-        "text_cAHAHL",
-        "text_LARLDe",
-        "text_F86tQ4"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.2,
-        "scroll_direction": "left",
-        "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 16,
-        "text_font_size_desktop": 24,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
-        "item_horizontal_spacing_mobile": 10,
-        "item_horizontal_spacing_desktop": 10,
-        "background": "",
-        "text_color": ""
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "bivvies-shelters",
-            "products_count": 8,
-            "title": "",
-            "link_url": "shopify://collections/bivvies-shelters",
-            "link_text": "View all"
-          }
-        },
-        "collection_G9RpPz": {
-          "type": "collection",
-          "settings": {
-            "collection": "chairs-bed-chairs",
-            "products_count": 8,
-            "title": "",
-            "link_url": "shopify://collections/chairs-bed-chairs",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection_G9RpPz"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-1",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
-      }
-    },
-    "featured_collections_pmhw7V": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_6EMgCU": {
-          "type": "collection",
-          "settings": {
-            "collection": "nets",
-            "products_count": 8,
-            "title": "",
-            "link_url": "shopify://collections/nets",
-            "link_text": "View all"
-          }
-        },
-        "collection_XAG7eY": {
-          "type": "collection",
-          "settings": {
-            "collection": "jumpers-tees-hoodies",
-            "products_count": 8,
-            "title": "",
-            "link_url": "shopify://collections/jumpers-tees-hoodies",
-            "link_text": "View all"
-          }
-        },
-        "collection_tDz6Lf": {
-          "type": "collection",
-          "settings": {
-            "collection": "hats",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
-        "collection_DchRC9": {
-          "type": "collection",
-          "settings": {
-            "collection": "scales-weighing-slings",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        }
-      },
-      "block_order": [
-        "collection_6EMgCU",
-        "collection_XAG7eY",
-        "collection_tDz6Lf",
-        "collection_DchRC9"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": ""
       }
     },
     "testimonials_TBzX6A": {
@@ -804,6 +730,7 @@
         "testimonial_9DxTtG",
         "testimonial_PNrUTD"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "separate_section_with_border": true,
@@ -865,63 +792,6 @@
         "remove_horizontal_spacing": false
       }
     },
-    "custom_liquid_enMzAr": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "",
-        "text_alignment": "center"
-      }
-    },
-    "1768914436eb0313e2": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_4fcc50b_9MQKAT": {
-          "type": "ai_gen_block_4fcc50b",
-          "settings": {
-            "custom_text": "Pre-order now - usually ships within 3 working days"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_4fcc50b_9MQKAT"
-      ],
-      "name": "Pre-order message",
-      "settings": {
-        "color_scheme": "scheme-3",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
-      }
-    },
-    "1768916274a86d8fc1": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_d121513_mU6M8C": {
-          "type": "re-stock_message_update",
-          "settings": {
-            "original_text": "Re-stocking soon",
-            "replacement_text": "Pre-order now - usually ships within 3 working days"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_d121513_mU6M8C"
-      ],
-      "name": "Pre-order message",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
-      }
-    },
     "faq_KTWBHq": {
       "type": "faq",
       "blocks": {
@@ -957,7 +827,9 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "show_categories": true,
-        "subheading": "Need help?",
+        "sec_left_head": "Smarter decisions start with clear answers.",
+        "sec_left_para": "Answers to your questions about our tackle, bait, delivery, and collection.",
+        "subheading": "",
         "title": "Frequently Asked Questions",
         "content": ""
       }
@@ -987,15 +859,10 @@
     "rich_text_AzdJdY",
     "scrolling_content_Lt8DRt",
     "image_with_text_6Yz6hW",
+    "tabs_featured_collections_jCVXcR",
     "blog_posts_KCUVeE",
-    "scrolling_content_y3exB6",
-    "featured-collections",
-    "featured_collections_pmhw7V",
     "testimonials_TBzX6A",
     "174930763382116150",
-    "custom_liquid_enMzAr",
-    "1768914436eb0313e2",
-    "1768916274a86d8fc1",
     "faq_KTWBHq",
     "newsletter"
   ]

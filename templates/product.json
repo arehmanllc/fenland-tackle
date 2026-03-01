@@ -12,29 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "modal_pjKYDR": {
-          "type": "modal",
-          "settings": {
-            "button_title": "Button title",
-            "button_style": "solid",
-            "stretch_button": false,
-            "button_background": "",
-            "button_text_color": "",
-            "modal_title": "Modal title",
-            "modal_content": "<p>Write some content that will appear in a modal</p>"
-          }
-        },
-        "accordion_qj7Jmt": {
-          "type": "accordion",
-          "settings": {
-            "show_below_gallery": false,
-            "icon": "none",
-            "title": "Title",
-            "content": "<p>Share some content to your customers about your products.</p>",
-            "liquid": "",
-            "page": ""
-          }
-        },
         "vendor": {
           "type": "vendor",
           "settings": {}
@@ -42,7 +19,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h4"
+            "heading_tag": "h2"
           }
         },
         "price": {
@@ -51,19 +28,53 @@
             "show_taxes_notice": false
           }
         },
-        "payment_terms": {
-          "type": "payment_terms",
-          "settings": {}
-        },
         "separator": {
           "type": "separator",
           "settings": {}
         },
-        "description": {
-          "type": "description",
+        "text_p7r3iG": {
+          "type": "text",
           "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
+            "text": "This 1.3kW portable gas heater is designed for the practical angler who needsreliable warmth without unnecessary bulk. Built around a high-output ceramic burner, it provides steady heat distribution in a compact, lightweight frame that fits easily onto a barrow or into a transit van."
+          }
+        },
+        "feature_with_icon_iT7Bxm": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<p><strong>Free Local Delivery<br/></strong>On orders over £25</p>",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/IMG_20260225_150102.jpg",
+            "icon_width": 32,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_w7nyma": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<p><strong>Free National Delivery<br/></strong>On orders over £100</p>",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/IMG_20260228_103831.jpg",
+            "icon_width": 32,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
+          }
+        },
+        "feature_with_icon_qYLcnG": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "<p><strong>Manufacturers Warranty<br/></strong>On New Products</p>",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/IMG_20260225_150323.jpg",
+            "icon_width": 32,
+            "background": "#ffffff",
+            "text_color": "#6b6b6b",
+            "border_color": ""
           }
         },
         "variant_picker": {
@@ -76,33 +87,13 @@
             "size_chart_page": ""
           }
         },
-        "liquid_M6NYWq": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "{% if product.selected_or_first_available_variant.inventory_policy == 'continue' and product.selected_or_first_available_variant.inventory_quantity <= 0 %}\n  <div class=\"product-preorder-message\" style=\"margin: 1rem 0; padding: 0.75rem; background: #f3f4f6; border-radius: 4px;\">\n    <p style=\"margin: 0; font-size: 0.875rem; color: #374151;\">Pre-order now - usually ships within 3 working days</p>\n  </div>\n{% endif %}"
-          }
-        },
-        "more_information_Rnf887": {
-          "type": "more_information",
-          "settings": {
-            "text": "Pre-order now: usually available within 3-4 working days"
-          }
-        },
-        "inventory_mQfPHn": {
-          "type": "inventory",
-          "settings": {
-            "show_in_stock_quantity": true,
-            "low_inventory_threshold": 0,
-            "show_progress_bar": false,
-            "progress_bar_max_value": 50
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": true,
@@ -112,41 +103,107 @@
             "payment_button_text_color": ""
           }
         },
+        "share_buttons_rNMpYz": {
+          "type": "share_buttons",
+          "settings": {}
+        },
+        "liquid_M6NYWq": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "{% if product.selected_or_first_available_variant.inventory_policy == 'continue' and product.selected_or_first_available_variant.inventory_quantity <= 0 %}\n  <div class=\"product-preorder-message\" style=\"margin: 1rem 0; padding: 0.75rem; background: #f3f4f6; border-radius: 4px;\">\n    <p style=\"margin: 0; font-size: 0.875rem; color: #374151;\">Pre-order now - usually ships within 3 working days</p>\n  </div>\n{% endif %}"
+          }
+        },
+        "more_information_Rnf887": {
+          "type": "more_information",
+          "disabled": true,
+          "settings": {
+            "text": "Pre-order now: usually available within 3-4 working days"
+          }
+        },
+        "inventory_mQfPHn": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "show_in_stock_quantity": true,
+            "low_inventory_threshold": 0,
+            "show_progress_bar": false,
+            "progress_bar_max_value": 50
+          }
+        },
         "complementary_products": {
           "type": "complementary_products",
           "settings": {
             "title": "Pairs well with",
-            "products_count": 2,
-            "show_below_gallery": true,
+            "products_count": 5,
+            "show_below_gallery": false,
             "stack_products": false,
             "show_quick_buy": true
+          }
+        },
+        "product_tabs_yenAib": {
+          "type": "product_tabs",
+          "settings": {
+            "number_of_tabs": 3,
+            "label_0": "Key Features & Specofication",
+            "content_0": "",
+            "richtext_0": "<p>✓ 1.3kW Ceramic Burner: Efficient heat output designed for bivvies and sheltered fishing spots.<br/>✓ Built-in Ignition: Simple piezo starting system—no matches or lighters required.<br/><br/>✓ Temperature Control: Adjustable heat settings to manage fuel consumption and comfort.<br/>✓ Swivel Body Design: Allows you to direct the heat exactly where it is needed most.<br/>✓ Fuel Source: Uses standard 227g butane gas canisters (sold separately).<br/>✓ Safety First: Features a sturdy base and integrated handle for safe positioning.</p>",
+            "page_0": "",
+            "html_0": "",
+            "label_1": "Specifications",
+            "content_1": "",
+            "richtext_1": "<p><br/>Specifications<br/><br/></p>",
+            "page_1": "",
+            "html_1": "",
+            "label_2": "Shipping & Returns",
+            "content_2": "",
+            "richtext_2": "<p><br/>Shipping & Returns<br/><br/></p>",
+            "page_2": "",
+            "html_2": "",
+            "label_3": "",
+            "content_3": "",
+            "richtext_3": "",
+            "page_3": "",
+            "html_3": "",
+            "label_4": "",
+            "content_4": "",
+            "richtext_4": "",
+            "page_4": "",
+            "html_4": "",
+            "label_5": "",
+            "content_5": "",
+            "richtext_5": "",
+            "page_5": "",
+            "html_5": ""
           }
         }
       },
       "block_order": [
-        "modal_pjKYDR",
-        "accordion_qj7Jmt",
         "vendor",
         "title",
         "price",
-        "payment_terms",
         "separator",
-        "description",
+        "text_p7r3iG",
+        "feature_with_icon_iT7Bxm",
+        "feature_with_icon_w7nyma",
+        "feature_with_icon_qYLcnG",
         "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share_buttons_rNMpYz",
         "liquid_M6NYWq",
         "more_information_Rnf887",
         "inventory_mQfPHn",
-        "quantity_selector",
-        "buy_buttons",
-        "complementary_products"
+        "complementary_products",
+        "product_tabs_yenAib"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "container_size": "full",
         "product_info_size": 50,
         "show_sticky_add_to_cart": true,
         "center_basic_info": true,
-        "desktop_media_layout": "grid",
+        "desktop_media_layout": "carousel_thumbnails_left",
         "desktop_media_grid_gap": 50,
         "mobile_controls": "dots",
         "enable_media_autoplay": false,
@@ -158,7 +215,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "separate_section_with_border": true,
         "hide_product_information": false,
         "stack_products": false,
@@ -168,13 +225,93 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": "",
-        "title": "Related products",
+        "title": "You May Also Like",
         "content": ""
+      }
+    },
+    "blog_posts_YitjXX": {
+      "type": "blog-posts",
+      "name": "t:sections.blog_posts.presets.blog_posts.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "blog": "news",
+        "posts_count": 6,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_date": false,
+        "show_excerpt": true,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "Our Blogs",
+        "content": "",
+        "button_link": "",
+        "button_text": "View all"
+      }
+    },
+    "faq_AW7nbB": {
+      "type": "faq",
+      "blocks": {
+        "question_VNwnTM": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_9EQdtR": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_aHpTjf": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_VNwnTM",
+        "question_9EQdtR",
+        "question_aHpTjf"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": true,
+        "sec_left_head": "Smarter decisions start with clear answers.",
+        "sec_left_para": "Answers to your questions about our tackle, bait, delivery, and collection.",
+        "subheading": "",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "newsletter_WpJz4k": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "image": "shopify://shop_images/10794-banner.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "blog_posts_YitjXX",
+    "faq_AW7nbB",
+    "newsletter_WpJz4k"
   ]
 }
