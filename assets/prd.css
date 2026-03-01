@@ -1,0 +1,24 @@
+.product .product-title{
+  font-family: var(--heading-font-family) !important;
+}
+.product .price-list--product > *{
+  font-family: var(--text-font-family);
+  font-size: 30px;
+  color: #151515;
+  font-weight: 700;
+}
+.product .prd-text{
+  background-color: #F4F4F4;
+  padding: 10px;
+  color: rgba(65, 105, 84, 0.8);
+  border-radius: 4px;
+}
+.product .qty-prd-btn{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+}
+.product share-button{
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,274 @@
+/* ============================================================
+   Shared / base styles
+   ============================================================ */
+.featured-collections .ft-coll-hd {
+  letter-spacing: 0;
+  line-height: 36px;
+  font-size: clamp(28px,3vw,42px);
+  text-transform: capitalize;
+}
+
+.featured-collections .ft-coll-sb_hd {
+  letter-spacing: 0;
+  color: #656565;
+  line-height: 22px;
+  max-width: 650px;
+  text-transform: none;
+}
+.featured-collections .section-stack {
+  gap: 1rem;
+}
+
+.featured-collections .vendor {
+  display: none;
+}
+
+.featured-collections .product-list--carousel .product-card {
+  /* padding: 15px; */
+  height: 100%;
+  border-radius: 10px;
+}
+
+.featured-collections .product-list--carousel .product-card .product-card__image {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Force all product images to the same height */
+.featured-collections .product-list--carousel .product-card .product-card__figure {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.featured-collections .product-list--carousel .product-card .product-card__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.featured-collections .v-stack:not(.justify-self-center) {
+  justify-items: start;
+}
+
+.featured-collections .product-title {
+  text-align: left;
+  line-height: normal;
+}
+
+.featured-collections .product-card__quick-add-button:hover svg {
+  transform: unset;
+  background-color: #000000;
+  border-radius: 50%;
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+.featured-collections .product-card__quick-add-button:hover svg {
+  transform: unset !important;
+}
+
+.featured-collections .product-card__quick-add-button:hover svg>* {
+  stroke: #ffffff;
+}
+
+/* ============================================================
+   TOP horizontal tabs navigation
+   ============================================================ */
+.featured-collections .ft-tabs-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  /* override carousel default horizontal scroll behaviour */
+  overflow: visible !important;
+  grid-auto-flow: unset;
+  grid-auto-columns: unset;
+}
+.featured-collections .ft-tab-btn[aria-current="true"]{
+  background-color: #416954;
+  color: #ffffff;
+}
+.featured-collections .ft-tab-btn {
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-family: var(--text-font-family);
+}
+
+
+.featured-collections .ft-tab-btn::after {
+  display: none;
+}
+
+/* ============================================================
+   Content row: image (left) + products (right)
+   ============================================================ */
+.ft-coll-content-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ft-coll-image-col {
+  width: 100%;
+}
+
+.ft-coll-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.ft-coll-products-col {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Explore / view-all button */
+.ft-coll-explore-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ============================================================
+   Carousel prev/next buttons
+   ============================================================ */
+.tabs-btns-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.carousel-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.featured-collections .prev-next-button {
+  background-color: transparent;
+  color: #000000;
+  width: 35px;
+  height: 35px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.featured-collections .prev-next-button:not(:disabled) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.featured-collections .prev-next-button svg {
+  stroke-width: 3px;
+}
+
+.carousel-btns .floating-controls-container__control {
+  position: unset;
+}
+
+/* ============================================================
+   Product list
+   ============================================================ */
+.featured-collections .product-list--carousel {
+  gap: 22px;
+}
+
+
+
+.featured-collections .featured-collections-carousel {
+  margin-top: 0;
+}
+
+.featured-collections .featured-collections-carousel__item {
+  border-radius: 6px;
+}
+
+.featured-collections .product-card__figure>.badge-list {
+  position: absolute !important;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+/* ============================================================
+   Desktop (>= 1100px) — side-by-side
+   ============================================================ */
+/* ============================================================
+   Scroll progress bar
+   ============================================================ */
+.ft-scroll-bar {
+  display: block;
+  margin-top: 16px;
+}
+
+.ft-scroll-bar__track {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #C5C5C5;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ft-scroll-bar__thumb {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1D4D41;
+  border-radius: 3px;
+  transition: transform 0.15s ease, width 0.15s ease;
+}
+
+/* ============================================================
+   Desktop (>= 1100px) — side-by-side
+   ============================================================ */
+@media screen and (min-width: 1100px) {
+  .ft-coll-content-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .ft-coll-image-col {
+    width: 25.5vw;
+    flex-shrink: 0;
+  }
+
+  .ft-coll-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  /* Show 2.5 products — override the theme css variable so the 3rd is half-visible */
+  .featured-collections .product-list--carousel {
+    --product-list-items-per-row: 2.5 !important;
+    --product-list-max-items-per-row-allowed: 2.5 !important;
+  }
+}
+
+/* ============================================================
+   Mobile (< 1100px)
+   ============================================================ */
+@media screen and (max-width: 1099px) {
+  .tabs-btns-title-container {
+    display: none;
+  }
+
+  .featured-collections .ft-tab-btn {
+    font-size: 14px !important;
+  }
+}

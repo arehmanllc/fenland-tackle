@@ -1,0 +1,59 @@
+.shopify-section--faq .faqs-block{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 2rem;
+  justify-items: center;
+}
+.faqs-left{
+  max-width: 400px;
+}
+.faq{
+  width: 100%;
+}
+.faq__content{
+  flex-basis: 80%;
+}
+.shopify-section--faq .faqs-left .section-header__heading{
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: clamp(20px,3vw,36px);
+  background: linear-gradient(45deg, hsla(0, 0%, 0%, 1) 0%, hsla(149, 24%, 33%, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+.faqs-left .section-header__content{
+  color:#505050;
+  font-size: clamp(12px,3vw,18px);
+  line-height: 120%;
+}
+.shopify-section--faq .faq .accordion__disclosure{
+  background-color: rgba(65, 105, 84, 0.3);
+  padding-inline: 20px;
+  border-radius: 10px;
+  color: #000000;
+}
+.shopify-section--faq .accordion{
+  border-block-width: 6px;
+  border-color: transparent;
+}
+.shopify-section--faq .faq .accordion__disclosure[aria-expanded="true"]{
+  background-color: #F4F4F4;
+}
+.shopify-section--faq .faq .accordion__disclosure[aria-expanded="true"] .accordion__content {
+  color: #505050;
+}
+.shopify-section--faq .faq .accordion__disclosure[aria-expanded="true"] .accordion__toggle{
+  font-weight: 800;
+}
+@media screen and (max-width:999px){
+  .shopify-section--faq .faqs-block{
+    grid-template-columns: unset;
+  }
+  .faqs-left{
+    max-width: 100%;
+  }
+  .faq__content{
+    flex-basis: 100%;
+  }
+}
