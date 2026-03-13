@@ -22,7 +22,6 @@
         },
         "message_eA78Ek": {
           "type": "message",
-          "disabled": true,
           "settings": {
             "text": "Phones staffed: Mon 12pm-4pm | Thurs  12pm-7pm | Fri 12pm-4pm | Sat 9am-3pm | Sun 10am-3pm"
           }
