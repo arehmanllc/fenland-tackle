@@ -247,8 +247,15 @@ height-observer {
 .announcement-bar.announcement-bar-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
-
+.header__primary-nav-item{
+  display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
 .announcement-bar.announcement-bar-container .announcement-bar {
   padding: 0;
 }
