@@ -1,6 +1,6 @@
 .slideshow__slide .h6{
   font-family: var(--text-font-family);
-  font-size: clamp(14px,3vw,18px);
+  font-size: clamp(14px,3vw,30px);
   line-height: 100%;
 }
 .slideshow__slide .button{
