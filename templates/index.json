@@ -39,17 +39,70 @@
             "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
         },
-        "image_K73Arb": {
+        "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Fenland_Tackle_Exchange_Fishing_Rods.png",
-            "mobile_image": "shopify://shop_images/Fenland_Tackle_Exchange_Fishing_Rods.png",
-            "subheading": "Quality tackle trusted by UK anglers for every water and every season.",
-            "title": "Find Your Perfect Spot",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "content_max_width": 400,
-            "button_1_text": "Shop All Products",
+            "image": "shopify://shop_images/Fentexchange_2.png",
+            "mobile_image": "shopify://shop_images/Fentexchange_2.png",
+            "subheading": "For anglers with more sense than money",
+            "title": "For anglers with more sense than money",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 580,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#204e36",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#204e36",
+            "button_2_text_color": "#ffffff",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "image_AYaWQB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pole_Fishing_in_Cambridgeshire.png",
+            "subheading": "Proven brands, zero hype",
+            "title": "Proven brands, zero hype",
+            "mobile_text_position": "place-self-end text-end",
+            "desktop_text_position": "sm:place-self-end sm:text-end",
+            "content_max_width": 440,
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify://collections/all-products",
+            "button_1_style": "solid",
+            "button_1_background": "#204e36",
+            "button_1_text_color": "#ffffff",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fentexchange_1.png",
+            "mobile_image": "shopify://shop_images/Fentexchange_1.png",
+            "subheading": "Pre-owned tackle bought and sold",
+            "title": "Pre-owned tackle bought and sold",
+            "mobile_text_position": "place-self-end-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "content_max_width": 580,
+            "button_1_text": "Shop Now",
             "button_1_link": "shopify://collections/all-products",
             "button_1_style": "solid",
             "button_1_background": "#204e36",
@@ -65,94 +118,10 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
-        },
-        "slide-2": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Fentexchange_2.png",
-            "mobile_image": "shopify://shop_images/Fentexchange_2.png",
-            "subheading": "",
-            "title": "<strong>For anglers with more sense than money</strong>",
-            "mobile_text_position": "place-self-end-start text-start",
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "content_max_width": 580,
-            "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/all-products",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
-          }
-        },
-        "image_AYaWQB": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Pole_Fishing_in_Cambridgeshire.png",
-            "subheading": "",
-            "title": "<strong>Proven brands, zero hype</strong>",
-            "mobile_text_position": "place-self-end text-end",
-            "desktop_text_position": "sm:place-self-end sm:text-end",
-            "content_max_width": 440,
-            "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/all-products",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
-          }
-        },
-        "slide-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Fentexchange_1.png",
-            "mobile_image": "shopify://shop_images/Fentexchange_1.png",
-            "subheading": "",
-            "title": "<strong>Pre-owned tackle bought and sold</strong>",
-            "mobile_text_position": "place-self-end-start text-start",
-            "desktop_text_position": "sm:place-self-end-start sm:text-start",
-            "content_max_width": 580,
-            "button_1_text": "Shop Now",
-            "button_1_link": "shopify://collections/all-products",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "shopify://collections/terminal-tackle",
-            "button_2_style": "solid",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#204e36",
-            "background": "",
-            "background_opacity": 0,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
-          }
         }
       },
       "block_order": [
         "image_ErQbMW",
-        "image_K73Arb",
         "slide-2",
         "image_AYaWQB",
         "slide-1"
@@ -177,7 +146,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "winter-warmers",
-            "image": "shopify://shop_images/Home_crp_2.jpg",
+            "image": "shopify://shop_images/Group_34.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -186,7 +155,7 @@
             "button_link": "shopify://collections/winter-warmers",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection-1": {
@@ -194,7 +163,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "bait",
-            "image": "shopify://shop_images/Category-Bait.jpg",
+            "image": "shopify://shop_images/Group_33.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -203,7 +172,7 @@
             "button_link": "shopify://collections/bait",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection-3": {
@@ -220,7 +189,7 @@
             "button_link": "shopify://collections/other-terminal-tackle",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_eWrdnA": {
@@ -237,7 +206,7 @@
             "button_link": "shopify://collections/hardware",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_XgBTM3": {
@@ -254,7 +223,7 @@
             "button_link": "shopify://collections/camping",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_NamhfX": {
@@ -271,7 +240,7 @@
             "button_link": "shopify://collections/luggage-storage",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
@@ -299,7 +268,7 @@
         "collections_per_row_desktop": 6,
         "stack_collections_mobile": true,
         "collections_per_row_mobile": "2",
-        "subheading": "FEATURED CATEGORIES",
+        "subheading": "Featured Categories",
         "title": "",
         "content": ""
       }
