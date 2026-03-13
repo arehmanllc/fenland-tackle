@@ -251,10 +251,12 @@ height-observer {
   justify-content: center;
 }
 .header__primary-nav-item{
-  display: flex;
-    align-items: center;
-    gap: 8px;
     font-size: 16px;
+}
+.header__primary-nav-item summary{
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 .announcement-bar.announcement-bar-container .announcement-bar {
   padding: 0;
@@ -499,10 +501,17 @@ height-observer {
 .product-title {
   font-family: var(--text-font-family) !important;
   letter-spacing: 0 !important;
-  font-weight: 500;
+  font-weight: 500 !important;
   line-height: 100% !important;
+  font-size: 15px !important;
 }
-
+.text-with-icons__item .h6{
+  font-size: 18px;
+}
+.text-with-icons__item p{
+  font-size: 16px;
+  line-height: 1.4;
+}
 @media screen and (max-width: 999px) {
   .search-phone-wrapper {
     display: none !important;
@@ -516,9 +525,9 @@ height-observer {
     justify-content: center;
   }
 
-  .collection-list .collection-card__arrow svg {
+  /* .collection-list .collection-card__arrow svg {
     height: clamp(25px, 5vw, 36px) !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 1000px) {
@@ -5211,7 +5220,8 @@ product-rerender {
 
 @media screen and (min-width: 1150px) {
   .header__primary-nav {
-    column-gap: 2.5rem;
+    /* column-gap: 2.5rem; */
+    column-gap: 1.75rem;
   }
 }
 
@@ -7276,11 +7286,11 @@ product-rerender {
 @media screen and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .features--zoom-image .zoom-image {
     transform-origin: center;
-    transition: scale 8s cubic-bezier(.25, .46, .45, .94);
+    transition: scale 2s cubic-bezier(.25, .46, .45, .94);
   }
 
   .features--zoom-image .group:hover .group-hover\:zoom {
-    scale: 1.2;
+    scale: 1.03;
   }
 }
 

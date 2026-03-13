@@ -18,6 +18,11 @@
 }
 .ft-coll .product-card__info .price-list{
   justify-content: flex-start;
+  font-family: var(--text-font-family) !important;
+}
+.price-list > *{
+  font-family: var(--text-font-family) !important;
+  color: #151515;
 }
 .ft-coll .product-card__quick-add-button{
   background-color: #416954;

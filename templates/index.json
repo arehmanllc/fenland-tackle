@@ -21,7 +21,7 @@
             "title": "Find Your Perfect Spot",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
-            "content_max_width": 400,
+            "content_max_width": 580,
             "button_1_text": "Shop All Products",
             "button_1_link": "shopify://collections/all-products",
             "button_1_style": "solid",
@@ -131,7 +131,7 @@
         "show_next_section_button": false,
         "media_size": "md",
         "show_initial_transition": true,
-        "autoplay": true,
+        "autoplay": false,
         "autoplay_pause_on_video": true,
         "cycle_speed": 5,
         "background": "#000000",
@@ -146,7 +146,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "winter-warmers",
-            "image": "shopify://shop_images/Group_34.png",
+            "image": "shopify://shop_images/Group_34_1.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -163,7 +163,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "bait",
-            "image": "shopify://shop_images/Group_33.png",
+            "image": "shopify://shop_images/Group_33_1.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -180,7 +180,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "other-terminal-tackle",
-            "image": "shopify://shop_images/pike_1.jpg",
+            "image": "shopify://shop_images/Group_32_1.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -197,7 +197,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "hardware",
-            "image": "shopify://shop_images/Hardware_b14369bb-3dff-4403-b935-146d0df10a4d.png",
+            "image": "shopify://shop_images/Group_31_1.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -214,7 +214,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "",
-            "image": "shopify://shop_images/category-bivvies_8243eebd-e0cf-4bb6-9f1a-0fae287ad014.png",
+            "image": "shopify://shop_images/Group_30_1.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -231,7 +231,7 @@
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "luggage-storage",
-            "image": "shopify://shop_images/EVA_luggage.jpg",
+            "image": "shopify://shop_images/Group_29_1_2x_6d22c1a3-c637-4ab9-a5ea-76057c37cbe7.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -310,10 +310,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Prologic.png",
-            "icon_width": 64,
+            "custom_icon": "shopify://shop_images/Vector.png",
+            "icon_width": 100,
             "mobile_icon_width": 48,
-            "title": "Free Local Delivery",
+            "title": "<strong>Free Local Delivery</strong>",
             "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
           }
         },
@@ -321,22 +321,22 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Prologic.png",
-            "icon_width": 64,
+            "custom_icon": "shopify://shop_images/Vector_1.png",
+            "icon_width": 80,
             "mobile_icon_width": 48,
-            "title": "Free Local Delivery",
-            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+            "title": "<strong>Free National Delivery</strong>",
+            "content": "<p>Enjoy free UK-wide delivery on orders over £100.</p>"
           }
         },
         "item_JmhUa9": {
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Prologic.png",
-            "icon_width": 64,
+            "custom_icon": "shopify://shop_images/Group_35931.png",
+            "icon_width": 80,
             "mobile_icon_width": 48,
-            "title": "Free Local Delivery",
-            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+            "title": "<strong>Manufacturers Warranty</strong>",
+            "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
           }
         }
       },
