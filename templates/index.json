@@ -126,12 +126,16 @@
         "image_AYaWQB",
         "slide-1"
       ],
+      "custom_css": [
+        ".slideshow__slide .h6 {line-height: 120%;}",
+        ".h1,:where(.prose h1) {line-height: 1;}"
+      ],
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
         "media_size": "md",
         "show_initial_transition": true,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 5,
         "background": "#000000",
@@ -314,7 +318,7 @@
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free Local Delivery</strong>",
-            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+            "content": "<p>Free Local Delivery<br/> (20 Miles from PE15 9LS)</p>"
           }
         },
         "item_jXRMYg": {
@@ -336,7 +340,7 @@
             "icon_width": 80,
             "mobile_icon_width": 48,
             "title": "<strong>Manufacturers Warranty</strong>",
-            "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
+            "content": "<p>New products include manufacturer warranty, used items do not.</p>"
           }
         }
       },
@@ -344,6 +348,9 @@
         "item_Kkjpya",
         "item_jXRMYg",
         "item_JmhUa9"
+      ],
+      "custom_css": [
+        ".section-spacing {padding: 40px;}"
       ],
       "settings": {
         "color_scheme": "scheme-3",
@@ -381,7 +388,7 @@
           "settings": {
             "style": "solid",
             "text": "Shop All Products",
-            "url": "",
+            "url": "shopify://collections/all",
             "background": "",
             "text_color": ""
           }
@@ -391,7 +398,7 @@
           "settings": {
             "style": "outline",
             "text": "Sell Your Tackle",
-            "url": "",
+            "url": "shopify://collections/fenlandtackleexchange",
             "background": "",
             "text_color": ""
           }
@@ -404,11 +411,16 @@
         "button_b8JyNE",
         "button_DKfMXb"
       ],
+      "custom_css": [
+        ".block {text-align: center;}",
+        ".block p {color: #416954; font-weight: 600;}",
+        ".block div {font-size: 17px; margin-block-start: 0.3rem;}"
+      ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/IMG_20260228_103831.jpg",
+        "image": "shopify://shop_images/shop-front-pastel_1_0e117631-e6c7-4d89-9ae2-49ce0886a45e.png",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
@@ -436,38 +448,216 @@
         "heading_HV8yMK",
         "richtext_pekmLE"
       ],
+      "custom_css": [
+        ".container {padding-top: 30px;}"
+      ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-c9161325-0349-41a9-8394-c40d7b20ed8d",
         "separate_section_with_border": true,
-        "content_width": "sm",
+        "content_width": "xs",
         "text_position": "center",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": true
       }
     },
     "scrolling_content_Lt8DRt": {
       "type": "scrolling-content",
       "blocks": {
+        "image_NtBidF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/plano_1.png"
+          }
+        },
+        "image_6pipjQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/penn-logo_1.png"
+          }
+        },
+        "image_MUf8V6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sensas_1.png"
+          }
+        },
+        "image_gijeap": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Reuben_Heaton_1.png"
+          }
+        },
+        "image_z4p4xX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Savage_Gear_1.png"
+          }
+        },
+        "image_Q7j7Pm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Stickybaits_1.png"
+          }
+        },
+        "image_xckj6V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shakespeare-logo_1.png"
+          }
+        },
+        "image_b8GE9D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Prologic_1.png"
+          }
+        },
+        "image_cz8eL8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Lineaeffe_1.png"
+          }
+        },
+        "image_ReGE37": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mistral_1.png"
+          }
+        },
+        "image_PkDVxz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Maxima_1.png"
+          }
+        },
+        "image_yqaCCG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NGT_1.png"
+          }
+        },
+        "image_cN89Ck": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/MADCAT_1.png"
+          }
+        },
+        "image_GttTr9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Gardner_1.png"
+          }
+        },
+        "image_pj77LD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JRC_1.png"
+          }
+        },
+        "image_PGY6KL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/mitchell_1.png"
+          }
+        },
+        "image_Y7jTnF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Navitas_1.png"
+          }
+        },
+        "image_DN9gzg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_35899.png"
+          }
+        },
+        "image_QBk7CQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Dinsmores_1.png"
+          }
+        },
+        "image_rQXq8h": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Enterprise_1.png"
+          }
+        },
+        "image_pPz74q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fortis_1.png"
+          }
+        },
+        "image_yCBykF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CatfishPro_1.png"
+          }
+        },
+        "image_mhCxgB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DAM_1.png"
+          }
+        },
+        "image_h47tQB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cult_Tackle_1.png"
+          }
+        },
+        "image_yb3p76": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Carp_Company_1.png"
+          }
+        },
         "image_CW6tHJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/30cm-hook-length-box.jpg"
+            "image": "shopify://shop_images/Abu_1.png"
           }
         },
         "image_fWeD8K": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/long.webp"
+            "image": "shopify://shop_images/Bait-Tech_1.png"
           }
         },
         "image_h3VFKy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6c9d71cf-7600-42fd-ba84-74775f0126ec_1_1.jpg"
+            "image": "shopify://shop_images/berkley_1.png"
           }
         }
       },
       "block_order": [
+        "image_NtBidF",
+        "image_6pipjQ",
+        "image_MUf8V6",
+        "image_gijeap",
+        "image_z4p4xX",
+        "image_Q7j7Pm",
+        "image_xckj6V",
+        "image_b8GE9D",
+        "image_cz8eL8",
+        "image_ReGE37",
+        "image_PkDVxz",
+        "image_yqaCCG",
+        "image_cN89Ck",
+        "image_GttTr9",
+        "image_pj77LD",
+        "image_PGY6KL",
+        "image_Y7jTnF",
+        "image_DN9gzg",
+        "image_QBk7CQ",
+        "image_rQXq8h",
+        "image_pPz74q",
+        "image_yCBykF",
+        "image_mhCxgB",
+        "image_h47tQB",
+        "image_yb3p76",
         "image_CW6tHJ",
         "image_fWeD8K",
         "image_h3VFKy"
@@ -515,8 +705,8 @@
           "type": "button",
           "settings": {
             "style": "solid",
-            "text": "Read More",
-            "url": "",
+            "text": "Explore More",
+            "url": "shopify://collections/solar-tackle-stainless-steel-3-rod-setup-buzz-bars-bank-sticks-goalpost-setup-carp-fishing-specialist-tackle-made-in-uk-fenland-tackle-exchange",
             "background": "",
             "text_color": ""
           }
@@ -531,7 +721,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
-        "image": "shopify://shop_images/2A_1.png",
+        "image": "shopify://shop_images/shop-front-pastel_1_1.png",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
@@ -541,17 +731,6 @@
     "tabs_featured_collections_jCVXcR": {
       "type": "tabs-featured-collections",
       "blocks": {
-        "collection_J93xhW": {
-          "type": "collection",
-          "settings": {
-            "collection": "christmas-gifts-ideas",
-            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
         "collection_VGcKg7": {
           "type": "collection",
           "settings": {
@@ -563,11 +742,20 @@
             "link_text": "View all"
           }
         },
-        "collection_EMfyYM": {
+        "collection_aAaV7D": {
           "type": "collection",
           "settings": {
-            "collection": "angling-pursuits",
-            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
+            "collection": "floats",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_CyHaCC": {
+          "type": "collection",
+          "settings": {
+            "collection": "hooks",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -595,14 +783,74 @@
             "link_url": "",
             "link_text": "View all"
           }
+        },
+        "collection_zrD4VM": {
+          "type": "collection",
+          "settings": {
+            "collection": "line-leaders",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_8TyJDy": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-terminal-tackle",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_J93xhW": {
+          "type": "collection",
+          "settings": {
+            "collection": "swivels",
+            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_EMfyYM": {
+          "type": "collection",
+          "settings": {
+            "collection": "angling-pursuits",
+            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_Tpd3C6": {
+          "type": "collection",
+          "settings": {
+            "collection": "assembled-rigs",
+            "products_count": 8,
+            "title": "Rigs",
+            "link_url": "",
+            "link_text": "View all"
+          }
         }
       },
       "block_order": [
-        "collection_J93xhW",
         "collection_VGcKg7",
-        "collection_EMfyYM",
+        "collection_aAaV7D",
+        "collection_CyHaCC",
         "collection_7VTdFc",
-        "collection_m4JNgc"
+        "collection_m4JNgc",
+        "collection_zrD4VM",
+        "collection_8TyJDy",
+        "collection_J93xhW",
+        "collection_EMfyYM",
+        "collection_Tpd3C6"
+      ],
+      "custom_css": [
+        ".featured-collections .ft-coll-sb_hd {max-width: none;}"
       ],
       "name": "Tabs Featured Collection",
       "settings": {
@@ -761,37 +1009,103 @@
         "remove_horizontal_spacing": false
       }
     },
-    "faq_KTWBHq": {
+    "faq_m9BNCh": {
       "type": "faq",
       "blocks": {
-        "question_yRjhcP": {
+        "question_ghmFeb": {
           "type": "question",
           "settings": {
-            "question": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "question": "<strong>What type of fishing tackle do you sell at Fenland Tackle Exchange?</strong>",
+            "answer": "<p>We offer a wide range of freshwater fishing tackle, including rods, reels, carp fishing tackle, predator gear, coarse fishing essentials, specimen fishing tackle, bite alarms, luggage, and more—all from dependable, lesser-known brands at affordable prices.</p>"
           }
         },
-        "question_DMRJGn": {
+        "question_QU6hCU": {
           "type": "question",
           "settings": {
-            "question": "How long will it take to get my orders?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "question": "<strong>How can I sell my pre-owned fishing tackle with Fenland Tackle Exchange?</strong>",
+            "answer": "<p>You can easily sell your fishing tackle by filling out our seller enquiry form. We buy job lots of pre-owned fishing gear, particularly complete carp set-ups, to help you upgrade your kit or make extra cash.<br/></p>"
           }
         },
-        "question_ek6DfC": {
+        "question_j6GBdV": {
           "type": "question",
           "settings": {
-            "question": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "question": "<strong>What makes your fishing bait more affordable?</strong>",
+            "answer": "<p>We source quality bait from lesser-known brands, allowing anglers to obtain dependable options without the high price tag. Our affordable fishing bait is perfect for carp, coarse, and predator fishing.<br/></p>"
+          }
+        },
+        "question_bqjD6f": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you buy complete carp set-ups?</strong>",
+            "answer": "<p>Yes! At Fenland Tackle Exchange, we specialise in buying complete carp set-ups and other fishing tackle. This is a great way for you to upgrade your kit while getting fair prices for your pre-owned gear.<br/></p>"
+          }
+        },
+        "question_qck4n7": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How do you ensure the quality of your fishing tackle?</strong>",
+            "answer": "<p>We only sell fishing tackle and bait that our team personally uses and depends on. Our hands-on experience allows us to curate a selection of reliable products that meet the needs of anglers at all levels.<br/></p>"
+          }
+        },
+        "question_d68Ngh": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I trade my old fishing gear for new tackle?</strong>",
+            "answer": "<p>Yes! We offer a straightforward selling process where you can trade your pre-owned fishing gear, allowing you to invest in new tackle while clearing out what you no longer need.<br/></p>"
+          }
+        },
+        "question_dk4CtB": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What additional fishing accessories do you carry?</strong>",
+            "answer": "<p>Along with fishing tackle, we carry a variety of fishing accessories, including rod pods, metalware, bivvies, shelters, mats, slings, scales, cooking equipment, and more to enhance your fishing experience.<br/><br/></p>"
+          }
+        },
+        "question_gAqTGH": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are your prices competitive compared to other tackle shops?</strong>",
+            "answer": "<p>Absolutely! Fenland Tackle Exchange is dedicated to providing anglers with some of the best deals on affordable fishing tackle in the UK. Our competitive pricing makes it easy for you to find reliable gear without overspending.<br/></p>"
+          }
+        },
+        "question_AYJUpf": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How can I contact you for more information?</strong>",
+            "answer": "<p>If you have further questions about our fishing tackle or the selling process, you can reach out via our <a href=\"https://fenlandtacklestore.co.uk/pages/contact\" target=\"_blank\">contact form </a>on the website, or you can call our customer service team directly.<br/></p>"
+          }
+        },
+        "question_rVjqxQ": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What is your returns policy on fishing tackle purchases?</strong>",
+            "answer": "<p>We want you to be completely satisfied with your purchase. Please refer to our Returns Policy on our website for detailed information on returns and exchanges of any fishing tackle you buy.<br/></p>"
+          }
+        },
+        "question_iWwaHn": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I find reviews of your fishing tackle online?</strong>",
+            "answer": "<p>Yes! Check our website for customer reviews and testimonials on various tackle and bait products. Our community of anglers shares their experiences to help you make informed purchasing decisions.<br/></p>"
           }
         }
       },
       "block_order": [
-        "question_yRjhcP",
-        "question_DMRJGn",
-        "question_ek6DfC"
+        "question_ghmFeb",
+        "question_QU6hCU",
+        "question_j6GBdV",
+        "question_bqjD6f",
+        "question_qck4n7",
+        "question_d68Ngh",
+        "question_dk4CtB",
+        "question_gAqTGH",
+        "question_AYJUpf",
+        "question_rVjqxQ",
+        "question_iWwaHn"
       ],
-      "name": "t:sections.faq.presets.faq.name",
+      "custom_css": [
+        ".faqs-left {position: sticky; top: 165px; height: fit-content;}"
+      ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -799,7 +1113,7 @@
         "sec_left_head": "Smarter decisions start with clear answers.",
         "sec_left_para": "Answers to your questions about our tackle, bait, delivery, and collection.",
         "subheading": "",
-        "title": "Frequently Asked Questions",
+        "title": "<strong>Frequently Asked Questions</strong>",
         "content": ""
       }
     },
@@ -809,13 +1123,14 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/10794-banner.jpg",
+        "image": "shopify://shop_images/bagup1_2_1.png",
+        "mobile_image": "shopify://shop_images/bagup1_2_1.png",
         "subheading": "",
         "title": "",
         "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
         "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_color": "#416954",
+        "overlay_opacity": 50
       }
     }
   },
@@ -832,7 +1147,7 @@
     "blog_posts_KCUVeE",
     "testimonials_TBzX6A",
     "174930763382116150",
-    "faq_KTWBHq",
+    "faq_m9BNCh",
     "newsletter"
   ]
 }
