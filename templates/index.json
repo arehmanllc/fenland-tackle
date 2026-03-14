@@ -340,7 +340,7 @@
             "icon_width": 80,
             "mobile_icon_width": 48,
             "title": "<strong>Manufacturers Warranty</strong>",
-            "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
+            "content": "<p>New products include manufacturer warranty, used items do not.</p>"
           }
         }
       },
@@ -348,6 +348,9 @@
         "item_Kkjpya",
         "item_jXRMYg",
         "item_JmhUa9"
+      ],
+      "custom_css": [
+        ".section-spacing {padding: 40px;}"
       ],
       "settings": {
         "color_scheme": "scheme-3",
@@ -407,6 +410,11 @@
         "liquid_QRgMq7",
         "button_b8JyNE",
         "button_DKfMXb"
+      ],
+      "custom_css": [
+        ".block {text-align: center;}",
+        ".block p {color: #416954; font-weight: 600;}",
+        ".block div {font-size: 17px; margin-block-start: 0.3rem;}"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
