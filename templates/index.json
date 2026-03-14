@@ -448,6 +448,9 @@
         "heading_HV8yMK",
         "richtext_pekmLE"
       ],
+      "custom_css": [
+        ".container {padding-top: 30px;}"
+      ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
         "color_scheme": "scheme-c9161325-0349-41a9-8394-c40d7b20ed8d",
@@ -790,6 +793,9 @@
         "collection_EMfyYM",
         "collection_7VTdFc",
         "collection_m4JNgc"
+      ],
+      "custom_css": [
+        ".featured-collections .ft-coll-sb_hd {max-width: none;}"
       ],
       "name": "Tabs Featured Collection",
       "settings": {
