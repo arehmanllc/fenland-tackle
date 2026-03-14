@@ -794,17 +794,6 @@
             "link_text": "View all"
           }
         },
-        "collection_EMfyYM": {
-          "type": "collection",
-          "settings": {
-            "collection": "angling-pursuits",
-            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
         "collection_8TyJDy": {
           "type": "collection",
           "settings": {
@@ -820,6 +809,17 @@
           "settings": {
             "collection": "swivels",
             "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_EMfyYM": {
+          "type": "collection",
+          "settings": {
+            "collection": "angling-pursuits",
+            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -844,9 +844,9 @@
         "collection_7VTdFc",
         "collection_m4JNgc",
         "collection_zrD4VM",
-        "collection_EMfyYM",
         "collection_8TyJDy",
         "collection_J93xhW",
+        "collection_EMfyYM",
         "collection_Tpd3C6"
       ],
       "custom_css": [
@@ -1057,13 +1057,13 @@
         "color_scheme": "",
         "separate_section_with_border": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/10794-banner.jpg",
+        "image": "shopify://shop_images/bagup1_2_1.png",
         "subheading": "",
         "title": "",
         "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
         "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_color": "#416954",
+        "overlay_opacity": 50
       }
     }
   },
