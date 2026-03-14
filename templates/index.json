@@ -1103,6 +1103,9 @@
         "question_rVjqxQ",
         "question_iWwaHn"
       ],
+      "custom_css": [
+        ".faqs-left{position: sticky; border: 200px; height: fit-content;}"
+      ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
