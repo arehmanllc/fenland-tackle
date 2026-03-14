@@ -291,19 +291,20 @@
         "content": ""
       }
     },
-    "newsletter_WpJz4k": {
+    "newsletter_TFpe7E": {
       "type": "newsletter",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/10794-banner.jpg",
+        "image": "shopify://shop_images/bagup1_2_1.png",
+        "mobile_image": "shopify://shop_images/bagup1_2_1.png",
         "subheading": "",
         "title": "",
         "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
         "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_color": "#416954",
+        "overlay_opacity": 50
       }
     }
   },
@@ -312,6 +313,6 @@
     "related-products",
     "blog_posts_YitjXX",
     "faq_AW7nbB",
-    "newsletter_WpJz4k"
+    "newsletter_TFpe7E"
   ]
 }
