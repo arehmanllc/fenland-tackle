@@ -127,14 +127,15 @@
         "slide-1"
       ],
       "custom_css": [
-        ".slideshow__slide .h6{line-height: 120%;}"
+        ".slideshow__slide .h6 {line-height: 120%;}",
+        ".h1,:where(.prose h1) {line-height: 1;}"
       ],
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
         "media_size": "md",
         "show_initial_transition": true,
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_pause_on_video": true,
         "cycle_speed": 5,
         "background": "#000000",
@@ -317,7 +318,7 @@
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free Local Delivery</strong>",
-            "content": "<p>Get free delivery in your local area when you spend over £25.</p>"
+            "content": "<p>Free Local Delivery<br/> (20 Miles from PE15 9LS)</p>"
           }
         },
         "item_jXRMYg": {
