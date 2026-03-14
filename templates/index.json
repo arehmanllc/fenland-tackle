@@ -1104,7 +1104,7 @@
         "question_iWwaHn"
       ],
       "custom_css": [
-        ".faqs-left{position: sticky; border: 200px; height: fit-content;}"
+        ".faqs-left {position: sticky; top: 200px; height: fit-content;}"
       ],
       "settings": {
         "color_scheme": "",
