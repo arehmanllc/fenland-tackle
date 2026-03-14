@@ -731,6 +731,17 @@
     "tabs_featured_collections_jCVXcR": {
       "type": "tabs-featured-collections",
       "blocks": {
+        "collection_VGcKg7": {
+          "type": "collection",
+          "settings": {
+            "collection": "feeders",
+            "coll_image": "shopify://shop_images/IMG_20260228_103831.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
         "collection_aAaV7D": {
           "type": "collection",
           "settings": {
@@ -745,17 +756,6 @@
           "type": "collection",
           "settings": {
             "collection": "hooks",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
-        "collection_VGcKg7": {
-          "type": "collection",
-          "settings": {
-            "collection": "feeders",
-            "coll_image": "shopify://shop_images/IMG_20260228_103831.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -838,9 +838,9 @@
         }
       },
       "block_order": [
+        "collection_VGcKg7",
         "collection_aAaV7D",
         "collection_CyHaCC",
-        "collection_VGcKg7",
         "collection_7VTdFc",
         "collection_m4JNgc",
         "collection_zrD4VM",
