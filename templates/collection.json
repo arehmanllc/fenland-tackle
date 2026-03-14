@@ -37,7 +37,7 @@
         "show_grid_mode_selector": true,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "filter_layout": "drawer",
+        "filter_layout": "sidebar",
         "quick_links_menu": "",
         "show_sort_by": true,
         "show_filters": true,

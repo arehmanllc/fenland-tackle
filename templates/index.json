@@ -746,6 +746,7 @@
           "type": "collection",
           "settings": {
             "collection": "floats",
+            "coll_image": "shopify://shop_images/IMG_20260314_180102.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -756,6 +757,7 @@
           "type": "collection",
           "settings": {
             "collection": "hooks",
+            "coll_image": "shopify://shop_images/shop-front-pastel_1_1.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -788,6 +790,7 @@
           "type": "collection",
           "settings": {
             "collection": "line-leaders",
+            "coll_image": "shopify://shop_images/shop-front-pastel_1_0e117631-e6c7-4d89-9ae2-49ce0886a45e.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -798,6 +801,7 @@
           "type": "collection",
           "settings": {
             "collection": "other-terminal-tackle",
+            "coll_image": "shopify://shop_images/IMG_20260313_185826.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -830,6 +834,7 @@
           "type": "collection",
           "settings": {
             "collection": "assembled-rigs",
+            "coll_image": "shopify://shop_images/Rigs_3.png",
             "products_count": 8,
             "title": "Rigs",
             "link_url": "",
