@@ -126,6 +126,9 @@
         "image_AYaWQB",
         "slide-1"
       ],
+      "custom_css": [
+        ".slideshow__slide .h6{line-height: 120%;}"
+      ],
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
