@@ -731,11 +731,20 @@
     "tabs_featured_collections_jCVXcR": {
       "type": "tabs-featured-collections",
       "blocks": {
-        "collection_J93xhW": {
+        "collection_aAaV7D": {
           "type": "collection",
           "settings": {
-            "collection": "christmas-gifts-ideas",
-            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "collection": "floats",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_CyHaCC": {
+          "type": "collection",
+          "settings": {
+            "collection": "hooks",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -747,17 +756,6 @@
           "settings": {
             "collection": "feeders",
             "coll_image": "shopify://shop_images/IMG_20260228_103831.jpg",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
-          }
-        },
-        "collection_EMfyYM": {
-          "type": "collection",
-          "settings": {
-            "collection": "angling-pursuits",
-            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -785,14 +783,71 @@
             "link_url": "",
             "link_text": "View all"
           }
+        },
+        "collection_zrD4VM": {
+          "type": "collection",
+          "settings": {
+            "collection": "line-leaders",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_EMfyYM": {
+          "type": "collection",
+          "settings": {
+            "collection": "angling-pursuits",
+            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_8TyJDy": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-terminal-tackle",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_J93xhW": {
+          "type": "collection",
+          "settings": {
+            "collection": "swivels",
+            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_Tpd3C6": {
+          "type": "collection",
+          "settings": {
+            "collection": "assembled-rigs",
+            "products_count": 8,
+            "title": "Rigs",
+            "link_url": "",
+            "link_text": "View all"
+          }
         }
       },
       "block_order": [
-        "collection_J93xhW",
+        "collection_aAaV7D",
+        "collection_CyHaCC",
         "collection_VGcKg7",
-        "collection_EMfyYM",
         "collection_7VTdFc",
-        "collection_m4JNgc"
+        "collection_m4JNgc",
+        "collection_zrD4VM",
+        "collection_EMfyYM",
+        "collection_8TyJDy",
+        "collection_J93xhW",
+        "collection_Tpd3C6"
       ],
       "custom_css": [
         ".featured-collections .ft-coll-sb_hd {max-width: none;}"
