@@ -388,7 +388,7 @@
           "settings": {
             "style": "solid",
             "text": "Shop All Products",
-            "url": "",
+            "url": "shopify://collections/all",
             "background": "",
             "text_color": ""
           }
@@ -398,7 +398,7 @@
           "settings": {
             "style": "outline",
             "text": "Sell Your Tackle",
-            "url": "",
+            "url": "shopify://collections/fenlandtackleexchange",
             "background": "",
             "text_color": ""
           }
@@ -420,7 +420,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/IMG_20260228_103831.jpg",
+        "image": "shopify://shop_images/shop-front-pastel_1_0e117631-e6c7-4d89-9ae2-49ce0886a45e.png",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
@@ -452,34 +452,69 @@
       "settings": {
         "color_scheme": "scheme-c9161325-0349-41a9-8394-c40d7b20ed8d",
         "separate_section_with_border": true,
-        "content_width": "sm",
+        "content_width": "xs",
         "text_position": "center",
-        "remove_vertical_spacing": false
+        "remove_vertical_spacing": true
       }
     },
     "scrolling_content_Lt8DRt": {
       "type": "scrolling-content",
       "blocks": {
+        "image_NtBidF": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_rQXq8h": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_pPz74q": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_yCBykF": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_mhCxgB": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_h47tQB": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_yb3p76": {
+          "type": "image",
+          "settings": {}
+        },
         "image_CW6tHJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/30cm-hook-length-box.jpg"
+            "image": "shopify://shop_images/Abu_1.png"
           }
         },
         "image_fWeD8K": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/long.webp"
+            "image": "shopify://shop_images/Bait-Tech_1.png"
           }
         },
         "image_h3VFKy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6c9d71cf-7600-42fd-ba84-74775f0126ec_1_1.jpg"
+            "image": "shopify://shop_images/berkley_1.png"
           }
         }
       },
       "block_order": [
+        "image_NtBidF",
+        "image_rQXq8h",
+        "image_pPz74q",
+        "image_yCBykF",
+        "image_mhCxgB",
+        "image_h47tQB",
+        "image_yb3p76",
         "image_CW6tHJ",
         "image_fWeD8K",
         "image_h3VFKy"
