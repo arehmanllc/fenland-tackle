@@ -18,6 +18,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Logo.png",
+            "content": "<p>At Fenland Tackle Exchange, we pride ourselves on sourcing fishing tackle, bait, and clothing from long-established brands that may not always be the most fashionable but have proven their worth on the water. In addition to nationwide delivery, we offer convenient collection - including evenings and weekends - from our 'tackle trade counter' in March, PE15.</p>",
             "image_width": 150,
             "link": ""
           }
