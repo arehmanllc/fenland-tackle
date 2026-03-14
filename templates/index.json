@@ -702,8 +702,8 @@
           "type": "button",
           "settings": {
             "style": "solid",
-            "text": "Read More",
-            "url": "",
+            "text": "Explore More",
+            "url": "shopify://collections/solar-tackle-stainless-steel-3-rod-setup-buzz-bars-bank-sticks-goalpost-setup-carp-fishing-specialist-tackle-made-in-uk-fenland-tackle-exchange",
             "background": "",
             "text_color": ""
           }
@@ -718,7 +718,7 @@
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
-        "image": "shopify://shop_images/2A_1.png",
+        "image": "shopify://shop_images/shop-front-pastel_1_1.png",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
