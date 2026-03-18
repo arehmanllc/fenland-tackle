@@ -206,7 +206,8 @@
       "custom_css": [
         ".product-title {font-size: var(--text-h2) !important;}",
         ".share-and-more-info-row__store-info {}",
-        ".horizontal-product-card__info .product-title {font-size: 15px !important;}"
+        ".horizontal-product-card__info .product-title {font-size: 15px !important;}",
+        ".button-tab{padding: 16px 12px 9px;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
