@@ -207,7 +207,7 @@
         ".product-title {font-size: var(--text-h2) !important;}",
         ".share-and-more-info-row__store-info {}",
         ".horizontal-product-card__info .product-title {font-size: 15px !important;}",
-        ".button-tab{padding: 16px 12px 9px;}"
+        ".button-tab {padding: 16px 12px 9px;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
@@ -227,15 +227,15 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
         "recommendations_count": 10,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 0.4,
         "subheading": "",
         "title": "You May Also Like",
         "content": ""
