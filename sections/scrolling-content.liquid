@@ -21,11 +21,11 @@
       z-index: 5;
     }
 
-     
-    #shopify-section-{{ section.id }} .is-middle {
-        transform: scale(1.2);
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .is-middle {
+        transform: scale(1.3);
+      }
     }
-    
 
     #shopify-section-{{ section.id }} marquee-text {
       overflow: visible;
