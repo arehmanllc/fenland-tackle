@@ -424,7 +424,7 @@
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
       }
     },
     "rich_text_AzdJdY": {
