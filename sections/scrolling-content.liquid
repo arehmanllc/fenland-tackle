@@ -17,24 +17,13 @@
     }
 
     #shopify-section-{{ section.id }} .is-middle {
-      --scale-factor: 1.15;
-      --shift-factor: 7.5%;
-      transform: scale(var(--scale-factor));
+      transform: scale(1.1);
       z-index: 5;
-    }
-
-    #shopify-section-{{ section.id }} .is-middle-left {
-      transform: translateX(calc(-1 * var(--shift-factor))) scale(var(--scale-factor));
-    }
-
-    #shopify-section-{{ section.id }} .is-middle-right {
-      transform: translateX(var(--shift-factor)) scale(var(--scale-factor));
     }
 
     @media screen and (min-width: 750px) {
       #shopify-section-{{ section.id }} .is-middle {
-        --scale-factor: 1.25;
-        --shift-factor: 12.5%;
+        transform: scale(1.2);
       }
     }
 
@@ -110,24 +99,14 @@
 
         // Update classes for all items
         for (let i = 0; i < items.length; i++) {
-          items[i].classList.remove('is-middle', 'is-middle-left', 'is-middle-right');
-        }
-
-        if (distances.length > 0) {
-          const middleItems = [];
-          if (distances[0]) middleItems.push(distances[0].el);
-          if (distances[1]) middleItems.push(distances[1].el);
+          const item = items[i];
+          const isAmongTopTwo = (distances[0] && item === distances[0].el) || 
+                                (distances[1] && item === distances[1].el);
           
-          // Sort middle items by left position to know which is left/right
-          middleItems.sort((a, b) => {
-            return a.getBoundingClientRect().left - b.getBoundingClientRect().left;
-          });
-          
-          if (middleItems.length === 2) {
-            middleItems[0].classList.add('is-middle', 'is-middle-left');
-            middleItems[1].classList.add('is-middle', 'is-middle-right');
-          } else if (middleItems.length === 1) {
-            middleItems[0].classList.add('is-middle');
+          if (isAmongTopTwo) {
+            item.classList.add('is-middle');
+          } else {
+            item.classList.remove('is-middle');
           }
         }
 
