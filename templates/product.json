@@ -45,7 +45,7 @@
             "link": "",
             "icon": "none",
             "custom_icon": "shopify://shop_images/Container.svg",
-            "icon_width": 32,
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
@@ -58,7 +58,7 @@
             "link": "",
             "icon": "none",
             "custom_icon": "shopify://shop_images/Container_1.svg",
-            "icon_width": 32,
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
@@ -71,7 +71,7 @@
             "link": "",
             "icon": "none",
             "custom_icon": "shopify://shop_images/Container_2.svg",
-            "icon_width": 32,
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
