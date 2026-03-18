@@ -42,9 +42,9 @@
         "links_V3JU4Q": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "terms-and-policies",
             "show_menu_title": true,
-            "menu_title": "<strong>Find Out More</strong>"
+            "menu_title": "<strong>Terms and Policies </strong>"
           }
         }
       },
