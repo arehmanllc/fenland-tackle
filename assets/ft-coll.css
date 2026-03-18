@@ -26,26 +26,26 @@
 .featured-collections .product-list--carousel .product-card {
   /* padding: 15px; */
   height: 100%;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .featured-collections .product-list--carousel .product-card .product-card__image {
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Force all product images to the same height */
 .featured-collections .product-list--carousel .product-card .product-card__figure {
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .featured-collections .product-list--carousel .product-card .product-card__figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 

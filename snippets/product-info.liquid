@@ -528,26 +528,46 @@ Supported variables
             {%- endif -%}
 
           {%- when 'share_buttons' -%}
-            <share-button>
-              <button class="share-buttons share-buttons--native link-faded" hidden>
-                <span class="smallcaps text-xxs">{{- 'general.social.share' | t -}}</span>
-                {%- render 'icon' with 'share' -%}
-              </button>
+            <div class="share-and-more-info-row" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1rem;">
+              {%- comment -%} LEFT: View store information {%- endcomment -%}
+              {%- assign pick_up_avails = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+              {%- if pick_up_avails.size > 0 -%}
+                {%- assign closest = pick_up_avails.first -%}
+                {%- capture store_drawer_id -%}store-availability-drawer-{{ product.selected_or_first_available_variant.product.id }}{%- endcapture -%}
+                {%- if closest.available -%}
+                  {%- if pick_up_avails.size == 1 -%}
+                    {%- assign store_button_text = 'product.store_availability.view_store_info' | t -%}
+                  {%- else -%}
+                    {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
+                  {%- endif -%}
+                {%- else -%}
+                  {%- if pick_up_avails.size > 1 -%}
+                    {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
+                  {%- endif -%}
+                {%- endif -%}
+                <div class="share-and-more-info-row__store-info">
+                  <button type="button" class="link" aria-controls="{{ store_drawer_id }}" aria-expanded="false">{{ store_button_text }}</button>
+                </div>
+              {%- endif -%}
 
-              <div class="share-buttons">
-                <span class="smallcaps text-xxs text-subdued">{{- 'general.social.share' | t -}}</span>
-                {%- render 'share-buttons', url: product.url, title: product.title, description: product.description, layout: 'list' -%}
+              {%- comment -%} RIGHT: Share buttons {%- endcomment -%}
+              <div class="share-and-more-info-row__share">
+                <share-button>
+                  <button class="share-buttons share-buttons--native link-faded" hidden>
+                    <span class="smallcaps text-xxs">{{- 'general.social.share' | t -}}</span>
+                    {%- render 'icon' with 'share' -%}
+                  </button>
+
+                  <div class="share-buttons">
+                    <span class="smallcaps text-xxs text-subdued">{{- 'general.social.share' | t -}}</span>
+                    {%- render 'share-buttons', url: product.url, title: product.title, description: product.description, layout: 'list' -%}
+                  </div>
+                </share-button>
               </div>
-            </share-button>
+            </div>
 
           {%- when 'more_information' -%}
-            {%- comment -%}We need at least one block compatible with below gallery information{%- endcomment -%}
-            {%- if block.settings.text != blank and has_content_below_gallery -%}
-              <a href="#product-extra-information" class="product-info__more-info md-max:hidden">
-                <span class="smallcaps text-xxs">{{- block.settings.text -}}</span>
-                {%- render 'icon' with 'chevron-right' -%}
-              </a>
-            {%- endif -%}
+            {%- comment -%} Now rendered inside the share_buttons block above {%- endcomment -%}
         {%- endcase -%}
       {%- endcapture -%}
       
