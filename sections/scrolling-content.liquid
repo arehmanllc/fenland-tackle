@@ -11,140 +11,27 @@
   {%- assign color_scheme_hash = section.settings.background | default: settings.default_color_scheme.settings.background | md5 -%}
 
   <div class="section-spacing color-scheme color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.background != blank and section.settings.background != 'rgba(0,0,0,0)' and section.settings.background != settings.default_color_scheme.settings.background %}section-spacing--padded{% endif %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}" style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}">
-    <style>
-      #shopify-section-{{ section.id }} .scrolling-content {
-        overflow: visible;
-        display: block;
-        width: 100%;
-      }
-      #shopify-section-{{ section.id }} .scrolling-content__item {
-        display: flex;
-        align-items: center;
-        gap: var(--scrolling-content-content-gap);
-        padding: 60px 0; /* Room for uplift */
-        margin-block: -40px; /* Offset padding to keep layout tight */
-      }
-      .scrolling-content__block {
-        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), 
-                    opacity 0.6s ease,
-                    filter 0.6s ease;
-        will-change: transform;
-        opacity: 0.5;
-        filter: blur(1px);
-        flex-shrink: 0;
-      }
-      .scrolling-content__block.is-uplifted {
-        transform: translateY(-30px) scale(1.15);
-        opacity: 1;
-        filter: blur(0);
-        z-index: 10;
-        position: relative;
-      }
-      /* Ensure images don't break flex */
-      .scrolling-content__image img {
-        display: block;
-        height: auto;
-      }
-    </style>
+    <marquee-text speed="{{ section.settings.scrolling_speed }}" direction="{{ section.settings.scroll_direction }}" {% if section.settings.pause_on_hover %}pause-on-hover{% endif %} class="scrolling-content">
+      <div class="scrolling-content__item">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'image' -%}
+              {%- if block.settings.image -%}
+                <div class="scrolling-content__image" {{ block.shopify_attributes }}>
+                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: '(max-width: 699px) 90px, 180px', widths: '90,180,270,360,540' -}}
+                </div>
+              {%- endif -%}
 
-    <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" direction="{{ section.settings.scroll_direction }}" {% if section.settings.pause_on_hover %}pause-on-hover{% endif %} class="scrolling-content scrolling-text--wrapper marquee-true direction-{{ section.settings.scroll_direction }}">
-      <div class="scrolling-content__item scrolling-text-marquee--slide">
-        {%- for i in (1..5) -%}
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when 'image' -%}
-                {%- if block.settings.image -%}
-                  <div class="scrolling-content__image scrolling-content__block" {{ block.shopify_attributes }}>
-                    {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: '(max-width: 699px) 90px, 180px', widths: '90,180,270,360,540' -}}
-                  </div>
-                {%- endif -%}
-
-              {%- when 'text' -%}
-                {%- if block.settings.text != blank -%}
-                  <p class="scrolling-content__text scrolling-content__block {% if section.settings.text_font == 'heading' %}heading{% endif %}" {{ block.shopify_attributes }}>
-                    {{- block.settings.text -}}
-                  </p>
-                {%- endif -%}
-            {%- endcase -%}
-          {%- endfor -%}
+            {%- when 'text' -%}
+              {%- if block.settings.text != blank -%}
+                <p class="scrolling-content__text {% if section.settings.text_font == 'heading' %}heading{% endif %}" {{ block.shopify_attributes }}>
+                  {{- block.settings.text -}}
+                </p>
+              {%- endif -%}
+          {%- endcase -%}
         {%- endfor -%}
       </div>
     </marquee-text>
-
-    <script>
-      (function() {
-        const section = document.querySelector('#shopify-section-{{ section.id }}');
-        const container = section?.querySelector('marquee-text');
-        if (!container) return;
-
-        let animationFrameId = null;
-
-        function updateEffect() {
-          const blocks = container.querySelectorAll('.scrolling-content__block');
-          if (!blocks.length) {
-            animationFrameId = requestAnimationFrame(updateEffect);
-            return;
-          }
-
-          const viewportCenter = window.innerWidth / 2;
-          
-          // Calculate distances to center
-          const blockData = [];
-          for (let i = 0; i < blocks.length; i++) {
-            const block = blocks[i];
-            const rect = block.getBoundingClientRect();
-            
-            // Optimization: skip blocks far outside the viewport
-            if (rect.right < -100 || rect.left > window.innerWidth + 100) {
-              block.classList.remove('is-uplifted');
-              continue;
-            }
-
-            const blockCenter = rect.left + rect.width / 2;
-            blockData.push({
-              element: block,
-              distance: Math.abs(viewportCenter - blockCenter)
-            });
-          }
-
-          // Sort by distance
-          blockData.sort((a, b) => a.distance - b.distance);
-
-          // Get the 2 closest blocks
-          const middleItems = blockData.slice(0, 2);
-          
-          // Apply/Remove class
-          for (let i = 0; i < blocks.length; i++) {
-            const block = blocks[i];
-            const isMiddle = middleItems.some(item => item.element === block);
-            
-            if (isMiddle) {
-              block.classList.add('is-uplifted');
-            } else {
-              block.classList.remove('is-uplifted');
-            }
-          }
-
-          animationFrameId = requestAnimationFrame(updateEffect);
-        }
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              if (!animationFrameId) updateEffect();
-            } else {
-              if (animationFrameId) {
-                cancelAnimationFrame(animationFrameId);
-                animationFrameId = null;
-              }
-            }
-          });
-        }, { threshold: 0 });
-
-        observer.observe(section);
-      })();
-    </script>
-
   </div>
 {%- endif -%}
 
