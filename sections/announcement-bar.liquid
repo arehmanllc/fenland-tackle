@@ -30,6 +30,22 @@
         --announcement-bar-font-size: {{ section.settings.desktop_font_size | divided_by: 16.0 }}rem;
       }
     }
+
+    /* Dynamic height: only the active slide determines the bar height */
+    #shopify-section-{{ section.id }} .announcement-bar__carousel {
+      grid-template-rows: auto;
+    }
+
+    #shopify-section-{{ section.id }} .announcement-bar__carousel > .prose.heading {
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    #shopify-section-{{ section.id }} .announcement-bar__carousel > .prose.heading:not(.is-selected) {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
   </style>
 
   <height-observer variable="announcement-bar">
