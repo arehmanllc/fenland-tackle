@@ -206,7 +206,7 @@
       "custom_css": [
         ".product-title {font-size: var(--text-h2) !important;}",
         ".share-and-more-info-row__store-info {}",
-        ".complementary-products__header .product-title{font-size: 15px;}"
+        ".complementary-products__header .product-title {font-size: 15px !important;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
