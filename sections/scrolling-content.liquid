@@ -6,6 +6,30 @@
 
       font-size: clamp({{ section.settings.text_font_size_mobile }}px, calc({{ section.settings.text_font_size_mobile }}px + ({{ section.settings.text_font_size_desktop }} - {{ section.settings.text_font_size_mobile }}) * ((100vw - 375px) / (1400 - 375))), {{ section.settings.text_font_size_desktop }}px);
     }
+
+    #shopify-section-{{ section.id }} .scrolling-content__image,
+    #shopify-section-{{ section.id }} .scrolling-content__text {
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      will-change: transform;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    #shopify-section-{{ section.id }} .is-middle {
+      transform: translateY(-15px) scale(1.1);
+      z-index: 5;
+    }
+
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .is-middle {
+        transform: translateY(-25px) scale(1.18);
+      }
+    }
+
+    #shopify-section-{{ section.id }} marquee-text {
+      overflow: visible;
+    }
   </style>
 
   {%- assign color_scheme_hash = section.settings.background | default: settings.default_color_scheme.settings.background | md5 -%}
@@ -33,6 +57,74 @@
       </div>
     </marquee-text>
   </div>
+
+  <script>
+    (function() {
+      const section = document.querySelector('#shopify-section-{{ section.id }}');
+      if (!section) return;
+
+      const marquee = section.querySelector('marquee-text');
+      if (!marquee) return;
+
+      let frameId;
+      let isVisible = false;
+
+      const update = () => {
+        if (!isVisible) return;
+
+        const middleX = window.innerWidth / 2;
+        const items = marquee.querySelectorAll('.scrolling-content__image, .scrolling-content__text');
+        
+        if (items.length === 0) {
+          frameId = requestAnimationFrame(update);
+          return;
+        }
+
+        const distances = [];
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          const rect = item.getBoundingClientRect();
+          const itemCenterX = rect.left + rect.width / 2;
+          
+          // Only consider items that are somewhat on screen to avoid unnecessary calculations, 
+          // although with small number of items it doesn't matter much.
+          distances.push({
+            el: item,
+            dist: Math.abs(itemCenterX - middleX)
+          });
+        }
+
+        // Sort to find the 2 closest to center
+        distances.sort((a, b) => a.dist - b.dist);
+
+        // Update classes for all items
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          const isAmongTopTwo = (distances[0] && item === distances[0].el) || 
+                                (distances[1] && item === distances[1].el);
+          
+          if (isAmongTopTwo) {
+            item.classList.add('is-middle');
+          } else {
+            item.classList.remove('is-middle');
+          }
+        }
+
+        frameId = requestAnimationFrame(update);
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        isVisible = entries[0].isIntersecting;
+        if (isVisible) {
+          frameId = requestAnimationFrame(update);
+        } else {
+          cancelAnimationFrame(frameId);
+        }
+      }, { threshold: 0 });
+
+      observer.observe(marquee);
+    })();
+  </script>
 {%- endif -%}
 
 {% schema %}
