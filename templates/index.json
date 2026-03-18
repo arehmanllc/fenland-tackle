@@ -665,7 +665,7 @@
       "name": "t:sections.scrolling_content.presets.scrolling_content.name",
       "settings": {
         "separate_section_with_border": false,
-        "scrolling_speed": 0.3,
+        "scrolling_speed": 0.2,
         "scroll_direction": "left",
         "pause_on_hover": false,
         "text_font": "heading",
