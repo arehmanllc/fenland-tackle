@@ -226,6 +226,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".product-card__info.empty\\:hidden{background: #41695433;}"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "separate_section_with_border": false,
