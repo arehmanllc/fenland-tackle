@@ -6,13 +6,83 @@ SOCIAL MEDIA
 Output a list of social media icons based on the social URL settings.
 
 * layout: either support "list" or "block" (default to list)
+* icon_set: optional icon set name (eg: "footer")
 {%- endcomment -%}
+
+{%- capture footer_icon_facebook -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<g clip-path="url(#clip0_19_3511)">
+<g clip-path="url(#clip1_19_3511)">
+<path d="M21.6653 21.2493H23.7487L24.582 17.916H21.6653V16.2494C21.6653 15.391 21.6653 14.5827 23.332 14.5827H24.582V11.7827C24.3103 11.7469 23.2845 11.666 22.2012 11.666C19.9387 11.666 18.332 13.0469 18.332 15.5827V17.916H15.832V21.2493H18.332V28.3327H21.6653V21.2493Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_19_3511">
+<rect width="20" height="20" fill="white" transform="translate(10 10)"/>
+</clipPath>
+<clipPath id="clip1_19_3511">
+<rect width="20" height="20" fill="white" transform="translate(10 10)"/>
+</clipPath>
+</defs>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_twitter -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<path d="M21.6175 18.66L27.9463 11.25H26.4462L20.9525 17.6837L16.5625 11.25H11.5L18.1375 20.98L11.5 28.75H13L18.8025 21.955L23.4388 28.75H28.5012L21.6175 18.66ZM19.5638 21.065L18.8913 20.0962L13.54 12.3875H15.8438L20.1613 18.6088L20.8337 19.5775L26.4475 27.665H24.1437L19.5638 21.065Z" fill="black"/>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_instagram -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<g clip-path="url(#clip0_19_3519)">
+<path d="M24.1667 11.667H15.8334C13.5322 11.667 11.6667 13.5325 11.6667 15.8337V24.167C11.6667 26.4682 13.5322 28.3337 15.8334 28.3337H24.1667C26.4679 28.3337 28.3334 26.4682 28.3334 24.167V15.8337C28.3334 13.5325 26.4679 11.667 24.1667 11.667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.5834 15.417H24.5918M23.3334 19.4753C23.4363 20.1689 23.3178 20.8772 22.9949 21.4995C22.672 22.1218 22.1611 22.6265 21.5348 22.9417C20.9085 23.2569 20.1988 23.3667 19.5066 23.2553C18.8144 23.1439 18.1749 22.8171 17.6791 22.3213C17.1834 21.8255 16.8565 21.1861 16.7452 20.4938C16.6338 19.8016 16.7435 19.0919 17.0587 18.4656C17.3739 17.8394 17.8786 17.3284 18.5009 17.0055C19.1233 16.6826 19.8316 16.5641 20.5251 16.667C21.2325 16.7719 21.8875 17.1015 22.3932 17.6072C22.8989 18.1129 23.2285 18.7679 23.3334 19.4753Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_19_3519">
+<rect width="20" height="20" fill="white" transform="translate(10 10)"/>
+</clipPath>
+</defs>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_threads -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<path d="M26.0416 17.0871C24.7274 12.1979 20.2083 12.5038 20.2083 12.5038C20.2083 12.5038 13.9583 12.0871 13.9583 19.9996C13.9583 27.9121 20.2083 27.4963 20.2083 27.4963C20.2083 27.4963 23.9233 27.7429 25.6249 24.2313C26.1808 22.6829 26.0416 19.5871 20.6249 19.5871C20.6249 19.5871 18.1249 19.5871 18.1249 21.6705C18.1249 22.4838 18.9583 23.3371 20.2083 23.3371C21.4583 23.3371 22.8508 22.4813 23.1249 20.8371C23.9583 15.8371 19.3749 15.4204 18.1249 17.5038" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_pinterest -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<path d="M18.8916 22.5809C18.4699 24.8526 17.9566 27.0309 16.4333 28.1684C15.9641 24.7351 17.1241 22.1559 17.6624 19.4184C16.7441 17.8267 17.7733 14.6226 19.7099 15.4117C22.0933 16.3834 17.6458 21.3301 20.6316 21.9484C23.7491 22.5934 25.0224 16.3792 23.0891 14.3576C20.2958 11.4401 14.9583 14.2917 15.6149 18.4692C15.7749 19.4909 16.7991 19.8009 16.0241 21.2109C14.2366 20.8017 13.7033 19.3501 13.7724 17.4142C13.8824 14.2476 16.5366 12.0292 19.1983 11.7226C22.5649 11.3342 25.7241 12.9951 26.1599 16.2559C26.6516 19.9359 24.6408 23.9226 21.0416 23.6351C20.0658 23.5576 19.6558 23.0601 18.8916 22.5809Z" fill="black"/>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_tiktok -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.6666 12.5C21.8876 12.5 22.0996 12.5878 22.2559 12.7441C22.4122 12.9004 22.5 13.1123 22.5 13.3333C22.5004 14.1016 22.766 14.8462 23.2518 15.4413C23.7377 16.0365 24.414 16.4457 25.1666 16.6C25.3832 16.6442 25.5734 16.7726 25.6953 16.957C25.8172 17.1415 25.8608 17.3667 25.8166 17.5833C25.7724 17.7999 25.644 17.9901 25.4596 18.112C25.2752 18.2339 25.0499 18.2775 24.8333 18.2333C23.9651 18.0554 23.1599 17.6499 22.5 17.0583V24.1667C22.5 24.9908 22.2556 25.7963 21.7978 26.4815C21.3399 27.1667 20.6892 27.7008 19.9278 28.0162C19.1665 28.3315 18.3287 28.414 17.5204 28.2533C16.7122 28.0925 15.9697 27.6957 15.387 27.1129C14.8043 26.5302 14.4075 25.7878 14.2467 24.9795C14.0859 24.1713 14.1684 23.3335 14.4838 22.5722C14.7992 21.8108 15.3332 21.16 16.0184 20.7022C16.7036 20.2444 17.5092 20 18.3333 20C18.5543 20 18.7663 20.0878 18.9226 20.2441C19.0788 20.4004 19.1666 20.6123 19.1666 20.8333C19.1666 21.0543 19.0788 21.2663 18.9226 21.4226C18.7663 21.5789 18.5543 21.6667 18.3333 21.6667C17.8388 21.6667 17.3555 21.8133 16.9444 22.088C16.5332 22.3627 16.2128 22.7531 16.0236 23.21C15.8344 23.6668 15.7849 24.1694 15.8813 24.6544C15.9778 25.1393 16.2159 25.5848 16.5655 25.9344C16.9152 26.2841 17.3606 26.5222 17.8456 26.6186C18.3305 26.7151 18.8332 26.6656 19.29 26.4764C19.7468 26.2871 20.1373 25.9667 20.412 25.5556C20.6867 25.1445 20.8333 24.6611 20.8333 24.1667V13.3333C20.8333 13.1123 20.9211 12.9004 21.0774 12.7441C21.2337 12.5878 21.4456 12.5 21.6666 12.5Z" fill="black"/>
+</svg>
+{%- endcapture -%}
+
+{%- capture footer_icon_whatsapp -%}
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="40" height="40" rx="8" fill="white"/>
+<path d="M25.8749 14.092C25.1108 13.3205 24.2008 12.7087 23.1978 12.2923C22.1949 11.876 21.1192 11.6634 20.0333 11.667C15.4833 11.667 11.7749 15.3754 11.7749 19.9254C11.7749 21.3837 12.1583 22.8004 12.8749 24.0504L11.7083 28.3337L16.0833 27.1837C17.2916 27.842 18.6499 28.192 20.0333 28.192C24.5833 28.192 28.2916 24.4837 28.2916 19.9337C28.2916 17.7254 27.4333 15.6504 25.8749 14.092ZM20.0333 26.792C18.7999 26.792 17.5916 26.4587 16.5333 25.8337L16.2833 25.6837L13.6833 26.367L14.3749 23.8337L14.2083 23.5754C13.5229 22.4813 13.159 21.2164 13.1583 19.9254C13.1583 16.142 16.2416 13.0587 20.0249 13.0587C21.8583 13.0587 23.5833 13.7754 24.8749 15.0754C25.5146 15.7119 26.0215 16.4692 26.3663 17.3031C26.711 18.1371 26.8868 19.0313 26.8833 19.9337C26.8999 23.717 23.8166 26.792 20.0333 26.792ZM23.7999 21.6587C23.5916 21.5587 22.5749 21.0587 22.3916 20.9837C22.1999 20.917 22.0666 20.8837 21.9249 21.0837C21.7833 21.292 21.3916 21.7587 21.2749 21.892C21.1583 22.0337 21.0333 22.0504 20.8249 21.942C20.6166 21.842 19.9499 21.617 19.1666 20.917C18.5499 20.367 18.1416 19.692 18.0166 19.4837C17.8999 19.2754 17.9999 19.167 18.1083 19.0587C18.1999 18.967 18.3166 18.817 18.4166 18.7004C18.5166 18.5837 18.5583 18.492 18.6249 18.3587C18.6916 18.217 18.6583 18.1004 18.6083 18.0004C18.5583 17.9004 18.1416 16.8837 17.9749 16.467C17.8083 16.067 17.6333 16.117 17.5083 16.1087H17.1083C16.9666 16.1087 16.7499 16.1587 16.5583 16.367C16.3749 16.5754 15.8416 17.0754 15.8416 18.092C15.8416 19.1087 16.5833 20.092 16.6833 20.2254C16.7833 20.367 18.1416 22.4504 20.2083 23.342C20.6999 23.5587 21.0833 23.6837 21.3833 23.7754C21.8749 23.9337 22.3249 23.9087 22.6833 23.8587C23.0833 23.8004 23.9083 23.3587 24.0749 22.8754C24.2499 22.392 24.2499 21.9837 24.1916 21.892C24.1333 21.8004 24.0083 21.7587 23.7999 21.6587Z" fill="black"/>
+</svg>
+{%- endcapture -%}
 
 {%- capture social_media -%}
   {%- if settings.social_facebook != blank or shop.brand.metafields.social_links.facebook != blank -%}
     <li class="social-media__item branding-colors--facebook">
       <a href="{{ settings.social_facebook | default: shop.brand.metafields.social_links.facebook }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Facebook' }}">
-        {%- render 'icon' with 'facebook' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_facebook }}{%- else -%}{%- render 'icon' with 'facebook' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -20,7 +90,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_twitter != blank or shop.brand.metafields.social_links.twitter != blank -%}
     <li class="social-media__item branding-colors--twitter">
       <a href="{{ settings.social_twitter | default: shop.brand.metafields.social_links.twitter }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Twitter' }}">
-        {%- render 'icon' with 'twitter' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_twitter }}{%- else -%}{%- render 'icon' with 'twitter' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -28,7 +98,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_instagram != blank or shop.brand.metafields.social_links.instagram != blank -%}
     <li class="social-media__item branding-colors--instagram">
       <a href="{{ settings.social_instagram | default: shop.brand.metafields.social_links.instagram }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Instagram' }}">
-        {%- render 'icon' with 'instagram' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_instagram }}{%- else -%}{%- render 'icon' with 'instagram' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -36,7 +106,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_threads != blank or shop.brand.metafields.social_links.threads != blank -%}
     <li class="social-media__item branding-colors--instagram">
       <a href="{{ settings.social_threads | default: shop.brand.metafields.social_links.threads }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Threads' }}">
-        {%- render 'icon' with 'threads' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_threads }}{%- else -%}{%- render 'icon' with 'threads' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -44,7 +114,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_pinterest != blank or shop.brand.metafields.social_links.pinterest != blank -%}
     <li class="social-media__item branding-colors--pinterest">
       <a href="{{ settings.social_pinterest | default: shop.brand.metafields.social_links.pinterest }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'Pinterest' }}">
-        {%- render 'icon' with 'pinterest' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_pinterest }}{%- else -%}{%- render 'icon' with 'pinterest' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -60,7 +130,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_tiktok != blank or shop.brand.metafields.social_links.tiktok != blank -%}
     <li class="social-media__item branding-colors--tiktok">
       <a href="{{ settings.social_tiktok | default: shop.brand.metafields.social_links.tiktok }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'TikTok' }}">
-        {%- render 'icon' with 'tiktok' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_tiktok }}{%- else -%}{%- render 'icon' with 'tiktok' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}
@@ -92,7 +162,7 @@ Output a list of social media icons based on the social URL settings.
   {%- if settings.social_whatsapp != blank or shop.brand.metafields.social_links.whatsapp != blank -%}
     <li class="social-media__item branding-colors--whatsapp">
       <a href="{{ settings.social_whatsapp | default: shop.brand.metafields.social_links.whatsapp }}" class="tap-area" target="_blank" rel="noopener" aria-label="{{ 'general.social.follow_on' | t: social_media: 'WhatsApp' }}">
-        {%- render 'icon' with 'whatsapp' -%}
+        {%- if icon_set == 'footer' -%}{{ footer_icon_whatsapp }}{%- else -%}{%- render 'icon' with 'whatsapp' -%}{%- endif -%}
       </a>
     </li>
   {%- endif -%}

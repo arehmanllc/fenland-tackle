@@ -56,7 +56,7 @@
                           {%- endcapture -%}
 
                           <div class="faq__item {% if block.settings.light_background %}faq__item--light{% endif %}">
-                            {%- render 'accordion', title: block.settings.question, content: answer, show_title_as_text: true, block: block -%}
+                            {%- render 'accordion', title: block.settings.question, content: answer, show_title_as_text: true, show_arrow: true, block: block -%}
                           </div>
                         {%- endif -%}
                     {%- endcase -%}
