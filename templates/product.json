@@ -203,6 +203,9 @@
         "complementary_products",
         "product_tabs_yenAib"
       ],
+      "custom_css": [
+        ".product-title {font-size: var(--text-h2) !important;}"
+      ],
       "settings": {
         "color_scheme": "scheme-4",
         "container_size": "full",
