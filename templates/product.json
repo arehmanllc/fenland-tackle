@@ -157,7 +157,7 @@
             "html_0": "",
             "label_1": "Specifications",
             "content_1": "",
-            "richtext_1": "<p><br/>Specifications<br/><br/></p>",
+            "richtext_1": "<p>These specifications are provided to give a clear and accurate overview of the product’s design, features, and intended use. Please note that details may vary slightly between models or production batches and are subject to change without prior notice. For the most up-to-date and precise information, please refer to the full product description or contact us directly.</p>",
             "page_1": "",
             "html_1": "",
             "label_2": "Shipping & Returns",
@@ -227,7 +227,7 @@
     "related-products": {
       "type": "related-products",
       "custom_css": [
-        ".product-card__info.empty\\:hidden{background: #41695433;}"
+        ".product-card__info.empty\\:hidden {background: #41695433;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
