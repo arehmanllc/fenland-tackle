@@ -250,14 +250,17 @@ height-observer {
   align-items: center;
   justify-content: center;
 }
-.header__primary-nav-item{
-    font-size: 16px;
+
+.header__primary-nav-item {
+  font-size: 16px;
 }
-.header__primary-nav-item summary{
-    display: flex;
-    gap: 8px;
-    align-items: center;
+
+.header__primary-nav-item summary {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
+
 .announcement-bar.announcement-bar-container .announcement-bar {
   padding: 0;
 }
@@ -505,13 +508,16 @@ height-observer {
   line-height: 100% !important;
   font-size: 15px !important;
 }
-.text-with-icons__item .h6{
+
+.text-with-icons__item .h6 {
   font-size: 18px;
 }
-.text-with-icons__item p{
+
+.text-with-icons__item p {
   font-size: 16px;
   line-height: 1.4;
 }
+
 @media screen and (max-width: 999px) {
   .search-phone-wrapper {
     display: none !important;
@@ -2211,7 +2217,8 @@ model-media .shopify-model-viewer-ui {
   pointer-events: auto;
   transition: transform .2s ease-in-out;
 }
-.pswp__top-bar>.circle-button path{
+
+.pswp__top-bar>.circle-button path {
   stroke: #000;
 }
 
@@ -3035,6 +3042,16 @@ tr[onclick]:hover {
   width: var(--social-media-icon-size, 1.25rem);
 }
 
+.social-media--footer svg {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.social-media--footer .social-media__item {
+  opacity: 1;
+}
+
 @media screen and (pointer: fine) {
   .social-media--list .social-media__item:hover {
     opacity: 1;
@@ -3676,6 +3693,18 @@ tr[onclick]:hover {
 .group[aria-expanded="true"] .animated-plus.group-expanded\:rotate:before,
 .group[aria-expanded="true"] .animated-plus.group-expanded\:rotate:after {
   transform: translate(-50%, -50%)rotate(90deg);
+}
+
+.accordion__arrow {
+  display: inline-block;
+  flex: 0 0 auto;
+  transform: rotate(180deg);
+  transition: transform 200ms ease;
+}
+
+.group[aria-expanded="true"] .accordion__arrow,
+.accordion__disclosure[open] .accordion__arrow {
+  transform: rotate(0deg);
 }
 
 @media (pointer: fine) {
@@ -4881,7 +4910,7 @@ product-rerender {
 
 .footer__aside .payment-methods {
   justify-content: center;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
 @media screen and (min-width: 700px) {
