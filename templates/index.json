@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify://shop_images/Fentexchange_2.png",
             "mobile_image": "shopify://shop_images/Fentexchange_2.png",
-            "subheading": "For anglers with more sense than money",
+            "subheading": "",
             "title": "For anglers with more sense than money",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center-start sm:text-start",
