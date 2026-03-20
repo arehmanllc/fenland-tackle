@@ -318,7 +318,7 @@
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free Local Delivery</strong>",
-            "content": "<p>Free Local Delivery<br/> (20 Miles from PE15 9LS)</p>"
+            "content": "<p>On order over £25<br/>(20 Miles from PE15 9LS)</p>"
           }
         },
         "item_jXRMYg": {
@@ -331,23 +331,11 @@
             "title": "<strong>Free National Delivery</strong>",
             "content": "<p>Enjoy free UK-wide delivery on orders over £100.</p>"
           }
-        },
-        "item_JmhUa9": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Group_35931.png",
-            "icon_width": 80,
-            "mobile_icon_width": 48,
-            "title": "<strong>Manufacturers Warranty</strong>",
-            "content": "<p>New products include manufacturer warranty, used items do not.</p>"
-          }
         }
       },
       "block_order": [
         "item_Kkjpya",
-        "item_jXRMYg",
-        "item_JmhUa9"
+        "item_jXRMYg"
       ],
       "custom_css": [
         ".section-spacing {padding: 40px;}"
