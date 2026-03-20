@@ -1125,7 +1125,7 @@
     "newsletter": {
       "type": "newsletter",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
         "separate_section_with_border": true,
         "image_size": "auto",
         "image": "shopify://shop_images/bagup1_2_1.png",
@@ -1134,7 +1134,7 @@
         "title": "PLUS get <strong>10% off your first order. </strong>Subscribe to our newsletter.",
         "content": "",
         "button_text": "Subscribe",
-        "overlay_color": "#416954",
+        "overlay_color": "#151515",
         "overlay_opacity": 50
       }
     }
