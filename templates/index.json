@@ -723,7 +723,7 @@
           "type": "collection",
           "settings": {
             "collection": "feeders",
-            "coll_image": "shopify://shop_images/IMG_20260228_103831.jpg",
+            "coll_image": "shopify://shop_images/Collection_Feeders.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -734,7 +734,7 @@
           "type": "collection",
           "settings": {
             "collection": "floats",
-            "coll_image": "shopify://shop_images/IMG_20260314_180102.jpg",
+            "coll_image": "shopify://shop_images/Collection_Floats.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -745,7 +745,7 @@
           "type": "collection",
           "settings": {
             "collection": "hooks",
-            "coll_image": "shopify://shop_images/shop-front-pastel_1_1.png",
+            "coll_image": "shopify://shop_images/Collection_Hooks.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -755,10 +755,10 @@
         "collection_7VTdFc": {
           "type": "collection",
           "settings": {
-            "collection": "artificials",
-            "coll_image": "shopify://shop_images/8929e9f0-0705-47fb-ad5f-7af26fc8872d_1.jpg",
+            "collection": "luggage-storage",
+            "coll_image": "shopify://shop_images/Collection_Luggage.jpg",
             "products_count": 8,
-            "title": "",
+            "title": "Luggage",
             "link_url": "",
             "link_text": "View all"
           }
@@ -778,7 +778,7 @@
           "type": "collection",
           "settings": {
             "collection": "line-leaders",
-            "coll_image": "shopify://shop_images/shop-front-pastel_1_0e117631-e6c7-4d89-9ae2-49ce0886a45e.png",
+            "coll_image": "shopify://shop_images/Collection_Line_and_leaders.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -789,7 +789,7 @@
           "type": "collection",
           "settings": {
             "collection": "other-terminal-tackle",
-            "coll_image": "shopify://shop_images/IMG_20260313_185826.jpg",
+            "coll_image": "shopify://shop_images/Collection_Predator_Terminal.jpg",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -800,7 +800,7 @@
           "type": "collection",
           "settings": {
             "collection": "swivels",
-            "coll_image": "shopify://shop_images/IMG_20260225_150135.jpg",
+            "coll_image": "shopify://shop_images/Collection_swivels.png",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -810,10 +810,10 @@
         "collection_EMfyYM": {
           "type": "collection",
           "settings": {
-            "collection": "angling-pursuits",
-            "coll_image": "shopify://shop_images/15cm-hook-length-box.jpg",
+            "collection": "terminal-tackle-tools",
+            "coll_image": "shopify://shop_images/Collection-Terminal_tackle_and_tools_828de277-16a2-43bf-bf65-c90778f8569c.png",
             "products_count": 8,
-            "title": "",
+            "title": "Tackle & Tools",
             "link_url": "",
             "link_text": "View all"
           }
@@ -822,7 +822,7 @@
           "type": "collection",
           "settings": {
             "collection": "assembled-rigs",
-            "coll_image": "shopify://shop_images/Rigs_3.png",
+            "coll_image": "shopify://shop_images/Collection_rigs.jpg",
             "products_count": 8,
             "title": "Rigs",
             "link_url": "",
