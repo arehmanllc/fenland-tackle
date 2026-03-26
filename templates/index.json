@@ -655,7 +655,7 @@
         "separate_section_with_border": false,
         "scrolling_speed": 0.3,
         "scroll_direction": "left",
-        "pause_on_hover": false,
+        "pause_on_hover": true,
         "text_font": "heading",
         "text_font_size_mobile": 40,
         "text_font_size_desktop": 96,
