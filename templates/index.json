@@ -310,6 +310,17 @@
     "text_with_icons_FjVN8V": {
       "type": "text-with-icons",
       "blocks": {
+        "item_R9QK83": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Group_35931_b152808d-9cec-41ad-b191-679468a1b66d.png",
+            "icon_width": 100,
+            "mobile_icon_width": 48,
+            "title": "Manufacturers Warranty",
+            "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
+          }
+        },
         "item_Kkjpya": {
           "type": "item",
           "settings": {
@@ -334,6 +345,7 @@
         }
       },
       "block_order": [
+        "item_R9QK83",
         "item_Kkjpya",
         "item_jXRMYg"
       ],
@@ -655,7 +667,7 @@
         "separate_section_with_border": false,
         "scrolling_speed": 0.3,
         "scroll_direction": "left",
-        "pause_on_hover": true,
+        "pause_on_hover": false,
         "text_font": "heading",
         "text_font_size_mobile": 40,
         "text_font_size_desktop": 96,
