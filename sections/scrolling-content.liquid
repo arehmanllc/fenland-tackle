@@ -39,7 +39,7 @@
 
   <div
     class="section-spacing color-scheme color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.background != blank and section.settings.background != 'rgba(0,0,0,0)' and section.settings.background != settings.default_color_scheme.settings.background %}section-spacing--padded{% endif %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}"
-    style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}, overflow: clip;"
+    style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}; overflow: clip;"
   >
     <marquee-text
       speed="{{ section.settings.scrolling_speed }}"
