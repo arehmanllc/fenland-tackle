@@ -29,7 +29,14 @@ being eligible for free shipping.
 
 {%- if cart.requires_shipping -%}
   <free-shipping-bar class="free-shipping-bar" threshold="{{ settings.cart_free_shipping_threshold }}" total-price="{{ calculated_total_price }}" reached-message="{{ 'cart.free_shipping_bar.limit_reached_html' | t | escape }}" unreached-message="{{ 'cart.free_shipping_bar.limit_unreached_html' | t | escape }}">
-    {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
-    <span class="text-subdued">&nbsp;</span>
+    <div class="free-shipping-bar__content">
+      {%- comment -%}The span below is the placeholder where the content will be inserted in JS{%- endcomment -%}
+      <span class="text-subdued">&nbsp;</span>
+    </div>
+    <div class="free-shipping-bar__progress-container">
+      <div class="free-shipping-bar__progress-bar">
+        <div class="free-shipping-bar__progress-fill"></div>
+      </div>
+    </div>
   </free-shipping-bar>
 {%- endif -%}

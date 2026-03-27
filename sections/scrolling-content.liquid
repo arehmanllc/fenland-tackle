@@ -6,25 +6,69 @@
 
       font-size: clamp({{ section.settings.text_font_size_mobile }}px, calc({{ section.settings.text_font_size_mobile }}px + ({{ section.settings.text_font_size_desktop }} - {{ section.settings.text_font_size_mobile }}) * ((100vw - 375px) / (1400 - 375))), {{ section.settings.text_font_size_desktop }}px);
     }
+
+    #shopify-section-{{ section.id }} .scrolling-content__image,
+    #shopify-section-{{ section.id }} .scrolling-content__text {
+      transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    #shopify-section-{{ section.id }} .is-middle {
+      transform: scale(1.3);
+      z-index: 5;
+    }
+
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .is-middle {
+        transform: scale(1.1);
+      }
+    }
+
+    #shopify-section-{{ section.id }} marquee-text {
+      overflow: visible;
+    }
   </style>
 
-  {%- assign color_scheme_hash = section.settings.background | default: settings.default_color_scheme.settings.background | md5 -%}
+  {%- assign color_scheme_hash = section.settings.background
+    | default: settings.default_color_scheme.settings.background
+    | md5
+  -%}
 
-  <div class="section-spacing color-scheme color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.background != blank and section.settings.background != 'rgba(0,0,0,0)' and section.settings.background != settings.default_color_scheme.settings.background %}section-spacing--padded{% endif %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}" style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}">
-    <marquee-text speed="{{ section.settings.scrolling_speed }}" direction="{{ section.settings.scroll_direction }}" {% if section.settings.pause_on_hover %}pause-on-hover{% endif %} class="scrolling-content">
+  <div
+    class="section-spacing color-scheme color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.background != blank and section.settings.background != 'rgba(0,0,0,0)' and section.settings.background != settings.default_color_scheme.settings.background %}section-spacing--padded{% endif %} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}"
+    style="{% render 'surface', background: section.settings.background, text_color: section.settings.text_color %}; overflow: clip;"
+  >
+    <marquee-text
+      speed="{{ section.settings.scrolling_speed }}"
+      direction="{{ section.settings.scroll_direction }}"
+      {% if section.settings.pause_on_hover %}
+        pause-on-hover
+      {% endif %}
+      class="scrolling-content"
+    >
       <div class="scrolling-content__item">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'image' -%}
               {%- if block.settings.image -%}
                 <div class="scrolling-content__image" {{ block.shopify_attributes }}>
-                  {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: '(max-width: 699px) 90px, 180px', widths: '90,180,270,360,540' -}}
+                  {{-
+                    block.settings.image
+                    | image_url: width: block.settings.image.width
+                    | image_tag: sizes: '(max-width: 699px) 90px, 180px', widths: '90,180,270,360,540'
+                  -}}
                 </div>
               {%- endif -%}
 
             {%- when 'text' -%}
               {%- if block.settings.text != blank -%}
-                <p class="scrolling-content__text {% if section.settings.text_font == 'heading' %}heading{% endif %}" {{ block.shopify_attributes }}>
+                <p
+                  class="scrolling-content__text {% if section.settings.text_font == 'heading' %}heading{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
                   {{- block.settings.text -}}
                 </p>
               {%- endif -%}
@@ -33,13 +77,81 @@
       </div>
     </marquee-text>
   </div>
+
+  <script>
+    (function() {
+      const section = document.querySelector('#shopify-section-{{ section.id }}');
+      if (!section) return;
+
+      const marquee = section.querySelector('marquee-text');
+      if (!marquee) return;
+
+      let frameId;
+      let isVisible = false;
+
+      const update = () => {
+        if (!isVisible) return;
+
+        const middleX = window.innerWidth / 2;
+        const items = marquee.querySelectorAll('.scrolling-content__image, .scrolling-content__text');
+        
+        if (items.length === 0) {
+          frameId = requestAnimationFrame(update);
+          return;
+        }
+
+        const distances = [];
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          const rect = item.getBoundingClientRect();
+          const itemCenterX = rect.left + rect.width / 2;
+          
+          // Only consider items that are somewhat on screen to avoid unnecessary calculations, 
+          // although with small number of items it doesn't matter much.
+          distances.push({
+            el: item,
+            dist: Math.abs(itemCenterX - middleX)
+          });
+        }
+
+        // Sort to find the 2 closest to center
+        distances.sort((a, b) => a.dist - b.dist);
+
+        // Update classes for all items
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          const isAmongTopTwo = (distances[0] && item === distances[0].el) || 
+                                (distances[1] && item === distances[1].el);
+          
+          if (isAmongTopTwo) {
+            item.classList.add('is-middle');
+          } else {
+            item.classList.remove('is-middle');
+          }
+        }
+
+        frameId = requestAnimationFrame(update);
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        isVisible = entries[0].isIntersecting;
+        if (isVisible) {
+          frameId = requestAnimationFrame(update);
+        } else {
+          cancelAnimationFrame(frameId);
+        }
+      }, { threshold: 0 });
+
+      observer.observe(marquee);
+    })();
+  </script>
 {%- endif -%}
 
 {% schema %}
 {
   "name": "t:sections.scrolling_content.name",
   "class": "shopify-section--scrolling-content",
-  "max_blocks": 10,
+  "max_blocks": 30,
   "tag": "section",
   "disabled_on": {
     "groups": ["header", "custom.overlay"]

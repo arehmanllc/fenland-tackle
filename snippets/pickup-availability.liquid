@@ -19,38 +19,7 @@ Supported variables
     {%- if pick_up_availabilities.size > 0 -%}
       {%- capture drawer_id -%}store-availability-drawer-{{ product_variant.product.id }}{%- endcapture -%}
 
-      <div class="h-stack align-start gap-2.5">
-        {%- assign closest_location = pick_up_availabilities.first -%}
-
-        {%- if closest_location.available -%}
-          {%- render 'icon' with 'success', offset: true, class: 'text-success' -%}
-        {%- else -%}
-          {%- render 'icon' with 'error', offset: true, class: 'text-error' -%}
-        {%- endif -%}
-
-        <div class="v-stack justify-items-start gap-2">
-          <div>
-            {%- if closest_location.available -%}
-              <p>{{- 'product.store_availability.pick_up_available_at' | t: location_name: closest_location.location.name -}}</p>
-              <p>{{ closest_location.pick_up_time }}</p>
-
-              {%- if pick_up_availabilities.size == 1 -%}
-                {%- assign button_text = 'product.store_availability.view_store_info' | t -%}
-              {%- else -%}
-                {%- assign button_text = 'product.store_availability.check_other_stores' | t -%}
-              {%- endif -%}
-            {%- else -%}
-              <p>{{- 'product.store_availability.pick_up_unavailable_at' | t: location_name: closest_location.location.name -}}</p>
-
-              {%- if pick_up_availabilities.size > 1 -%}
-                {%- assign button_text = 'product.store_availability.check_other_stores' | t -%}
-              {%- endif -%}
-            {%- endif -%}
-          </div>
-
-          <button type="button" class="link" aria-controls="{{ drawer_id }}" aria-expanded="false">{{ button_text }}</button>
-        </div>
-      </div>
+      {%- comment -%} Visible button is now rendered in the share_buttons row in product-info.liquid {%- endcomment -%}
 
       <x-drawer id="{{ drawer_id }}" class="drawer color-scheme color-scheme--dialog">
         <div class="h-stack gap-4" slot="header">

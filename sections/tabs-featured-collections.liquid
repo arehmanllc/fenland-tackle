@@ -49,7 +49,7 @@
 
                 {%- if block.settings.coll_image != blank -%}
                   <div class="ft-coll-image-col">
-                    <img class="ft-coll-img" src="{{ block.settings.coll_image | img_url: 'medium' }}" alt="{{ block.settings.coll_image.alt }}">
+                    <img class="ft-coll-img" src="{{ block.settings.coll_image | img_url: 'master' }}" alt="{{ block.settings.coll_image.alt }}">
                   </div>
                 {%- endif -%}
 
@@ -129,7 +129,7 @@
     "templates": ["password"],
     "groups": ["header", "custom.overlay"]
   },
-  "max_blocks": 5,
+  "max_blocks": 10,
   "settings": [
     {
       "type": "color_scheme",

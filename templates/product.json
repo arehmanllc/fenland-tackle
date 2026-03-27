@@ -44,8 +44,8 @@
             "text": "<p><strong>Free Local Delivery<br/></strong>On orders over £25</p>",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify://shop_images/IMG_20260225_150102.jpg",
-            "icon_width": 32,
+            "custom_icon": "shopify://shop_images/Container.svg",
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
@@ -57,8 +57,8 @@
             "text": "<p><strong>Free National Delivery<br/></strong>On orders over £100</p>",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify://shop_images/IMG_20260228_103831.jpg",
-            "icon_width": 32,
+            "custom_icon": "shopify://shop_images/Container_1.svg",
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
@@ -70,8 +70,8 @@
             "text": "<p><strong>Manufacturers Warranty<br/></strong>On New Products</p>",
             "link": "",
             "icon": "none",
-            "custom_icon": "shopify://shop_images/IMG_20260225_150323.jpg",
-            "icon_width": 32,
+            "custom_icon": "shopify://shop_images/Container_2.svg",
+            "icon_width": 40,
             "background": "#ffffff",
             "text_color": "#6b6b6b",
             "border_color": ""
@@ -102,6 +102,11 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "pickup_availability_BY8Ctp": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
         },
         "share_buttons_rNMpYz": {
           "type": "share_buttons",
@@ -145,19 +150,19 @@
           "type": "product_tabs",
           "settings": {
             "number_of_tabs": 3,
-            "label_0": "Key Features & Specofication",
+            "label_0": "Key Features & Specification",
             "content_0": "",
             "richtext_0": "<p>✓ 1.3kW Ceramic Burner: Efficient heat output designed for bivvies and sheltered fishing spots.<br/>✓ Built-in Ignition: Simple piezo starting system—no matches or lighters required.<br/><br/>✓ Temperature Control: Adjustable heat settings to manage fuel consumption and comfort.<br/>✓ Swivel Body Design: Allows you to direct the heat exactly where it is needed most.<br/>✓ Fuel Source: Uses standard 227g butane gas canisters (sold separately).<br/>✓ Safety First: Features a sturdy base and integrated handle for safe positioning.</p>",
             "page_0": "",
             "html_0": "",
-            "label_1": "Specifications",
+            "label_1": "",
             "content_1": "",
-            "richtext_1": "<p><br/>Specifications<br/><br/></p>",
+            "richtext_1": "",
             "page_1": "",
             "html_1": "",
             "label_2": "Shipping & Returns",
             "content_2": "",
-            "richtext_2": "<p><br/>Shipping & Returns<br/><br/></p>",
+            "richtext_2": "<p><strong>Shipping & Delivery</strong></p><ul><li>Orders are shipped across the UK.<br/></li><li>Free delivery is available on orders over £25.<br/></li><li>Customers can choose between home delivery or local collection.<br/><br/></li></ul><p><strong>Returns Policy</strong></p><ul><li>Returns are accepted in accordance with the store’s policy.<br/></li><li>Items must be:<br/>✓ Unused<br/>✓ n their original condition<br/>✓ Accompanied by proof of purchase</li></ul>",
             "page_2": "",
             "html_2": "",
             "label_3": "",
@@ -190,12 +195,19 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "pickup_availability_BY8Ctp",
         "share_buttons_rNMpYz",
         "liquid_M6NYWq",
         "more_information_Rnf887",
         "inventory_mQfPHn",
         "complementary_products",
         "product_tabs_yenAib"
+      ],
+      "custom_css": [
+        ".product-title {font-size: var(--text-h2) !important;}",
+        ".share-and-more-info-row__store-info {}",
+        ".horizontal-product-card__info .product-title {font-size: 15px !important;}",
+        ".button-tab {padding: 16px 12px 9px;}"
       ],
       "settings": {
         "color_scheme": "scheme-4",
@@ -214,16 +226,19 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".product-card__info.empty\\:hidden {background: #41695433;}"
+      ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "separate_section_with_border": true,
+        "color_scheme": "scheme-4",
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
         "recommendations_count": 10,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 0.4,
         "subheading": "",
         "title": "You May Also Like",
         "content": ""
@@ -249,61 +264,140 @@
         "button_text": "View all"
       }
     },
-    "faq_AW7nbB": {
+    "faq_VKNYTQ": {
       "type": "faq",
       "blocks": {
-        "question_VNwnTM": {
+        "question_BMriFF": {
           "type": "question",
           "settings": {
-            "question": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "question": "What type of fishing tackle do you sell at Fenland Tackle Exchange?",
+            "light_background": true,
+            "answer": "<p>We offer a wide range of freshwater fishing tackle, including rods, reels, carp fishing tackle, predator gear, coarse fishing essentials, specimen fishing tackle, bite alarms, luggage, and more—all from dependable, lesser-known brands at affordable prices.</p>"
           }
         },
-        "question_9EQdtR": {
+        "question_MfAMe7": {
           "type": "question",
           "settings": {
-            "question": "How long will it take to get my orders?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "question": "How can I sell my pre-owned fishing tackle with Fenland Tackle Exchange?",
+            "light_background": false,
+            "answer": "<p>You can easily sell your fishing tackle by filling out our seller enquiry form. We buy job lots of pre-owned fishing gear, particularly complete carp set-ups, to help you upgrade your kit or make extra cash.<br/></p>"
           }
         },
-        "question_aHpTjf": {
+        "question_NMa847": {
           "type": "question",
           "settings": {
-            "question": "Any question?",
-            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "question": "What makes your fishing bait more affordable?",
+            "light_background": true,
+            "answer": "<p>We source quality bait from lesser-known brands, allowing anglers to obtain dependable options without the high price tag. Our affordable fishing bait is perfect for carp, coarse, and predator fishing.<br/></p>"
+          }
+        },
+        "question_UHJec3": {
+          "type": "question",
+          "settings": {
+            "question": "Do you buy complete carp set-ups?",
+            "light_background": false,
+            "answer": "<p>Yes! At Fenland Tackle Exchange, we specialise in buying complete carp set-ups and other fishing tackle. This is a great way for you to upgrade your kit while getting fair prices for your pre-owned gear.<br/></p>"
+          }
+        },
+        "question_hCAHqY": {
+          "type": "question",
+          "settings": {
+            "question": "How do you ensure the quality of your fishing tackle?",
+            "light_background": true,
+            "answer": "<p>We only sell fishing tackle and bait that our team personally uses and depends on. Our hands-on experience allows us to curate a selection of reliable products that meet the needs of anglers at all levels.<br/></p>"
+          }
+        },
+        "question_rHcQFQ": {
+          "type": "question",
+          "settings": {
+            "question": "Can I trade my old fishing gear for new tackle?",
+            "light_background": false,
+            "answer": "<p>Yes! We offer a straightforward selling process where you can trade your pre-owned fishing gear, allowing you to invest in new tackle while clearing out what you no longer need.<br/></p>"
+          }
+        },
+        "question_pFx4UD": {
+          "type": "question",
+          "settings": {
+            "question": "What additional fishing accessories do you carry?",
+            "light_background": true,
+            "answer": "<p>Along with fishing tackle, we carry a variety of fishing accessories, including rod pods, metalware, bivvies, shelters, mats, slings, scales, cooking equipment, and more to enhance your fishing experience.<br/><br/></p>"
+          }
+        },
+        "question_HYTLNP": {
+          "type": "question",
+          "settings": {
+            "question": "Are your prices competitive compared to other tackle shops?",
+            "light_background": false,
+            "answer": "<p>Absolutely! Fenland Tackle Exchange is dedicated to providing anglers with some of the best deals on affordable fishing tackle in the UK. Our competitive pricing makes it easy for you to find reliable gear without overspending.<br/></p>"
+          }
+        },
+        "question_tdq9ce": {
+          "type": "question",
+          "settings": {
+            "question": "How can I contact you for more information?",
+            "light_background": true,
+            "answer": "<p>If you have further questions about our fishing tackle or the selling process, you can reach out via our <a href=\"https://fenlandtacklestore.co.uk/pages/contact\" target=\"_blank\">contact form </a>on the website, or you can call our customer service team directly.<br/></p>"
+          }
+        },
+        "question_xfYJYN": {
+          "type": "question",
+          "settings": {
+            "question": "What is your returns policy on fishing tackle purchases?",
+            "light_background": false,
+            "answer": "<p>We want you to be completely satisfied with your purchase. Please refer to our Returns Policy on our website for detailed information on returns and exchanges of any fishing tackle you buy.<br/></p>"
+          }
+        },
+        "question_h3mzwG": {
+          "type": "question",
+          "settings": {
+            "question": "Can I find reviews of your fishing tackle online?",
+            "light_background": true,
+            "answer": "<p>Yes! Check our website for customer reviews and testimonials on various tackle and bait products. Our community of anglers shares their experiences to help you make informed purchasing decisions.<br/></p>"
           }
         }
       },
       "block_order": [
-        "question_VNwnTM",
-        "question_9EQdtR",
-        "question_aHpTjf"
+        "question_BMriFF",
+        "question_MfAMe7",
+        "question_NMa847",
+        "question_UHJec3",
+        "question_hCAHqY",
+        "question_rHcQFQ",
+        "question_pFx4UD",
+        "question_HYTLNP",
+        "question_tdq9ce",
+        "question_xfYJYN",
+        "question_h3mzwG"
       ],
-      "name": "t:sections.faq.presets.faq.name",
+      "custom_css": [
+        ".faqs-left {position: sticky; top: 165px; height: fit-content;}",
+        "@media screen and (max-width: 999px) {.faqs-left {position: static; }}"
+      ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "show_categories": true,
         "sec_left_head": "Smarter decisions start with clear answers.",
         "sec_left_para": "Answers to your questions about our tackle, bait, delivery, and collection.",
         "subheading": "",
-        "title": "Frequently Asked Questions",
+        "title": "<strong>Frequently Asked Questions</strong>",
         "content": ""
       }
     },
-    "newsletter_WpJz4k": {
+    "newsletter_FkmLNU": {
       "type": "newsletter",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/10794-banner.jpg",
-        "subheading": "",
-        "title": "",
-        "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
+        "image": "shopify://shop_images/bagup1_2_1.png",
+        "mobile_image": "shopify://shop_images/bagup1_2_1.png",
+        "subheading": "Stay right up to date with the latest news and offers",
+        "title": "PLUS get <strong>10% off your first order. </strong>Subscribe to our newsletter.",
+        "content": "",
         "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_color": "#416954",
+        "overlay_opacity": 50
       }
     }
   },
@@ -311,7 +405,7 @@
     "main",
     "related-products",
     "blog_posts_YitjXX",
-    "faq_AW7nbB",
-    "newsletter_WpJz4k"
+    "faq_VKNYTQ",
+    "newsletter_FkmLNU"
   ]
 }

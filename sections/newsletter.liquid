@@ -4,6 +4,8 @@ CSS
 ------------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
+{{ 'newsletter-fenland.css' | asset_url | stylesheet_tag }}
+
 <style>
   #shopify-section-{{ section.id }} {
     {%- if section.settings.overlay_color != 'rgba(0,0,0,0)' -%}
@@ -58,11 +60,13 @@ LIQUID
 
           <input type="hidden" name="contact[tags]" value="newsletter">
 
-          <div class="form-row">
-            {%- assign input_label = 'general.newsletter.email' | t -%}
+          <div class="newsletter__field">
+            <div class="form-row">
+              {%- assign input_label = 'general.newsletter.email' | t -%}
 
-            {%- render 'input', name: 'contact[email]', label: input_label, label_hidden: true, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send' -%}
-            {%- render 'button', type: 'submit', content: section.settings.button_text -%}
+              {%- render 'input', name: 'contact[email]', label: input_label, label_hidden: true, type: 'email', required: true, autocomplete: 'email', enterkeyhint: 'send' -%}
+              {%- render 'button', type: 'submit', content: section.settings.button_text -%}
+            </div>
           </div>
         {%- endif -%}
       {%- endform -%}

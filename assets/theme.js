@@ -1510,6 +1510,24 @@ _threshold = new WeakMap();
 _FreeShippingBar_instances = new WeakSet();
 updateMessage_fn = function() {
   const messageElement = this.querySelector("span");
+  const progressFill = this.querySelector(".free-shipping-bar__progress-fill");
+  const progressPercentage = Math.min((this.totalPrice / __privateGet(this, _threshold)) * 100, 100);
+  
+  // Update progress bar width with smooth transition
+  if (progressFill) {
+    progressFill.style.width = `${progressPercentage}%`;
+    
+    // Update color based on progress
+    if (progressPercentage >= 100) {
+      progressFill.classList.add("free-shipping-bar__progress-fill--eligible");
+      progressFill.classList.remove("free-shipping-bar__progress-fill--processing");
+    } else {
+      progressFill.classList.add("free-shipping-bar__progress-fill--processing");
+      progressFill.classList.remove("free-shipping-bar__progress-fill--eligible");
+    }
+  }
+  
+  // Update message
   if (this.totalPrice >= __privateGet(this, _threshold)) {
     messageElement.innerHTML = this.getAttribute("reached-message");
   } else {

@@ -13,7 +13,8 @@
       "type": "collection-banner",
       "settings": {
         "color_scheme": "scheme-3",
-        "image_size": "md",
+        "image": "shopify://shop_images/Hardware_1.png",
+        "image_size": "auto",
         "allow_transparent_header": false,
         "show_image": true,
         "reveal": true,
@@ -37,7 +38,7 @@
         "show_grid_mode_selector": true,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "filter_layout": "drawer",
+        "filter_layout": "sidebar",
         "quick_links_menu": "",
         "show_sort_by": true,
         "show_filters": true,
@@ -47,87 +48,93 @@
         "open_filters_by_default": false
       }
     },
-    "image_with_text_pEjbY9": {
+    "image_with_text_eVVMD4": {
       "type": "image-with-text",
       "blocks": {
-        "heading_HqUYE3": {
+        "heading_HpKLDC": {
           "type": "heading",
           "settings": {
             "text": "Our Story at Fenland Tackle Exchange",
             "heading_tag": "h1"
           }
         },
-        "richtext_FVGnWt": {
+        "richtext_6RM7Pj": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Fenland Tackle Exchange was founded with a simple mission — to give anglers across the UK a better way to buy, sell, and trade quality fishing tackle. We understand the passion behind every session, which is why we offer carefully selected new and pre-owned gear you can trust. Our goal is to help anglers access premium equipment while giving unused tackle a second life.</p>"
+            "content": "<p>Fenland Tackle Exchange was formed to give anglers in East Anglia and beyond a fairer way to buy, sell, and trade-in dependable fishing tackle, bait and clothing - curating new and pre-owned gear you can trust, based on many decades’ carp and coarse fishing experience. Our goal is to help anglers throughout the Fenland region (and the UK as a whole) to access new and used tackle, bait and clothing that has stood the test of time.</p>"
           }
         },
-        "liquid_Bq4pTX": {
+        "liquid_PaDJTr": {
           "type": "liquid",
           "settings": {
             "liquid": "<div class=\"container\">\n<div class=\"block\"><p>1000+</p>\n<div>Products\nAvailable</div></div>\n<div class=\"block\"><p>UK Wide</p>\n<div>Buy, Sell, and\nTrade Service</div></div>\n<div class=\"block\"><p>Quality Checked</p>\n<div>Every Used Item Inspected</div></div>\n</div>"
           }
         },
-        "button_x3XFFg": {
+        "button_zV6T9P": {
           "type": "button",
           "settings": {
             "style": "solid",
             "text": "Shop All Products",
-            "url": "",
+            "url": "shopify://collections/all",
             "background": "",
             "text_color": ""
           }
         },
-        "button_zAgt6c": {
+        "button_qUPLeY": {
           "type": "button",
           "settings": {
             "style": "outline",
             "text": "Sell Your Tackle",
-            "url": "",
+            "url": "shopify://pages/sell-your-fishing-tackle",
             "background": "",
             "text_color": ""
           }
         }
       },
       "block_order": [
-        "heading_HqUYE3",
-        "richtext_FVGnWt",
-        "liquid_Bq4pTX",
-        "button_x3XFFg",
-        "button_zAgt6c"
+        "heading_HpKLDC",
+        "richtext_6RM7Pj",
+        "liquid_PaDJTr",
+        "button_zV6T9P",
+        "button_qUPLeY"
+      ],
+      "custom_css": [
+        ".block {text-align: center;}",
+        ".block p {color: #416954; font-weight: 600;}",
+        ".block div {font-size: 17px; margin-block-start: 0.3rem;}"
       ],
       "name": "t:sections.image_with_text.presets.image_with_text.name",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
-        "image": "shopify://shop_images/IMG_20260228_103831.jpg",
+        "image": "shopify://shop_images/shop-front-pastel_1_0e117631-e6c7-4d89-9ae2-49ce0886a45e.png",
         "reveal_on_scroll": true,
         "image_position": "end",
         "content_width": "md",
-        "remove_vertical_spacing": true
+        "remove_vertical_spacing": false
       }
     },
-    "newsletter_4wiFKF": {
+    "newsletter_6hg9dC": {
       "type": "newsletter",
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
         "image_size": "auto",
-        "image": "shopify://shop_images/10794-banner.jpg",
+        "image": "shopify://shop_images/bagup1_2_1.png",
+        "mobile_image": "shopify://shop_images/bagup1_2_1.png",
         "subheading": "",
         "title": "",
         "content": "<p>Stay right up to date with the latest news and offers <br/>PLUS <strong>get 10% off your first order. </strong>  Subscribe to our newsletter. </p>",
         "button_text": "Subscribe",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_color": "#416954",
+        "overlay_opacity": 50
       }
     }
   },
   "order": [
     "collection-banner",
     "main",
-    "image_with_text_pEjbY9",
-    "newsletter_4wiFKF"
+    "image_with_text_eVVMD4",
+    "newsletter_6hg9dC"
   ]
 }

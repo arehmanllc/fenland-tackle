@@ -65,12 +65,54 @@
     "header": {
       "type": "header",
       "blocks": {
+        "mega_menu_XzAzGT": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Luggage",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Luggage.png",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_Ja4hzm": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Clothing",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Winter_Warmers_0c212212-f1c7-4af0-bfc8-d31002901209.png",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_PEPLer": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "camping",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/camping.png",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
         "mega_menu_qRwBnX": {
           "type": "mega_menu",
           "settings": {
             "menu_item": "Bait",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Predator_6e54d84f-1e21-4e57-b905-48f101467c42.png",
+            "image_1": "shopify://shop_images/Bait.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -84,7 +126,7 @@
           "settings": {
             "menu_item": "Hardware",
             "images_position": "right",
-            "image_1": "shopify://shop_images/shop-front-pastel_1.png",
+            "image_1": "shopify://shop_images/Hardware_c9faecbd-90cd-4bb3-a7db-ad0c8cf2971d.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -95,6 +137,9 @@
         }
       },
       "block_order": [
+        "mega_menu_XzAzGT",
+        "mega_menu_Ja4hzm",
+        "mega_menu_PEPLer",
         "mega_menu_qRwBnX",
         "mega_menu_9k76A7"
       ],

@@ -43,7 +43,9 @@ Supported parameters
         {%- endif -%}
 
         {%- if show_arrow -%}
-          {%- render 'icon' with 'chevron-down', class: 'group-expanded:rotate' -%}
+          <svg class="accordion__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M12 10L8 6L4 10" stroke="#717182" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         {%- else -%}
           <span class="animated-plus group-expanded:rotate" aria-hidden="true"></span>
         {%- endif -%}
