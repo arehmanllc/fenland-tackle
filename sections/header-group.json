@@ -70,6 +70,7 @@
           "settings": {
             "menu_item": "Luggage",
             "images_position": "right",
+            "image_1": "shopify://shop_images/Collection_Luggage.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -83,6 +84,7 @@
           "settings": {
             "menu_item": "Clothing",
             "images_position": "right",
+            "image_1": "shopify://shop_images/57_c3c85a11-a0a4-415f-b9f9-2bb1d12eb51b.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -96,6 +98,7 @@
           "settings": {
             "menu_item": "camping",
             "images_position": "right",
+            "image_1": "shopify://shop_images/Cabrio1.jpg",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
