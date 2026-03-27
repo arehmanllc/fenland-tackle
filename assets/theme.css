@@ -4460,6 +4460,8 @@ product-rerender {
 .free-shipping-bar__progress-container {
   width: 100%;
   margin-block: 0.25rem;
+  background-color: #d0cece;
+  border-radius: 4px;
 }
 
 .free-shipping-bar__progress-bar {
