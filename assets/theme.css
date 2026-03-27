@@ -250,11 +250,15 @@ height-observer {
   align-items: center;
   justify-content: center;
 }
-.header__primary-nav-item{
+
+.header__primary-nav-item {
+  font-size: 16px;
+}
+
+.header__primary-nav-item summary {
   display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
+  gap: 8px;
+  align-items: center;
 }
 
 .announcement-bar.announcement-bar-container .announcement-bar {
@@ -506,6 +510,16 @@ height-observer {
   letter-spacing: 0 !important;
   font-weight: 500 !important;
   line-height: 100% !important;
+  font-size: 15px !important;
+}
+
+.text-with-icons__item .h6 {
+  font-size: 18px;
+}
+
+.text-with-icons__item p {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 @media screen and (max-width: 999px) {
@@ -4434,41 +4448,6 @@ product-rerender {
   padding-block: .5rem;
   padding-inline-start: var(--drawer-body-padding-inline);
   padding-inline-end: var(--drawer-body-padding-inline);
-  background-color: #f4f4f4;
-}
-
-.free-shipping-bar__content {
-  margin-bottom: 0.5rem;
-  font-size: 15px;
-}
-
-.free-shipping-bar__progress-container {
-  width: 100%;
-  margin-block: 0.25rem;
-}
-
-.free-shipping-bar__progress-bar {
-  width: 100%;
-  height: 8px;
-  background-color: var(--border-color);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.free-shipping-bar__progress-fill {
-  height: 100%;
-  width: 0%;
-  border-radius: 4px;
-  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
-  background-color: #416954; /* Light green for processing */
-}
-
-.free-shipping-bar__progress-fill--eligible {
-  background-color: #416954; /* Signal green for eligible */
-}
-
-.free-shipping-bar__progress-fill--processing {
-  background-color: #151515; /* Light green for processing */
 }
 
 .cart-drawer__items {
