@@ -18,6 +18,12 @@
   grid-template-columns: auto 1fr;
   gap: 12px;
 }
+.product .qty-prd-btn.empty{
+  grid-template-columns: 1fr;
+}
+.product .qty-prd-btn.empty button{
+  width: 100%;
+}
 .product share-button{
   display: flex;
   justify-content: flex-end;

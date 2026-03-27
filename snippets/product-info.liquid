@@ -311,7 +311,7 @@
             {%- endif -%}
 
           {%- when 'quantity_selector' -%}
-            <div class="qty-prd-btn">
+            <div class="qty-prd-btn {% unless product.available %} empty {% endunless %}">
               {%- if product.available -%}
                 <div class="v-stack gap-1 justify-items-start">
                   {%- liquid
@@ -349,7 +349,13 @@
                 atc_button_text_color: block.settings.atc_button_text_color,
                 payment_button_background: block.settings.payment_button_background,
                 payment_button_text_color: block.settings.payment_button_text_color
-            -%}
+                -%}
+              {%- else -%}
+                <div class="v-stack gap-1 justify-items-start">
+                  <button class="add-to-cart button button--secondary" disabled>
+                    {{ 'product.form.sold_out' | t }}
+                  </button>
+                </div>
               {%- endif -%}
             </div>
           {%- when 'volume_pricing' -%}
@@ -531,25 +537,33 @@
             <div class="share-and-more-info-row" style="display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1rem;">
               {%- comment -%} LEFT: View store information {%- endcomment -%}
               {%- assign pick_up_avails = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-              {%- if pick_up_avails.size > 0 -%}
-                {%- assign closest = pick_up_avails.first -%}
-                {%- capture store_drawer_id -%}store-availability-drawer-{{ product.selected_or_first_available_variant.product.id }}{%- endcapture -%}
-                {%- if closest.available -%}
-                  {%- if pick_up_avails.size == 1 -%}
-                    {%- assign store_button_text = 'product.store_availability.view_store_info' | t -%}
+              <div class="share-and-more-info-row__store-info">
+                {%- if pick_up_avails.size > 0 -%}
+                  {%- assign closest = pick_up_avails.first -%}
+                  {%- capture store_drawer_id -%}store-availability-drawer-{{ product.selected_or_first_available_variant.product.id }}{%- endcapture -%}
+                  {%- if closest.available -%}
+                    {%- if pick_up_avails.size == 1 -%}
+                      {%- assign store_button_text = 'product.store_availability.view_store_info' | t -%}
+                    {%- else -%}
+                      {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
+                    {%- endif -%}
                   {%- else -%}
-                    {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
+                    {%- if pick_up_avails.size > 1 -%}
+                      {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
+                    {%- else -%}
+                      {%- assign store_button_text = 'product.store_availability.pick_up_currently_unavailable' | t -%}
+                    {%- endif -%}
                   {%- endif -%}
-                {%- else -%}
-                  {%- if pick_up_avails.size > 1 -%}
-                    {%- assign store_button_text = 'product.store_availability.check_other_stores' | t -%}
-                  {%- endif -%}
-                {%- endif -%}
-                <div class="share-and-more-info-row__store-info">
                   <button type="button" class="link" aria-controls="{{ store_drawer_id }}" aria-expanded="false">{{ store_button_text }}</button>
                   {%- render 'pickup-availability', product_variant: product.selected_or_first_available_variant -%}
-                </div>
-              {%- endif -%}
+                {%- else -%}
+                  {%- if product.available -%}
+                    <span class="text-subdued">{{ 'product.store_availability.check_other_stores' | t }}</span>
+                  {%- else -%}
+                    <span class="text-subdued">{{ 'product.inventory.out_of_stock' | t }}</span>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
 
               {%- comment -%} RIGHT: Share buttons {%- endcomment -%}
               <div class="share-and-more-info-row__share">
