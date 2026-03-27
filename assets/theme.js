@@ -1490,6 +1490,8 @@ var FreeShippingBar = class extends HTMLElement {
   }
   connectedCallback() {
     document.addEventListener("cart:change", __privateGet(this, _onCartChangedListener));
+    // Initialize progress bar on load
+    __privateMethod(this, _FreeShippingBar_instances, updateMessage_fn).call(this);
   }
   disconnectedCallback() {
     document.removeEventListener("cart:change", __privateGet(this, _onCartChangedListener));
