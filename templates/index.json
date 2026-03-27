@@ -777,6 +777,7 @@
         },
         "collection_m4JNgc": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "bait",
             "coll_image": "shopify://shop_images/Zenith.jpg",
