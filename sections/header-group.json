@@ -65,6 +65,45 @@
     "header": {
       "type": "header",
       "blocks": {
+        "mega_menu_XzAzGT": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Luggage",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_Ja4hzm": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Clothing",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
+        "mega_menu_PEPLer": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "camping",
+            "images_position": "right",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": ""
+          }
+        },
         "mega_menu_qRwBnX": {
           "type": "mega_menu",
           "settings": {
@@ -95,6 +134,9 @@
         }
       },
       "block_order": [
+        "mega_menu_XzAzGT",
+        "mega_menu_Ja4hzm",
+        "mega_menu_PEPLer",
         "mega_menu_qRwBnX",
         "mega_menu_9k76A7"
       ],
