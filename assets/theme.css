@@ -1637,9 +1637,9 @@ shopify-accelerated-checkout-cart {
 }
 
 .checkbox:checked {
-  background-color: rgb(var(--accent));
-  border-color: rgb(var(--accent));
-  background-size: 10px 8px;
+  background-color: #151515;
+  border-color: #151515;
+  padding: 2px;
 }
 
 .checkbox:checked~label {
@@ -1652,9 +1652,7 @@ shopify-accelerated-checkout-cart {
   cursor: default;
 }
 
-.checkbox:not(:disabled, :checked)~label {
-  opacity: .7;
-}
+
 
 .checkbox~label {
   transition: all .2s ease-in-out;
@@ -1727,7 +1725,7 @@ shopify-accelerated-checkout-cart {
 }
 
 .switch:checked {
-  background: rgb(var(--accent));
+  background: #151515;
 }
 
 .switch:checked:after {
@@ -4456,7 +4454,9 @@ product-rerender {
   font-size: 15px;
   font-weight: 600;
 }
-
+.accordion{
+  color: #151515;
+}
 .free-shipping-bar__progress-container {
   width: 100%;
   margin-block: 0.25rem;
@@ -7428,7 +7428,7 @@ product-rerender {
 }
 
 .text-subdued {
-  color: rgb(var(--text-color) / .65);
+  color: #151515;
 }
 
 .text-on-sale {
