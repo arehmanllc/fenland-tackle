@@ -250,15 +250,11 @@ height-observer {
   align-items: center;
   justify-content: center;
 }
-
-.header__primary-nav-item {
-  font-size: 16px;
-}
-
-.header__primary-nav-item summary {
+.header__primary-nav-item{
   display: flex;
-  gap: 8px;
-  align-items: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
 }
 
 .announcement-bar.announcement-bar-container .announcement-bar {
@@ -510,16 +506,6 @@ height-observer {
   letter-spacing: 0 !important;
   font-weight: 500 !important;
   line-height: 100% !important;
-  font-size: 15px !important;
-}
-
-.text-with-icons__item .h6 {
-  font-size: 18px;
-}
-
-.text-with-icons__item p {
-  font-size: 16px;
-  line-height: 1.4;
 }
 
 @media screen and (max-width: 999px) {
