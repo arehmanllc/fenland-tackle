@@ -70,7 +70,7 @@
           "settings": {
             "menu_item": "Luggage",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Collection_Luggage.jpg",
+            "image_1": "shopify://shop_images/Luggage.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -84,7 +84,7 @@
           "settings": {
             "menu_item": "Clothing",
             "images_position": "right",
-            "image_1": "shopify://shop_images/57_c3c85a11-a0a4-415f-b9f9-2bb1d12eb51b.jpg",
+            "image_1": "shopify://shop_images/Winter_Warmers_0c212212-f1c7-4af0-bfc8-d31002901209.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -98,7 +98,7 @@
           "settings": {
             "menu_item": "camping",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Cabrio1.jpg",
+            "image_1": "shopify://shop_images/camping.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -112,7 +112,7 @@
           "settings": {
             "menu_item": "Bait",
             "images_position": "right",
-            "image_1": "shopify://shop_images/Predator_6e54d84f-1e21-4e57-b905-48f101467c42.png",
+            "image_1": "shopify://shop_images/Bait.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
@@ -126,7 +126,7 @@
           "settings": {
             "menu_item": "Hardware",
             "images_position": "right",
-            "image_1": "shopify://shop_images/shop-front-pastel_1.png",
+            "image_1": "shopify://shop_images/Hardware_c9faecbd-90cd-4bb3-a7db-ad0c8cf2971d.png",
             "image_1_heading": "",
             "image_1_text": "",
             "image_1_link": "",
