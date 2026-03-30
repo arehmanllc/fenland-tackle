@@ -315,7 +315,7 @@
           "settings": {
             "icon": "picto-award-gift",
             "custom_icon": "shopify://shop_images/Group_35953.png",
-            "icon_width": 100,
+            "icon_width": 72,
             "mobile_icon_width": 48,
             "title": "Manufacturers Warranty",
             "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
@@ -325,7 +325,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Vector_3.png",
+            "custom_icon": "shopify://shop_images/Cart.png",
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free Local Delivery</strong>",
