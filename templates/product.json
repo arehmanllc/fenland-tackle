@@ -35,7 +35,7 @@
         "text_p7r3iG": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.info.value }}"
+            "text": "This 1.3kW portable gas heater is designed for the practical angler who needsreliable warmth without unnecessary bulk. Built around a high-output ceramic burner, it provides steady heat distribution in a compact, lightweight frame that fits easily onto a barrow or into a transit van."
           }
         },
         "feature_with_icon_iT7Bxm": {
@@ -152,7 +152,7 @@
             "number_of_tabs": 3,
             "label_0": "Key Features & Specification",
             "content_0": "",
-            "richtext_0": "<p>{{ product.metafields.custom.specifications | metafield_tag }}</p>",
+            "richtext_0": "<p>✓ 1.3kW Ceramic Burner: Efficient heat output designed for bivvies and sheltered fishing spots.<br/>✓ Built-in Ignition: Simple piezo starting system—no matches or lighters required.<br/><br/>✓ Temperature Control: Adjustable heat settings to manage fuel consumption and comfort.<br/>✓ Swivel Body Design: Allows you to direct the heat exactly where it is needed most.<br/>✓ Fuel Source: Uses standard 227g butane gas canisters (sold separately).<br/>✓ Safety First: Features a sturdy base and integrated handle for safe positioning.</p>",
             "page_0": "",
             "html_0": "",
             "label_1": "",
