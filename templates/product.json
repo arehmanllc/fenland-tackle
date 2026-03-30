@@ -35,7 +35,7 @@
         "text_p7r3iG": {
           "type": "text",
           "settings": {
-            "text": "This 1.3kW portable gas heater is designed for the practical angler who needsreliable warmth without unnecessary bulk. Built around a high-output ceramic burner, it provides steady heat distribution in a compact, lightweight frame that fits easily onto a barrow or into a transit van."
+            "text": "{{ product.metafields.custom.info.value }}"
           }
         },
         "feature_with_icon_iT7Bxm": {
