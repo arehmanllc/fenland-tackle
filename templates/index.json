@@ -314,7 +314,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-award-gift",
-            "custom_icon": "shopify://shop_images/Group_35931_1.png",
+            "custom_icon": "shopify://shop_images/Group_35953.png",
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "Manufacturers Warranty",
@@ -325,7 +325,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Vector.png",
+            "custom_icon": "shopify://shop_images/Vector_3.png",
             "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free Local Delivery</strong>",
@@ -336,8 +336,8 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Vector_1.png",
-            "icon_width": 80,
+            "custom_icon": "shopify://shop_images/Group_35954.png",
+            "icon_width": 100,
             "mobile_icon_width": 48,
             "title": "<strong>Free National Delivery</strong>",
             "content": "<p>Enjoy free UK-wide delivery on orders over £100.</p>"
