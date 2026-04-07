@@ -30,9 +30,9 @@
   border: none;
   background: transparent;
   cursor: pointer;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   width: fit-content;
-  max-width: fit-content;
+  max-width: 100%;
   font-weight: 400;
   font-family: var(--font-heading-family);
   text-transform: capitalize;

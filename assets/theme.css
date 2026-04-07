@@ -3730,7 +3730,7 @@ tr[onclick]:hover {
 }
 
 .quantity-selector {
-  --quantity-selector-height: 2.4rem;
+  --quantity-selector-height: 3rem;
   --quantity-selector-input-width: 2.5rem;
   --tooltip-offset: calc(-1 * var(--quantity-selector-height) / 2 + 1rem);
   grid-template-columns: var(--quantity-selector-height) auto var(--quantity-selector-height);
@@ -6408,7 +6408,8 @@ product-rerender {
 }
 
 @media screen and (min-width: 1000px) {
-  .product-gallery__thumbnail-list {
+  .product-gallery__thumbnail-list,
+   .product-gallery{
     position: sticky;
     inset-block-start: calc(var(--sticky-area-height) + 20px);
   }

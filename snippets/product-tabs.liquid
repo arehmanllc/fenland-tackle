@@ -10,7 +10,7 @@
           <div class="prod-tabs__head" scroll-slider-wrapper>
             {% for i in (i..block.settings.number_of_tabs) %}
               {% capture label %}label_{{ forloop.index0 }}{% endcapture %}
-              {% if block.settings[label] %}
+              {% if block.settings[label] != blank %}
                 <button class="button-tab{% if forloop.first %} active{% endif %}" data-id="{{ block.settings[label] | handleize }}-{{ forloop.index0 }}" tab-button scroll-slider-item>
                   {{ block.settings[label] }}
                 </button>
