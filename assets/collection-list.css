@@ -31,13 +31,14 @@
   display: grid;
   place-items: center;
   pointer-events: none;
-  max-height: 36px;
+  /* max-height: 36px; */
+  max-height: 2.8vw;
   height: 100%;
 }
 .collection-list .collection-card__arrow svg{
   width: 100%;
   /* height: clamp(20px,2vw,36px); */
-  max-height: 36px;
+  /* max-height: 36px; */
   height: 100%;
 }
 .collection-list .collection-card__arrow::before{
@@ -54,4 +55,9 @@
 }
 .collection-list.wrap{
   gap: 12px;
+}
+@media screen and (max-width: 1149px){
+  .collection-list .collection-card__arrow{
+    max-height: 8.8vw;
+  }
 }
