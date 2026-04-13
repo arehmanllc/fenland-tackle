@@ -76,20 +76,6 @@
         "remove_vertical_spacing": true
       }
     },
-    "slideshow_pN6VxD": {
-      "type": "slideshow",
-      "settings": {
-        "allow_transparent_header": true,
-        "show_next_section_button": true,
-        "media_size": "auto",
-        "show_initial_transition": false,
-        "autoplay": true,
-        "autoplay_pause_on_video": true,
-        "cycle_speed": 5,
-        "background": "#000000",
-        "controls_color": "#ffffff"
-      }
-    },
     "multi_column_LkjiNU": {
       "type": "multi-column",
       "blocks": {
@@ -170,6 +156,60 @@
         "remove_vertical_spacing": false
       }
     },
+    "text_with_icons_FUcAhy": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_UqCVX6": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-award-gift",
+            "custom_icon": "shopify://shop_images/Group_35953.png",
+            "icon_width": 72,
+            "mobile_icon_width": 48,
+            "title": "Manufacturers Warranty",
+            "content": "<p>New products include manufacturer warranty, but used items do not have warranty.</p>"
+          }
+        },
+        "item_RMjQMq": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Cart.png",
+            "icon_width": 100,
+            "mobile_icon_width": 48,
+            "title": "<strong>Free Local Delivery</strong>",
+            "content": "<p>On order over £25<br/>(20 Miles from PE15 9LS)</p>"
+          }
+        },
+        "item_JK6JLb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/Group_35954.png",
+            "icon_width": 100,
+            "mobile_icon_width": 48,
+            "title": "<strong>Free National Delivery</strong>",
+            "content": "<p>Enjoy free UK-wide delivery on orders over £100.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_UqCVX6",
+        "item_RMjQMq",
+        "item_JK6JLb"
+      ],
+      "custom_css": [
+        ".section-spacing {padding: 40px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": false,
+        "stack_on_mobile": false,
+        "icon_color": "",
+        "text_color": "",
+        "text_alignment": "center"
+      }
+    },
     "text_with_icons_VTteYw": {
       "type": "text-with-icons",
       "blocks": {
@@ -209,6 +249,7 @@
         "item_6gMctd",
         "item_TRm6QV"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "separate_section_with_border": false,
@@ -335,10 +376,10 @@
     "main",
     "image_with_text_overlay_6PtQD8",
     "image_with_text_phnerb",
-    "slideshow_pN6VxD",
     "multi_column_LkjiNU",
     "multi_column_iARTJn",
     "rich_text_F3wMkp",
+    "text_with_icons_FUcAhy",
     "text_with_icons_VTteYw",
     "multi_column_JUQEXd",
     "rich_text_3UCyxV",
