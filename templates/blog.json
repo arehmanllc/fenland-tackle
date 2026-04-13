@@ -14,8 +14,8 @@
       "settings": {
         "color_scheme": "",
         "show_blog_title": true,
-        "show_rss_feed": false,
-        "show_tags": false,
+        "show_rss_feed": true,
+        "show_tags": true,
         "posts_per_page": 10,
         "feature_first_blog_post": false,
         "featured_blog_post_color_scheme": "scheme-2",
