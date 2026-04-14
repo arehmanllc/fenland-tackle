@@ -147,6 +147,7 @@
       "blocks": {
         "collection-2": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
             "collection": "winter-warmers",
@@ -157,6 +158,23 @@
             "title": "Winter Warmers",
             "button_text": "",
             "button_link": "shopify://collections/winter-warmers",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_zjRV6A": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e0375511-8841-4708-a587-96b13488ff60",
+            "collection": "rods-reels-combos",
+            "image": "shopify://shop_images/Group_34_1.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "Rods and reels",
+            "button_text": "",
+            "button_link": "shopify://collections/rods-reels-combos",
             "button_style": "solid",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -250,6 +268,7 @@
       },
       "block_order": [
         "collection-2",
+        "collection_zjRV6A",
         "collection-1",
         "collection-3",
         "collection_eWrdnA",
